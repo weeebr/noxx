@@ -121,6 +121,42 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     background: 
+      linear-gradient(120deg,
+        rgba(231,0,54, 0.08),
+        rgba(255,255,255, 0.9)
+      ),
+      linear-gradient(19deg,
+        rgba(255, 255, 255, 0.54),
+        rgba(171, 129, 129, 0.3)
+      );
+      
+
+    ${breakpoint(device.phone)} {
+      background: 
+      linear-gradient(19deg,
+        rgba(171, 129, 129, 0.3),
+        rgba(255, 255, 255, 0.54)
+      ), 
+      linear-gradient(120deg,
+        rgba(255,255,255, 0.9),
+        rgba(231,0,54, 0.08)
+      );
+    }
+
+    & > div {
+      flex: 1 0 auto;
+      display: flex;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      & > .content {
+        background: white;
+        padding: 40px;
+        max-width: 992px;
+        box-shadow: 0 0 14px #e0dfdf;
+        min-height: 400px;
+        margin-right: 180px;
+        background: 
       linear-gradient(19deg,
         rgba(171, 129, 129, 0.3),
         rgba(255, 255, 255, 0.54)
@@ -130,26 +166,8 @@ const GlobalStyle = createGlobalStyle`
         rgba(231,0,54, 0.08)
       );
 
-    & > div {
-      flex: 1 0 auto;
-      display: flex;
-      margin: 0 auto;
-      padding: 0 20px;
-      margin-bottom: 80px;
-
-      & > .content {
-        background: white;
-        padding: 40px;
-        width: 992px;
-        box-shadow: 0 0 14px #e0dfdf;
-        min-height: 400px;
-
         & > div:first-child {
           margin-top: 0;
-        }
-
-        @media (max-width: 1148px) {
-          width: calc(100% - 68px);
         }
 
         ${breakpoint(device.phone)} {

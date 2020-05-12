@@ -13,6 +13,10 @@ const StyledNavigation = styled.aside`
   right: 0;
 
   ${breakpoint(device.phone)} {
+    top: 20px;
+  }
+
+  ${breakpoint(device.phone)} {
     margin: 0;
   }
 
@@ -61,9 +65,8 @@ const StyledNavigation = styled.aside`
       transition: all 0.5s ease;
       box-shadow: none;
       height: 1px;
-      margin-left: -229px;
 
-      ${breakpoint(device.phone)} {
+      ${breakpoint("570px")} {
         width: 0;
       }
 
@@ -122,9 +125,9 @@ const StyledNavigation = styled.aside`
 `;
 
 const Navigation = ({ isOpen, setNavigationOpen }) => {
-  const hamburgerVisible = useMediaQuery(
-    `(max-width:${pageFullWidth + 130}px)`
-  );
+  const hamburgerVisible = useMediaQuery(`(max-width:570px)`);
+
+  console.log({ hamburgerVisible });
 
   return (
     <StyledNavigation className={isOpen ? "open" : null} isOpen={isOpen}>
@@ -145,8 +148,8 @@ const Navigation = ({ isOpen, setNavigationOpen }) => {
           <a href="#" className="active">
             Home
           </a>
-          <a href="#bio">Bio</a>
           <a href="#musik">Musik</a>
+          <a href="#bio">Bio</a>
           <a href="#kontakt">Kontakt</a>
           <a href="#downloads">Downloads</a>
         </nav>

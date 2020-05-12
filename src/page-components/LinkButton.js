@@ -92,11 +92,11 @@ const LinkButton = ({ link, text }) => {
   return (
     <Wrapper>
       <a href={link}>
-        <button class="learn-more">
-          <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
+        <button className="learn-more">
+          <span className="circle" aria-hidden="true">
+            <span className="icon arrow"></span>
           </span>
-          <span class="button-text">{text}</span>
+          <span className="button-text">{text}</span>
         </button>
       </a>
     </Wrapper>

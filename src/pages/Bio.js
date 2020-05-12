@@ -1,56 +1,18 @@
 import React from "react";
-import styled from "styled-components";
-import YouTube from "react-youtube";
 
-import marcoFaseth from "../assets/band/marco-faseth.webp";
-import sonjaKuster from "../assets/band/sonja-kuster.webp";
-import taminoWeggler from "../assets/band/tamino-weggler.webp";
-import tamaraMueller from "../assets/band/tamara-mueller.webp";
-import keithMaguire from "../assets/band/keith-maguire.webp";
+// page-components
 import SectionTitle from "../page-components/SectionTitle";
 import LinkButton from "./../page-components/LinkButton";
+import YoutubePreview from "../page-components/YoutubePreview";
 
-const memberWrapperStyles = {
-  display: "flex",
-  justifyContent: "space-between",
-};
+// assets
+import bandFrontal from "../assets/band/band-frontal.webp";
 
-const YoutubeWrapper = styled.div`
-  display: flex;
-
-  iframe {
-    max-width: 100%;
-    height: auto;
-  }
-`;
-
-const MemberProfile = styled.div`
-  font-size: 25px;
-  font-family: AmaticBold;
-`;
-
-const members = [
-  { name: "Marco Faseth", function: "Schlagzeug", img: marcoFaseth },
-  { name: "Sonja Kuster", function: "Sax/Gesang", img: sonjaKuster },
-  { name: "Tamino Weggler", function: "Gesang/Ukulele", img: taminoWeggler },
-  { name: "Tamara Müller", function: "Keyboard", img: tamaraMueller },
-  { name: "Keith Maguire", function: "Bass", img: keithMaguire },
-];
-
-const Bio = () => {
+const Bio = ({ openVideo }) => {
   return (
     <>
       <SectionTitle>Bio</SectionTitle>
-      <div style={memberWrapperStyles}>
-        {members.map((m) => (
-          <MemberProfile>
-            <img src={m.img} alt={m.name} />
-            {m.name}
-            <br />
-            {m.function}
-          </MemberProfile>
-        ))}
-      </div>
+
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum
         "Es Halbs Kilo Songs". 2019 folgte die Nachfolge-EP "Dörfs Es Bizli
@@ -67,12 +29,55 @@ const Bio = () => {
       >
         <LinkButton link="#" text="Learn more..." />
       </div>
-      <br />
-      <YoutubeWrapper>
-        <YouTube videoId="3K86RRajPEM" onReady={(e) => e.target.pauseVideo()} />
-        <YouTube videoId="U27b2SqZNH4" onReady={(e) => e.target.pauseVideo()} />
-        <YouTube videoId="cV3NnsfpA1Q" onReady={(e) => e.target.pauseVideo()} />
-      </YoutubeWrapper>
+      <p>
+        Nach der Veröffentlichung der letzten EP "Dörfs Es Bizli Zviel Sii?"
+        hatte ich mit Abgängen in der Begleitband zu kämpfen. Zusammen mit den
+        Verbliebenen Bandmitgliedern und zwei Neuzugängen wurde beschlossen,
+        NOXX fortan als Band und nicht mehr als Soloprojekt weiterzuführen.
+      </p>
+      <p>
+        Der Stil der Lieder wird ähnlich bleiben, ausser dass mehr Leute mit
+        verschiedenen Expertisen daran feilen.{" "}
+      </p>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <img src={bandFrontal} alt="Noxx Bandfoto" />
+      </div>
+      <h3>Und das ist erst der Anfang!</h3>
+      <p>
+        Wir haben schon einige neue Lieder am Start und würden gerne einen neuen
+        Tonträger unter dem Namen "Mimimi EP" produzieren. Dabei werden wir vom
+        Verein Graubünden Musik in der Planung unterstützt.
+      </p>
+      <p>
+        Um noch das nötige Kleingeld für die Produktion aufzutreiben haben wir
+        eine{" "}
+        <a href="https://wemakeit.com/projects/noxx-mimimi-ep">
+          Crowdfunding-Kampagne auf wemakeit.com
+        </a>{" "}
+        gestartet.
+      </p>
+      <p>
+        Wir würden uns enorm über deinen Beitrag freuen! Es gibt tolle Goodies
+        als Entschädigung.
+      </p>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <LinkButton
+          link="https://wemakeit.com/projects/noxx-mimimi-ep"
+          text="Zur Kampagne"
+        />
+        <br />
+        <YoutubePreview
+          openVideo={openVideo}
+          id="cV3NnsfpA1Q"
+          title="cV3NnsfpA1Q"
+        />
+      </div>
     </>
   );
 };

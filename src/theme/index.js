@@ -17,7 +17,8 @@ export const colors = {
 export const device = {
   mobile: "767px",
   tablet: "991px",
-  phone: "600px",
+  phone: "570px",
+  xs: "450px",
   md: "900px",
   lg: "1200px",
   xl: "1920px",
@@ -67,4 +68,4 @@ export const zIndex = {
   overNavOverlay: 3,
 };
 
-export const pageFullWidth = 297 + 922; // nav + content
+export const pageFullWidth = 140 + 922; // nav + content
