@@ -1,11 +1,11 @@
-import aufrichtigIcon from "../assets/images/footer/icon-aufrichtig.svg";
-import fairIcon from "../assets/images/footer/icon-fair.svg";
-import gemeinsamIcon from "../assets/images/footer/icon-gemeinsam.svg";
-import wertschaetzungIcon from "../assets/images/footer/icon-wertschaetzung.svg";
-import favIcon from "../assets/images/favicon.jpg";
-import phoneIcon from "../assets/images/footer/phone.svg";
-import emailIcon from "../assets/images/footer/email.svg";
+import appleIcon from "../assets/icons/apple.webp";
+import arrowDownIcon from "../assets/icons/arrow-down.webp";
+import facebookIcon from "../assets/icons/facebook.webp";
+import instagramIcon from "../assets/icons/instagram.webp";
+import spotifyIcon from "../assets/icons/spotify.webp";
+import youtubeIcon from "../assets/icons/youtube.webp";
 import { lighten } from "polished";
+import styled from "styled-components";
 
 export const colors = {
   primaryRed: "#e70036",
@@ -23,100 +23,36 @@ export const device = {
   xl: "1920px",
 };
 
-export const breakpoint = device => `@media (max-width:${device})`;
-
-export const muiFontRecommendations = {
-  sm: {
-    h1: "56px",
-    h2: "38px",
-    h3: "32px",
-    h4: "25px",
-    h5: "20px",
-    h6: "18px",
-  },
-  md: {
-    h1: "76px",
-    h2: "48px",
-    h3: "38px",
-    h4: "31px",
-    h5: "21px",
-    h6: "20px",
-  },
-  lg: {
-    h1: "88px",
-    h2: "56px",
-    h3: "42px",
-    h4: "31px",
-    h5: "24px",
-    h6: "20px",
-  },
-  xl: {
-    h1: "96px",
-    h2: "60px",
-    h3: "46px",
-    h4: "34px",
-    h5: "24px",
-    h6: "20px",
-  },
-};
+export const breakpoint = (device) => `@media (max-width:${device})`;
 
 export const icons = {
-  aufrichtig: aufrichtigIcon,
-  fair: fairIcon,
-  gemeinsam: gemeinsamIcon,
-  wertschaetzung: wertschaetzungIcon,
-  favicon: favIcon,
-  phone: phoneIcon,
-  email: emailIcon,
+  apple: appleIcon,
+  arrowDown: arrowDownIcon,
+  facebook: facebookIcon,
+  instagram: instagramIcon,
+  spotify: spotifyIcon,
+  youtube: youtubeIcon,
 };
 
 export const typography = {
   h1: {
     textTransform: "uppercase",
-    fontFamily: "OpenSansLight",
-    fontSize: "28px",
-    fontWeight: 300,
+    fontFamily: "AmaticBold",
+    fontSize: "100px",
+  },
+  h2: {
+    textTransform: "uppercase",
+    fontFamily: "AmaticBold",
+    fontSize: "54px",
   },
   h3: {
     textTransform: "uppercase",
-    fontFamily: "OpenSansLight",
-    fontSize: "18px",
-    fontWeight: 300,
-  },
-
-  hauptTitel: {
-    fontSize: "25px",
-    fontFamily: "OpenSansBold",
-    color: lighten(0.1, "#000"),
-    marginBottom: "20px",
-  },
-  rubrikTitel: {
-    fontSize: "25px",
-    fontFamily: "OpenSans",
-  },
-  titel: {
-    fontSize: "20px",
-    fontFamily: "OpenSansBold, Calibri, sans-serif",
-  },
-  subTitel: {
-    fontSize: "18px",
-    fontFamily: "OpenSans",
-    textTransform: "uppercase",
-  },
-  leadText: {
-    fontFamily: "OpenSans",
-    borderTop: "1px solid currentColor",
-    borderBottom: "1px solid currentColor",
-    padding: "8px 0",
-  },
-  zitat: {
-    fontSize: "18px",
-    fontStyle: "italic",
-    textAlign: "center",
+    fontFamily: "AmaticRegular",
+    fontSize: "39px",
   },
 };
 
-export const getString = stylings => {
+export const getString = (stylings) => {
   let result = "";
   for (let [key, value] of Object.entries(stylings)) {
     key = key.replace(/([A-Z])/g, "-$1").toLowerCase();

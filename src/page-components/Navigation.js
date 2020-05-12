@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { colors, pageFullWidth } from "../theme";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
@@ -7,12 +6,11 @@ import OverlayBg from "./OverlayBg";
 import Hamburger from "./Hamburger";
 import { breakpoint, device } from "./../theme/index";
 
-// prettier-ignore
 const StyledNavigation = styled.aside`
   transition: all 0.5s ease;
-  margin-left: 0;
-  position: relative;
-  margin-right: 20px;
+  position: fixed;
+  top: 40%;
+  right: 0;
 
   ${breakpoint(device.phone)} {
     margin: 0;
@@ -21,37 +19,39 @@ const StyledNavigation = styled.aside`
   nav {
     display: flex;
     flex-direction: column;
-    width: 277px;
-    box-shadow: 0 0 14px #e0dfdf;
+    text-align: right;
 
     a {
       padding: 12px 20px;
       color: black;
-      font-family: OpenSans;
+      font-family: AmaticBold;
+      font-size: 30px;
       text-decoration: none;
       white-space: nowrap;
-      background: white;
       transition: all 0.5s ease, background 0.1s ease;
       height: 48px;
 
-      &:not(:last-child) {
-        border-bottom: 1px solid #d0d0d0;
+      &:after {
+        margin-left: 12px;
+        content: "◦";
+        position: relative;
+        top: -13px;
+        float: right;
+        font-size: 45px;
       }
 
       &.active {
-        background: ${colors.primaryRed};
-
-        &:first-child {
-          border-bottom: 1px solid ${colors.primaryRed};
+        &:after {
+          content: "⦁";
+          font-size: 41px;
+          top: -10px;
         }
       }
 
-
       &:focus,
       &:hover {
-        border-bottom: 1px solid ${colors.primaryRed};
-        background: ${colors.primaryRed};
         padding: 12px 15px 12px 25px;
+        border: none;
       }
     }
 
@@ -81,7 +81,7 @@ const StyledNavigation = styled.aside`
         &:nth-child(7) { transition-delay: 0.40s }
         &:nth-child(8) { transition-delay: 0.45s }*/
       }
-    } 
+    }
   }
 
   &.open {
@@ -91,7 +91,7 @@ const StyledNavigation = styled.aside`
     ${breakpoint(device.phone)} {
       margin-right: calc(277px + 68px - 7%);
     }
-  
+
     nav.mobile {
       position: fixed;
       top: 176px;
@@ -142,16 +142,13 @@ const Navigation = ({ isOpen, setNavigationOpen }) => {
             isOpen ? "open" : ""
           }`}
         >
-          <NavLink to="/" exact activeClassName="active">
+          <a href="#" className="active">
             Home
-          </NavLink>
-          <NavLink to="/leitbild">Leitbild & Philosophie</NavLink>
-          <NavLink to="/angebote">Angebote & Dienstleistungen</NavLink>
-          <NavLink to="/referenzen">Referenzen & Partner</NavLink>
-          <NavLink to="/team">Unser Team</NavLink>
-          <NavLink to="/aktuell">Aktuell</NavLink>
-          <NavLink to="/wissenswertes">Wissenswertes</NavLink>
-          <NavLink to="/kontakt">Kontakt</NavLink>
+          </a>
+          <a href="#bio">Bio</a>
+          <a href="#musik">Musik</a>
+          <a href="#kontakt">Kontakt</a>
+          <a href="#downloads">Downloads</a>
         </nav>
       </div>
     </StyledNavigation>

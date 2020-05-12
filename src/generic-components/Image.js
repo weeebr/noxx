@@ -1,7 +1,7 @@
 import React from "react";
 
-export const getAltText = icon => {
-  const { src = icon } = icon;
+export const getAltText = (icon = {}) => {
+  const { src = "" } = icon;
   return src.substring(src.lastIndexOf("/") + 1, src.indexOf("."));
 };
 

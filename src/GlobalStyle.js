@@ -1,38 +1,30 @@
 import { createGlobalStyle } from "styled-components";
-import bgImage from "./assets/images/bg.jpg";
-import OpenSansBold from "./assets/fonts/OpenSans-Bold.ttf";
-import OpenSansItalic from "./assets/fonts/OpenSans-Italic.ttf";
-import OpenSansLight from "./assets/fonts/OpenSans-Light.ttf";
-import OpenSans from "./assets/fonts/OpenSans-Regular.ttf";
+import AmaticBold from "./assets/fonts/AmaticSC-Bold.ttf";
+import AmaticRegular from "./assets/fonts/AmaticSC-Regular.ttf";
+import LatoRegular from "./assets/fonts/Lato-Regular.ttf";
+
 import { colors, typography, getString, breakpoint, device } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'OpenSansBold';
+    font-family: 'AmaticBold';
     font-style: normal;
     font-weight: 700;
-    src: url(${OpenSansBold}) format('truetype');
+    src: url(${AmaticBold}) format('truetype');
   }
 
   @font-face {
-    font-family: 'OpenSansItalic';
+    font-family: 'AmaticRegular';
     font-style: normal;
     font-weight: 400;
-    src: url(${OpenSansItalic}) format('truetype');
+    src: url(${AmaticRegular}) format('truetype');
   }
 
   @font-face {
-    font-family: 'OpenSansLight';
-    font-style: normal;
-    font-weight: 300;
-    src: url(${OpenSansLight}) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'OpenSans';
+    font-family: 'LatoRegular';
     font-style: normal;
     font-weight: 400;
-    src: url(${OpenSans}) format('truetype');
+    src: url(${LatoRegular}) format('truetype');
   }
 
   *::before, *::after, * {
@@ -42,9 +34,8 @@ const GlobalStyle = createGlobalStyle`
   html, body,  p {
     margin: 0;
     padding: 0;
-    font-family: OpenSans;
-    line-height: 1.5;
-    letter-spacing: 0.01038em;
+    font-family: LatoRegular;
+    text-align: center;
   }
 
   body,
@@ -81,9 +72,7 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
-    font-family: OpenSans;
     line-height: 1.5;
-    background: black;
   }
 
   p {
@@ -95,9 +84,20 @@ const GlobalStyle = createGlobalStyle`
     padding: 8px 0 18px 0;
   }
 
+  h2 {
+    ${getString(typography.h2)}
+    width: 349px;
+    height: 115px;
+    box-shadow: inset 0 0 0px 7px black;
+    background: white;
+    border: 4px solid white;
+    padding-top: 13px;
+  }
+
   h3 {
-    ${getString(typography.h3)}
-    letter-spacing: 1px;
+    ${getString(typography.h3)};
+    text-align: center;
+    margin: 16px 0 8px 0;
   }
 
   button {
@@ -109,8 +109,10 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: ${colors.primaryRed};
 
-    &:focus, &:hover {
-      border-bottom: 2px dashed ${colors.primaryRed};
+    &.external {
+      &:focus, &:hover {
+        border-bottom: 2px dashed ${colors.primaryRed};
+      }
     }
   }
 
@@ -126,8 +128,7 @@ const GlobalStyle = createGlobalStyle`
       linear-gradient(120deg,
         rgba(255,255,255, 0.9),
         rgba(231,0,54, 0.08)
-      ),
-      url(${bgImage});
+      );
 
     & > div {
       flex: 1 0 auto;
@@ -136,21 +137,16 @@ const GlobalStyle = createGlobalStyle`
       padding: 0 20px;
       margin-bottom: 80px;
 
-      @media (max-width: 1148px) {
-        margin: 0 20px 80px 20px;
-        padding: 0;
-      }
-
-      ${breakpoint(device.phone)} {
-        margin: 0 5% 80px 5%;
-      }
-
       & > .content {
         background: white;
         padding: 40px;
         width: 992px;
         box-shadow: 0 0 14px #e0dfdf;
         min-height: 400px;
+
+        & > div:first-child {
+          margin-top: 0;
+        }
 
         @media (max-width: 1148px) {
           width: calc(100% - 68px);

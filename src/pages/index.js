@@ -1,21 +1,4 @@
-import Aktuell from "./Aktuell";
-import AngeboteDienstleistungen from "./AngeboteDienstleistungen/AngeboteDienstleistungen";
-import Home from "./Home";
-import Kontakt from "./Kontakt";
-import LeitbildPhilosophie from "./LeitbildPhilosophie";
-import ReferenzenPartner from "./ReferenzenPartner";
-import UnserTeam from "./UnserTeam/UnserTeam";
-import Wissenswertes from "./Wissenswertes";
+import Page from "./Page";
 import NotFound from "./NotFound";
 
-export {
-  Aktuell,
-  AngeboteDienstleistungen,
-  Home,
-  Kontakt,
-  LeitbildPhilosophie,
-  ReferenzenPartner,
-  UnserTeam,
-  Wissenswertes,
-  NotFound,
-};
+export { Page, NotFound };
