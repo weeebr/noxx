@@ -13,20 +13,18 @@ const Pages = () => {
   const [isNavigationOpen, setNavigationOpen] = React.useState(false);
 
   return (
-    <>
-      <div>
-        <div className="content">
-          <Switch>
-            <Route exact path="/" component={Page} />
-            <Route component={NotFound} />
-          </Switch>
-        </div>
-        <Navigation
-          isOpen={isNavigationOpen}
-          setNavigationOpen={setNavigationOpen}
-        />
+    <div>
+      <div className="content">
+        <Switch>
+          <Route exact path="/" component={Page} />
+          <Route component={NotFound} />
+        </Switch>
       </div>
-    </>
+      <Navigation
+        isOpen={isNavigationOpen}
+        setNavigationOpen={setNavigationOpen}
+      />
+    </div>
   );
 };
 

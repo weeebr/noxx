@@ -22,6 +22,7 @@ const Page = () => {
       <ModalVideo
         channel="youtube"
         isOpen={isOpen}
+        autoplay={1}
         videoId={videoId}
         onClose={() => setOpen(false)}
       />
