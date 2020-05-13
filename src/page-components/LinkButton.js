@@ -77,7 +77,7 @@ const Wrapper = styled.div`
         bottom: 0;
         padding: 0.75rem 0;
         margin: 0 0 0 1.85rem;
-        color: #282936;
+        color: white;
         line-height: 1.6;
         text-align: center;
         padding-left: 10px;
