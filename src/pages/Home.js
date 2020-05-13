@@ -97,11 +97,13 @@ const Home = () => {
 const ProfileWrapper = styled.div`
   margin: 0 4px;
   position: relative;
+  cursor: crosshair;
 
   &:hover {
     .member-overlay {
       background: rgba(0, 0, 0, 0.7);
       z-index: 4;
+      transition: all 0.8s ease;
     }
 
     .member-info {
@@ -120,15 +122,24 @@ const ProfileWrapper = styled.div`
     }
 
     .member-emoji {
-      transform: translateY(-240px) scale(1.5);
+      transform: translateY(-210px) scale(1.3);
+
+      ${breakpoint(device.tablet)} {
+        transform: translateY(-190px) scale(1.2);
+      }
     }
 
     .member-function {
-      transform: translateY(-200px) scale(1.4);
+      transform: translateY(-200px) scale(1.2);
       margin-top: 0;
       word-spacing: 74px;
+      line-height: 20px;
       text-align: center;
       word-break: break-all;
+
+      ${breakpoint(device.tablet)} {
+        transform: translateY(-180px) scale(1.2);
+      }
     }
   }
 
@@ -164,10 +175,11 @@ const ProfileWrapper = styled.div`
       font-weight: 900;
       background: ${(props) =>
         props.name === "Tamino Weggler" ? "#ffbb0e" : "goldenrod"};
-      padding: 0 6px;
+      padding: 6px 4px;
 
       ${breakpoint(device.phone)} {
         font-size: 13px;
+        line-height: 18px;
         font-family: LatoRegular;
         font-weight: normal;
       }
