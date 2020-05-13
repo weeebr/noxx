@@ -62,8 +62,9 @@ const Bio = ({ openVideo }) => {
       <h3>Und das ist erst der Anfang!</h3>
       <p>
         Wir haben schon einige neue Lieder am Start und würden gerne einen neuen
-        Tonträger unter dem Namen "Mimimi EP" produzieren. Dabei werden wir vom
-        Verein Graubünden Musik in der Planung unterstützt.
+        Tonträger unter dem Namen <HighlightedText>Mimimi EP</HighlightedText>{" "}
+        produzieren. Dabei werden wir vom Verein Graubünden Musik in der Planung
+        unterstützt.
       </p>
       <br />
       <h4>Crowdfunding-Kampagne</h4>
