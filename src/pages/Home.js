@@ -127,6 +127,10 @@ const ProfileWrapper = styled.div`
       ${breakpoint(device.tablet)} {
         transform: translateY(-190px) scale(1.2);
       }
+
+      ${breakpoint(device.phone)} {
+        transform: translateY(-170px) scale(1.1);
+      }
     }
 
     .member-function {
@@ -139,6 +143,10 @@ const ProfileWrapper = styled.div`
 
       ${breakpoint(device.tablet)} {
         transform: translateY(-180px) scale(1.2);
+      }
+
+      ${breakpoint(device.phone)} {
+        transform: translateY(-160px) scale(1.1);
       }
     }
   }
