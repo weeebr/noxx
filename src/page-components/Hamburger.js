@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { colors } from "./../theme";
-import { breakpoint, device } from "./../theme/index";
 
 const StyledHamburger = styled.div`
   width: 48px;
@@ -9,7 +7,7 @@ const StyledHamburger = styled.div`
   position: absolute;
   top: 0;
   margin-left: 0;
-  z-index: 11;
+  z-index: 5;
   outline: none;
   cursor: pointer;
   background: #d24e4e;
@@ -85,7 +83,6 @@ const Hamburger = ({ isOpen, onClick }) => {
         className={isOpen ? "open" : null}
         onClick={() => {
           onClick(!isOpen);
-          window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
         <div></div>

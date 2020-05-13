@@ -32,7 +32,7 @@ const SliderWrapper = styled.div`
           margin: 0 15px;
           transform: scale(1);
           transform-origin: center;
-          z-index: 2;
+          z-index: 1;
 
           .member-name {
             transform: scale(1.5);

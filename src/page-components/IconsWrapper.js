@@ -25,7 +25,7 @@ const Wrapper = styled.div`
       top: 0;
       left: 0;
       height: 58px;
-      z-index: 2;
+      z-index: 1;
     }
 
     &:hover {

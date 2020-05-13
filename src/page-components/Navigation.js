@@ -66,6 +66,7 @@ const StyledNavigation = styled.aside`
       transition: all 0.5s ease;
       box-shadow: none;
       height: 1px;
+      display: none;
 
       ${breakpoint(device.phone)} {
         width: 0;
@@ -93,18 +94,18 @@ const StyledNavigation = styled.aside`
   &.open {
     margin-right: calc(277px + 68px - 20px);
     left: 207px;
-
-    ${breakpoint(device.phone)} {
+    g ${breakpoint(device.phone)} {
       margin-right: calc(277px + 68px - 7%);
     }
 
     nav.mobile {
       position: fixed;
+      display: flex;
       opacity: 1;
       height: 1500px;
       background: white;
       box-shadow: none;
-      z-index: 11;
+      z-index: 5;
       top: 75px;
       right: 5%;
       width: 300px;

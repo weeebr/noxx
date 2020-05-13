@@ -54,6 +54,21 @@ const members = [
   { name: "Keith Maguire", emoji: "🎸", function: "Bass", img: keithMaguire },
 ];
 
+const EmoijWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  span {
+    transform: rotate(0deg);
+    transition: all 1.7s ease-out;
+
+    &:hover {
+      transform: rotate(96000deg);
+      transition: all 0.4s ease-out;
+    }
+  }
+`;
+
 const Home = () => {
   const sliderVisible = useMediaQuery(`(max-width:${device.phone})`);
 
@@ -64,13 +79,51 @@ const Home = () => {
 
       <h3>Wer sind wir?</h3>
       <h4 style={{ fontWeight: "lighter" }}>Ganz einfach – Eine Band!</h4>
-      <span
-        role="img"
-        style={{ display: "block", fontSize: 39, marginTop: 8 }}
-        aria-label="music-emoijs"
-      >
-        🥁 🎷🎤 🪕 🎹 🎸
-      </span>
+      <EmoijWrapper>
+        <span
+          role="img"
+          style={{ display: "block", fontSize: 39, marginTop: 8 }}
+          aria-label="music-emoijs"
+        >
+          🥁
+        </span>
+        <span
+          role="img"
+          style={{ display: "block", fontSize: 39, marginTop: 8 }}
+          aria-label="music-emoijs"
+        >
+          🎷
+        </span>
+        <span
+          role="img"
+          style={{ display: "block", fontSize: 39, marginTop: 8 }}
+          aria-label="music-emoijs"
+        >
+          🎤
+        </span>
+        <span
+          role="img"
+          style={{ display: "block", fontSize: 39, marginTop: 8 }}
+          aria-label="music-emoijs"
+        >
+          🪕
+        </span>
+        <span
+          role="img"
+          style={{ display: "block", fontSize: 39, marginTop: 8 }}
+          aria-label="music-emoijs"
+        >
+          🎹
+        </span>
+        <span
+          role="img"
+          style={{ display: "block", fontSize: 39, marginTop: 8 }}
+          aria-label="music-emoijs"
+        >
+          🎸
+        </span>
+      </EmoijWrapper>
+
       <br />
       <MemberProfiles>
         {true && (
@@ -102,7 +155,7 @@ const ProfileWrapper = styled.div`
   &:hover {
     .member-overlay {
       background: rgba(0, 0, 0, 0.7);
-      z-index: 4;
+      z-index: 1;
       transition: all 0.8s ease;
     }
 
@@ -115,7 +168,7 @@ const ProfileWrapper = styled.div`
 
     .member-emoji,
     .member-function {
-      z-index: 5;
+      z-index: 2;
       position: relative;
       color: white;
     }
@@ -175,7 +228,7 @@ const ProfileWrapper = styled.div`
       width: 100%;
       bottom: -32px;
       position: absolute;
-      z-index: 7;
+      z-index: 3;
       transition: all 0.5s ease;
       font-size: 25px;
       font-family: AmaticBold;
