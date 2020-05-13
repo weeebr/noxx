@@ -14,9 +14,8 @@ const StyledHamburger = styled.div`
   cursor: pointer;
   background: rgb(37, 37, 36);
   position: fixed;
-  top: 0;
+  top: 36px;
   right: 5%;
-  margin-top: 5%;
   transition: all 0.6s ease, top 0.3s ease;
 
   &:hover {
@@ -42,12 +41,7 @@ const StyledHamburger = styled.div`
 
   &.open {
     position: fixed;
-    top: 176px;
     margin-left: 48px;
-
-    @media (max-width: 960px) {
-      top: 244px;
-    }
 
     ${breakpoint(device.phone)} {
       margin-top: 0;

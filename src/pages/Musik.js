@@ -11,7 +11,7 @@ const YoutubeWrapper = styled.div`
   display: flex;
 
   & > div {
-    padding: 0 4px;
+    padding: 0 20px;
   }
 `;
 
@@ -37,6 +37,7 @@ const Musik = ({ openVideo }) => {
           title="cV3NnsfpA1Q"
         />
       </YoutubeWrapper>
+      <br />
       <IconsWrapper>
         <a href="https://open.spotify.com/artist/70VQtiINNxQ15JdP2NDaZP">
           <img src={icons.spotify} alt="NOXX auf Spotify" />

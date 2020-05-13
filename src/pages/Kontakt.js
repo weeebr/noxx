@@ -7,16 +7,17 @@ import { breakpoint } from "./../theme/index";
 
 export const IconsWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 310px;
   margin: 0 auto;
-  padding: 20px;
+  transform: translateX(10px);
 
   a img {
     background: #49525a;
     border-radius: 50%;
     border: 4px solid #49525a;
     width: 58px;
+    margin-right: 20px;
 
     &:hover {
       background: #282936;
@@ -79,6 +80,7 @@ const Kontakt = () => {
       <br />
       <br />
       <h3>Social Media</h3>
+      <p>Du willst regelmässiger informiert werden? Dann folge uns hier:</p>
       <IconsWrapper>
         <a href="https://www.instagram.com/noxx_musik/">
           <img src={icons.instagram} alt="NOXX auf Instagram" />

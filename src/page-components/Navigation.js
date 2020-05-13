@@ -98,16 +98,14 @@ const StyledNavigation = styled.aside`
 
     nav.mobile {
       position: fixed;
-      top: 176px;
       opacity: 1;
-      height: 100vh;
+      height: 1500px;
       background: white;
       box-shadow: none;
       z-index: 11;
-
-      ${breakpoint(device.phone)} {
-        width: 277px;
-      }
+      top: 90px;
+      right: 5%;
+      width: 300px;
 
       a {
         opacity: 1;
@@ -116,10 +114,6 @@ const StyledNavigation = styled.aside`
         &:last-child {
           border-bottom: 1px solid #d0d0d0;
         }
-      }
-
-      @media (max-width: 960px) {
-        top: 244px;
       }
     }
   }

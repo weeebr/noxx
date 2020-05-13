@@ -32,7 +32,10 @@ const DownloadsWrapper = styled.div`
   }
 
   h3 {
+    font-size: 39px;
     text-align: center;
+    line-height: 40px;
+    margin: 16px 0 14px 0;
   }
 
   a {
