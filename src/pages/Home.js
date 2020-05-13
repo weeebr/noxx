@@ -62,12 +62,15 @@ const Home = () => {
       <h1>NOXX</h1>
       <SectionTitle>Home</SectionTitle>
 
-      <h3>
-        Wer sind wir? Eine Band!
-        <span role="img" style={{ display: "block" }} aria-label="music-emoijs">
-          🥁 🎷🎤 🪕 🎹 🎸
-        </span>
-      </h3>
+      <h3>Wer sind wir?</h3>
+      <h4 style={{ fontWeight: "lighter" }}>Ganz einfach: Eine Band!</h4>
+      <span
+        role="img"
+        style={{ display: "block", fontSize: 39, marginTop: 8 }}
+        aria-label="music-emoijs"
+      >
+        🥁 🎷🎤 🪕 🎹 🎸
+      </span>
       <br />
       <MemberProfiles>
         {true && (
