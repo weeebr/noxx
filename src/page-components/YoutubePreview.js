@@ -20,7 +20,7 @@ const PlayButton = styled.button`
   margin-left: -34px;
   margin-top: -24px;
   transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
-  z-index: 63;
+  z-index: 2;
   pointer-events: none;
   cursor: pointer;
   border: none;
