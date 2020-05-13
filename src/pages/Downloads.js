@@ -42,7 +42,7 @@ const DownloadsWrapper = styled.div`
       font-size: 39px;
       text-align: center;
       line-height: 40px;
-      color: #80775a;
+      color: #ada385;
     }
   }
 

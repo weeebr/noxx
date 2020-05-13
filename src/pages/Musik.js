@@ -4,7 +4,8 @@ import styled from "styled-components";
 import SectionTitle from "../page-components/SectionTitle";
 import YoutubePreview from "../page-components/YoutubePreview";
 import LinkButton from "./../page-components/LinkButton";
-import { IconsWrapper } from "./Kontakt";
+import IconsWrapper from "./../page-components/IconsWrapper";
+
 import { icons, device } from "../theme";
 import { breakpoint } from "./../theme/index";
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Navigation from "./page-components/Navigation";
@@ -11,18 +11,39 @@ import GlobalStyle from "./GlobalStyle";
 
 const Pages = () => {
   const [isNavigationOpen, setNavigationOpen] = React.useState(false);
+  const homeRef = useRef();
+  const musikRef = useRef();
+  const bioRef = useRef();
+  const kontaktRef = useRef();
+
+  const pageRefs = {
+    home: homeRef,
+    musik: musikRef,
+    bio: bioRef,
+    kontakt: kontaktRef,
+  };
+
+  const handleNavigate = (ref) => {
+    console.log(ref.current);
+  };
 
   return (
     <div>
       <div className="content">
         <Switch>
-          <Route exact path="/" component={Page} />
+          <Route
+            exact
+            path="/"
+            component={() => <Page pageRefs={pageRefs} />}
+          />
           <Route component={NotFound} />
         </Switch>
       </div>
       <Navigation
         isOpen={isNavigationOpen}
         setNavigationOpen={setNavigationOpen}
+        onNavigate={handleNavigate}
+        pageRefs={pageRefs}
       />
     </div>
   );

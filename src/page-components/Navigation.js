@@ -117,11 +117,9 @@ const StyledNavigation = styled.aside`
   }
 `;
 
-const Navigation = ({ isOpen, setNavigationOpen }) => {
+const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
   const hamburgerWhenWidth = `${parseInt(device.tablet) + 150}px`; // 170 = nav width
   const hamburgerVisible = useMediaQuery(`(max-width:${hamburgerWhenWidth})`);
-
-  console.log({ hamburgerVisible });
 
   return (
     <StyledNavigation className={isOpen ? "open" : null} isOpen={isOpen}>

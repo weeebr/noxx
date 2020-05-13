@@ -15,6 +15,7 @@ const HighlightedText = styled.span`
   margin: 0 4px;
   background: #54535445;
   border-radius: 3px;
+  white-space: nowrap;
 `;
 
 const Bio = ({ openVideo }) => {
@@ -39,6 +40,7 @@ const Bio = ({ openVideo }) => {
       >
         <LinkButton style={{ width: 195 }} link="#" text="Zu den EP's" />
       </div>
+      <br />
       <p>
         Nach der Veröffentlichung der letzten EP{" "}
         <HighlightedText>Dörfs Es Bizli Zviel Sii?</HighlightedText>
