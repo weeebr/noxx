@@ -63,7 +63,7 @@ const Home = () => {
       <SectionTitle>Home</SectionTitle>
 
       <h3>Wer sind wir?</h3>
-      <h4 style={{ fontWeight: "lighter" }}>Ganz einfach: Eine Band!</h4>
+      <h4 style={{ fontWeight: "lighter" }}>Ganz einfach – Eine Band!</h4>
       <span
         role="img"
         style={{ display: "block", fontSize: 39, marginTop: 8 }}
