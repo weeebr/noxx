@@ -13,6 +13,21 @@ const BioWrapper = styled.div`
   h3 {
     margin-top: 0;
   }
+
+  .large-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+      width: 195px;
+    }
+  }
+
+  .bandfoto-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const HighlightedText = styled.span`
@@ -37,14 +52,8 @@ const Bio = ({ openVideo }) => {
         Nachfolge-EP{" "}
         <HighlightedText>Dörfs Es Bizli Zviel Sii?</HighlightedText>.
       </p>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <LinkButton style={{ width: 195 }} link="#" text="Zu den EP's" />
+      <div className="large-link-wrapper">
+        <LinkButton link="#" text="Zu den EP's" />
       </div>
       <br />
       <p>
@@ -57,15 +66,15 @@ const Bio = ({ openVideo }) => {
       <h3>
         Heute: <span>NOXX Band</span>
       </h3>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <img src={bandFrontal} alt="NOXX Bandfoto" />
-      </div>
       <p>
         Am Stil der Lieder wird sich also nichts gross ändern. Mit der neuen
         Zusammensetzung und deren verschiedenen Expertisen stehen also
         spannenden neuen Ufern und Kreativität nichts mehr im Wege. Seid
         gespannt!
       </p>
+      <div className="bandfoto-wrapper">
+        <img src={bandFrontal} alt="NOXX Bandfoto" />
+      </div>
       <br />
       <h3>Und das ist erst der Anfang!</h3>
       <p>
@@ -91,17 +100,10 @@ const Bio = ({ openVideo }) => {
         Wir würden uns enorm über deinen Beitrag freuen! Es gibt tolle Goodies
         als Entschädigung.
       </p>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <div className="large-link-wrapper">
         <LinkButton
           link="https://wemakeit.com/projects/noxx-mimimi-ep"
           text="Zur Kampagne"
-          width={195}
         />
         <br />
         <YoutubePreview
