@@ -36,7 +36,7 @@ const members = [
   {
     name: "Sonja Kuster",
     emoji: "🎷🎤",
-    function: "Sax/Gesang",
+    function: "Sax/ Gesang",
     img: sonjaKuster,
   },
   {
@@ -118,7 +118,6 @@ const ProfileWrapper = styled.div`
       z-index: 5;
       position: relative;
       color: white;
-      word-spacing: 12px;
     }
 
     .member-emoji {
@@ -146,7 +145,7 @@ const ProfileWrapper = styled.div`
       }
 
       ${breakpoint(device.phone)} {
-        transform: translateY(-160px) scale(1.1);
+        transform: translateY(-155px) scale(1);
       }
     }
   }
@@ -201,6 +200,11 @@ const ProfileWrapper = styled.div`
     transform: translateY(0) scale(1);
     transition: all 0.25s ease;
     margin-top: 44px;
+
+    ${breakpoint(device.phone)} {
+      letter-spacing: -8px;
+      margin-left: -8px;
+    }
   }
 
   .member-function {
@@ -214,6 +218,7 @@ const ProfileWrapper = styled.div`
     ${breakpoint(device.phone)} {
       font-size: 11px;
       font-family: LatoRegular;
+      line-height: 16px;
     }
   }
 `;
