@@ -65,7 +65,7 @@ const Home = () => {
       <h3>
         Wer sind wir? Eine Band!
         <span role="img" style={{ display: "block" }} aria-label="music-emoijs">
-          🥁🎷🎤🪕🎹🎸
+          🥁 🎷🎤 🪕 🎹 🎸
         </span>
       </h3>
       <br />

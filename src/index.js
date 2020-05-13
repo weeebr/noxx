@@ -32,7 +32,7 @@ const App = (
   <Router>
     <GlobalStyle />
     <Helmet>
-      <title>NOXX 🥁🎷🎤🪕🎹🎸</title>
+      <title>NOXX 🥁 🎷🎤 🪕 🎹 🎸</title>
     </Helmet>
 
     <Pages />
