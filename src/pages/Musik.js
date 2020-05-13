@@ -5,13 +5,22 @@ import SectionTitle from "../page-components/SectionTitle";
 import YoutubePreview from "../page-components/YoutubePreview";
 import LinkButton from "./../page-components/LinkButton";
 import { IconsWrapper } from "./Kontakt";
-import { icons } from "../theme";
+import { icons, device } from "../theme";
+import { breakpoint } from "./../theme/index";
 
 const YoutubeWrapper = styled.div`
   display: flex;
 
   & > div {
     padding: 0 20px;
+
+    ${breakpoint(device.tablet)} {
+      padding: 0 8px;
+    }
+
+    ${breakpoint(device.phone)} {
+      padding: 0 4px;
+    }
   }
 `;
 
