@@ -17,11 +17,12 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 const MemberProfiles = styled.div`
   display: flex;
   justify-content: center;
-  margin: 30px -2px 0 -2px;
+  margin: 30px auto 0 auto;
+  width: 70%;
 
   ${breakpoint(device.phone)} {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 4px;
   }
 `;
 
@@ -92,6 +93,9 @@ const Home = () => {
 
 const ProfileWrapper = styled.div`
   margin: 0 4px;
+  ${breakpoint(device.phone)} {
+    max-width: 20%;
+  }
 
   p {
     margin: 0;
@@ -102,7 +106,9 @@ const ProfileWrapper = styled.div`
     font-size: 25px;
 
     ${breakpoint(device.phone)} {
-      font-size: 22px;
+      font-size: 13px;
+      font-family: LatoRegular;
+      font-weight: normal;
     }
 
     font-family: AmaticBold;
@@ -121,6 +127,11 @@ const ProfileWrapper = styled.div`
   .member-function {
     font-size: 22px;
     font-family: AmaticBold;
+
+    ${breakpoint(device.phone)} {
+      font-size: 11px;
+      font-family: LatoRegular;
+    }
   }
 `;
 

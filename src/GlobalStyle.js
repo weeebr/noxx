@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     ${getString(typography.h1)}
     margin-bottom: 40px;
-    
+
     ${breakpoint(device.tablet)} {
       margin-top: 40px;
     }
@@ -138,15 +138,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
     & > div {
-      flex: 1 0 auto;
-      display: flex;
-      margin: 0 auto;
-      padding: 0 20px;
-
-      ${breakpoint(device.tablet)} {
-        padding: 0;
-      }
-
       & > .content {
         padding: 40px 10px;
         max-width: 1102px;

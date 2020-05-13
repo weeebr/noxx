@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 import SectionTitle from "../page-components/SectionTitle";
-import { icons } from "../theme";
+import { icons, device } from "../theme";
+import { breakpoint } from "./../theme/index";
 
 export const IconsWrapper = styled.div`
   display: flex;
@@ -31,6 +32,10 @@ const SignupForm = styled.div`
 
   div {
     display: flex;
+
+    ${breakpoint(device.phone)} {
+      display: block;
+    }
   }
 
   input {
@@ -39,6 +44,10 @@ const SignupForm = styled.div`
     padding: 12px 20px;
     background: #fdfbe9;
     margin-right: 10px;
+
+    ${breakpoint(device.phone)} {
+      margin-bottom: 10px;
+    }
   }
 
   button {

@@ -14,6 +14,7 @@ const DownloadsWrapper = styled.div`
   padding: 12px;
 
   ${breakpoint(device.phone)} {
+    margin: 200px 0 0 0;
     padding: 0 3px;
   }
 
