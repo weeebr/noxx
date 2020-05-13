@@ -8,7 +8,7 @@ import { lighten } from "polished";
 import styled from "styled-components";
 
 export const colors = {
-  primaryRed: "#e70036",
+  primaryRed: "#d24e4e",
   primaryAnthracite: "#3c3c3c",
   textColor: lighten(0.1, "#000"), // 90% black
   footerBg: lighten(0.1, "#000"),

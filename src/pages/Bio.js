@@ -53,7 +53,10 @@ const Bio = ({ openVideo }) => {
       <p>
         Um noch das nötige Kleingeld für die Produktion aufzutreiben haben wir
         eine{" "}
-        <a href="https://wemakeit.com/projects/noxx-mimimi-ep">
+        <a
+          className="external"
+          href="https://wemakeit.com/projects/noxx-mimimi-ep"
+        >
           Crowdfunding-Kampagne auf wemakeit.com
         </a>{" "}
         gestartet.

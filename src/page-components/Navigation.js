@@ -110,10 +110,6 @@ const StyledNavigation = styled.aside`
       a {
         opacity: 1;
         margin-left: 0;
-
-        &:last-child {
-          border-bottom: 1px solid #d0d0d0;
-        }
       }
     }
   }
