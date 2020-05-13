@@ -116,16 +116,15 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #282936;
+    color: ${colors.primaryRed};
 
     &.external {
       transition: all 1s ease;
-      border-bottom: 2px solid ${colors.primaryRed};
+      border-bottom: 2px solid #282936;
 
       &:focus, &:hover {
-        border-bottom: 2px solid #282936;
-        
-        color: ${colors.primaryRed};
+        color: #282936;
+        border-bottom: 2px solid ${colors.primaryRed};
       }
     }
   }
