@@ -45,7 +45,7 @@ const StyledNavigation = styled.aside`
       }
 
       &.active {
-        color: rgb(37, 37, 36);
+        color: #d24e4e;
         &:after {
           content: "⦁";
           font-size: 41px;

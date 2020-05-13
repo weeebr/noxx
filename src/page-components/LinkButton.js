@@ -21,6 +21,7 @@ const Wrapper = styled.div`
       height: auto;
       background: slategray;
       border-radius: 40px;
+      border: 2px solid #d24e4e;
 
       ${breakpoint(device.tablet)} {
         width: 195px;
