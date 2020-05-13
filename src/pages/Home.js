@@ -61,6 +61,7 @@ const EmoijWrapper = styled.div`
   span {
     transform: rotate(0deg);
     transition: all 1.7s ease-out;
+    padding: 0 8px;
 
     &:hover {
       transform: rotate(96000deg);
