@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import SectionTitle from "../page-components/SectionTitle";
-import { icons, device } from "../theme";
+import { icons, device, colors } from "../theme";
 import { breakpoint } from "./../theme/index";
 
 export const IconsWrapper = styled.div`
@@ -12,16 +12,36 @@ export const IconsWrapper = styled.div`
   margin: 0 auto;
   transform: translateX(10px);
 
-  a img {
-    background: #49525a;
-    border-radius: 50%;
-    border: 4px solid #49525a;
-    width: 58px;
+  a {
     margin-right: 20px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 58px;
+      border-radius: 50%;
+      border: 4px solid #282936;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 58px;
+      z-index: 2;
+    }
 
     &:hover {
-      background: #282936;
-      border: 4px solid #282936;
+      img {
+        background: ${colors.primaryRed};
+      }
+    }
+
+    img {
+      background: #49525a;
+      border-radius: 50%;
+      border: 4px solid ${colors.primaryRed};
+      width: 58px;
+      box-shadow: 0 0 0 black;
     }
   }
 `;
