@@ -81,7 +81,11 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     ${getString(typography.h1)}
-    margin: 40px 0;
+    margin-bottom: 40px;
+    
+    ${breakpoint(device.tablet)} {
+      margin-top: 40px;
+    }
   }
 
   h2 {

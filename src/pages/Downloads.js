@@ -32,6 +32,7 @@ const DownloadsWrapper = styled.div`
 
   h3 {
     text-align: left;
+    margin-left: 25px;
 
     ${breakpoint(device.phone)} {
       text-align: center;
