@@ -42,7 +42,7 @@ const members = [
   {
     name: "Tamino Weggler",
     emoji: "🎤🪕",
-    function: "Gesang/Ukulele",
+    function: "Gesang/ Ukulele",
     img: taminoWeggler,
   },
   {
@@ -96,6 +96,42 @@ const Home = () => {
 
 const ProfileWrapper = styled.div`
   margin: 0 4px;
+  position: relative;
+
+  &:hover {
+    .member-overlay {
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 4;
+    }
+
+    .member-info {
+      .member-name {
+        position: absolute;
+        bottom: -41px;
+      }
+    }
+
+    .member-emoji,
+    .member-function {
+      z-index: 5;
+      position: relative;
+      color: white;
+      word-spacing: 12px;
+    }
+
+    .member-emoji {
+      transform: translateY(-240px) scale(1.5);
+    }
+
+    .member-function {
+      transform: translateY(-200px) scale(1.4);
+      margin-top: 0;
+      word-spacing: 74px;
+      text-align: center;
+      word-break: break-all;
+    }
+  }
+
   ${breakpoint(device.phone)} {
     max-width: 20%;
   }
@@ -104,32 +140,56 @@ const ProfileWrapper = styled.div`
     margin: 0;
   }
 
-  .member-name {
-    margin: 0 0 4px 0;
-    font-size: 25px;
+  .member-info {
+    position: relative;
 
-    ${breakpoint(device.phone)} {
-      font-size: 13px;
-      font-family: LatoRegular;
-      font-weight: normal;
+    .member-overlay {
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      position: absolute;
     }
 
-    font-family: AmaticBold;
-    font-weight: 900;
-    background: ${(props) =>
-      props.name === "Tamino Weggler" ? "#ffbb0e" : "goldenrod"};
-    padding: 0 6px;
+    .member-name {
+      margin: 0 0 4px 0;
+      line-height: 28px;
+      width: 100%;
+      bottom: -32px;
+      position: absolute;
+      z-index: 7;
+      transition: all 0.5s ease;
+      font-size: 25px;
+      font-family: AmaticBold;
+      font-weight: 900;
+      background: ${(props) =>
+        props.name === "Tamino Weggler" ? "#ffbb0e" : "goldenrod"};
+      padding: 0 6px;
+
+      ${breakpoint(device.phone)} {
+        font-size: 13px;
+        font-family: LatoRegular;
+        font-weight: normal;
+      }
+    }
   }
 
   .member-emoji {
     display: block;
     font-family: AmaticBold;
     font-size: 20px;
+    transform: translateY(0) scale(1);
+    transition: all 0.25s ease;
+    margin-top: 44px;
   }
 
   .member-function {
     font-size: 22px;
     font-family: AmaticBold;
+    transform: translateY(0) scale(1);
+    transition: all 0.25s ease;
+    line-height: 25px;
+    word-spacing: 0px;
 
     ${breakpoint(device.phone)} {
       font-size: 11px;
@@ -139,11 +199,13 @@ const ProfileWrapper = styled.div`
 `;
 
 const Profile = ({ m, idx }) => {
-  console.log({ m, idx });
   return (
     <ProfileWrapper name={m.name} key={idx}>
-      <img src={m.img} alt={m.name} />
-      <p className="member-name">{m.name}</p>
+      <div className="member-info">
+        <div className="member-overlay" />
+        <img src={m.img} alt={m.name} />
+        <p className="member-name">{m.name}</p>
+      </div>
       <span className="member-emoji" role="img" aria-label="member-emoji">
         {m.emoji}
       </span>
