@@ -112,13 +112,19 @@ const GlobalStyle = createGlobalStyle`
     margin: 16px 0 8px 0;
 
     span {
-      display: block
-      font-size: 25px;
+      ${getString(typography.h2)};
+      display: block;
+      font-size: 26px;
+      font-weight: bolder;
+      color: #545340;
     }
   }
 
   h4 {
-    font-size: 19px;
+    ${getString(typography.h2)};
+    font-size: 26px;
+    font-weight: bolder;
+    color: #545340;
   }
 
   button {
