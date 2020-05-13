@@ -13,9 +13,9 @@ export const IconsWrapper = styled.div`
   padding: 20px;
 
   a img {
-    background: slategray;
+    background: #49525a;
     border-radius: 50%;
-    border: 4px solid slategray;
+    border: 4px solid #49525a;
     width: 58px;
 
     &:hover {
@@ -51,7 +51,7 @@ const SignupForm = styled.div`
   }
 
   button {
-    background: #8e8f98;
+    background: slategray;
     border-radius: 40px;
     text-transform: uppercase;
     font-family: LatoRegular;

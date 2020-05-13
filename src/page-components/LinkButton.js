@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     &.learn-more {
       width: 210px;
       height: auto;
-      background: #8e8f98;
+      background: slategray;
       border-radius: 40px;
 
       ${breakpoint(device.tablet)} {
