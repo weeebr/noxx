@@ -57,7 +57,8 @@ const MemberProfile = styled.div`
     font-size: 25px;
     font-family: AmaticBold;
     font-weight: 900;
-    background: goldenrod;
+    background: ${(props) =>
+      props.name === "Tamino Weggler" ? "#ffbb0e" : "goldenrod"};
     padding: 0 6px;
   }
 
@@ -73,7 +74,7 @@ const MemberProfile = styled.div`
   }
 `;
 
-const Home = ({ openVideo }) => {
+const Home = () => {
   return (
     <>
       <SectionTitle>Home</SectionTitle>
@@ -86,7 +87,7 @@ const Home = ({ openVideo }) => {
       </h3>
       <div style={memberWrapperStyles}>
         {members.map((m, idx) => (
-          <MemberProfile key={idx}>
+          <MemberProfile name={m.name} key={idx}>
             <img src={m.img} alt={m.name} />
             <p className="member-name">{m.name}</p>
             <span className="member-emoji" role="img" aria-label="member-emoji">

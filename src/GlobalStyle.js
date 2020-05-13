@@ -81,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     ${getString(typography.h1)}
-    padding: 8px 0 18px 0;
+    margin: -20px 0;
   }
 
   h2 {
@@ -98,6 +98,10 @@ const GlobalStyle = createGlobalStyle`
     ${getString(typography.h3)};
     text-align: center;
     margin: 16px 0 8px 0;
+  }
+
+  h4 {
+    font-size: 19px;
   }
 
   button {
@@ -121,14 +125,7 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     background: 
-      linear-gradient(120deg,
-        rgba(231,0,54, 0.08),
-        rgba(255,255,255, 0.9)
-      ),
-      linear-gradient(19deg,
-        rgba(255, 255, 255, 0.54),
-        rgba(171, 129, 129, 0.3)
-      );
+    linear-gradient(120deg,rgba(238,232,170, 0.3),rgba(173,169,126, 0.05));
       
 
     ${breakpoint(device.phone)} {
@@ -150,23 +147,16 @@ const GlobalStyle = createGlobalStyle`
       padding: 0 20px;
 
       & > .content {
-        background: white;
         padding: 40px;
         max-width: 992px;
-        box-shadow: 0 0 14px #e0dfdf;
         min-height: 400px;
         margin-right: 180px;
+        display: flex;
+        flex-direction: column;
         background: 
-      linear-gradient(19deg,
-        rgba(171, 129, 129, 0.3),
-        rgba(255, 255, 255, 0.54)
-      ), 
-      linear-gradient(120deg,
-        rgba(255,255,255, 0.9),
-        rgba(231,0,54, 0.08)
-      );
+        linear-gradient(-120deg,rgba(238,232,170, 0.03),rgba(173,169,126, 0.5));
 
-        & > div:first-child {
+        & > div:first-child > div:first-child{
           margin-top: 0;
         }
 

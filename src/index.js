@@ -9,14 +9,6 @@ import GlobalStyle from "./GlobalStyle";
 // icon: type/png
 // shortcut icon: ICO
 
-const RouteWithTitle = ({ title, ...other }) => {
-  React.useEffect(() => {
-    document.title = "NOOX";
-  }, [title]);
-
-  return <Route {...other} />;
-};
-
 const Pages = () => {
   const [isNavigationOpen, setNavigationOpen] = React.useState(false);
 
@@ -25,8 +17,8 @@ const Pages = () => {
       <div>
         <div className="content">
           <Switch>
-            <RouteWithTitle exact path="/" component={Page} />
-            <RouteWithTitle component={NotFound} />
+            <Route exact path="/" component={Page} />
+            <Route component={NotFound} />
           </Switch>
         </div>
         <Navigation
@@ -42,7 +34,7 @@ const App = (
   <Router>
     <GlobalStyle />
     <Helmet>
-      <title>RED Struss</title>
+      <title>NOXX 🎤🪕</title>
     </Helmet>
 
     <Pages />

@@ -2,10 +2,36 @@ import React from "react";
 import styled from "styled-components";
 
 import SectionTitle from "../page-components/SectionTitle";
-import LinkButton from "./../page-components/LinkButton";
+import { icons } from "../theme";
+
+export const IconsWrapper = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 310px;
+  margin: 0 auto;
+  padding: 20px;
+
+  a img {
+    background: slategray;
+    border-radius: 50%;
+    border: 4px solid slategray;
+    width: 58px;
+
+    &:hover {
+      background: #282936;
+      border: 4px solid #282936;
+    }
+  }
+`;
 
 const SignupForm = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div {
+    display: flex;
+  }
 
   input {
     border-radius: 4px;
@@ -29,24 +55,25 @@ const Kontakt = () => {
   return (
     <>
       <SectionTitle>Kontakt</SectionTitle>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
-        <LinkButton
-          link="mailto:booking@noxx-musik.ch?subject=Anfrage"
-          text="Buche uns!"
-        />
+      <SignupForm>
         <h3>Newsletter</h3>
         <p>Unregelmässig und nur für das Wichtigste, kein Spam!</p>
-        <SignupForm>
+        <div>
           <input type="email" placeholder="name@company.com" />
           <button type="submit">Abonnieren</button>
-        </SignupForm>
-      </div>
+        </div>
+      </SignupForm>
+      <br />
+      <br />
+      <h3>Social Media</h3>
+      <IconsWrapper>
+        <a href="https://www.instagram.com/noxx_musik/">
+          <img src={icons.instagram} alt="NOXX auf Instagram" />
+        </a>
+        <a href="https://www.facebook.com/NOXXMusik/">
+          <img src={icons.facebook} alt="NOXX auf FaceBook" />
+        </a>
+      </IconsWrapper>
     </>
   );
 };

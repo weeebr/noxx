@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   margin: 200px 0 30px 0;
-  background: palegoldenrod;
+  background: linear-gradient(120deg, rgb(238, 232, 170), rgb(173, 169, 126));
 `;
 
 const SectionTitle = ({ children }) => {

@@ -25,10 +25,12 @@ const Page = () => {
         videoId={videoId}
         onClose={() => setOpen(false)}
       />
-      <Home />
-      <Musik openVideo={openVideo} />
-      <Bio openVideo={openVideo} />
-      <Kontakt />
+      <div>
+        <Home />
+        <Musik openVideo={openVideo} />
+        <Bio openVideo={openVideo} />
+        <Kontakt />
+      </div>
       <Downloads />
     </>
   );

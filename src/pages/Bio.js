@@ -12,13 +12,11 @@ const Bio = ({ openVideo }) => {
   return (
     <>
       <SectionTitle>Bio</SectionTitle>
-
+      <h3>Die Anfänge: NOXX a.k.a. Tamino Weggler</h3>
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum
         "Es Halbs Kilo Songs". 2019 folgte die Nachfolge-EP "Dörfs Es Bizli
-        Zviel Sii?". Nach einigen Austritten aus der Begleitband, wurde im
-        Sommer 2019 beschlossen, NOXX nicht länger als Soloprojekt, sondern als
-        Band weiterzuführen.
+        Zviel Sii?".
       </p>
       <div
         style={{
@@ -27,27 +25,31 @@ const Bio = ({ openVideo }) => {
           alignItems: "center",
         }}
       >
-        <LinkButton link="#" text="Learn more..." />
+        <LinkButton link="#" text="Zu den EP's" />
       </div>
       <p>
         Nach der Veröffentlichung der letzten EP "Dörfs Es Bizli Zviel Sii?"
-        hatte ich mit Abgängen in der Begleitband zu kämpfen. Zusammen mit den
-        Verbliebenen Bandmitgliedern und zwei Neuzugängen wurde beschlossen,
-        NOXX fortan als Band und nicht mehr als Soloprojekt weiterzuführen.
+        hatten Begleitbands viele Abgängen zu beklagen. Aus den Verbliebenen und
+        zwei Neuzugängen entstand daraus im Sommer 2019 die Noxx Band.
       </p>
-      <p>
-        Der Stil der Lieder wird ähnlich bleiben, ausser dass mehr Leute mit
-        verschiedenen Expertisen daran feilen.{" "}
-      </p>
+      <h3>Heute: NOXX Band</h3>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <img src={bandFrontal} alt="Noxx Bandfoto" />
+        <img src={bandFrontal} alt="NOXX Bandfoto" />
       </div>
+      <p>
+        Am Stil der Lieder wird sich also nichts gross ändern. Mit der neuen
+        Zusammensetzung und deren verschiedenen Expertisen stehen also
+        spannenden neuen Ufern und Kreativität nichts mehr im Wege. Seid
+        gespannt!
+      </p>
+
       <h3>Und das ist erst der Anfang!</h3>
       <p>
         Wir haben schon einige neue Lieder am Start und würden gerne einen neuen
         Tonträger unter dem Namen "Mimimi EP" produzieren. Dabei werden wir vom
         Verein Graubünden Musik in der Planung unterstützt.
       </p>
+      <h4>Crowdfunding-Kampagne</h4>
       <p>
         Um noch das nötige Kleingeld für die Produktion aufzutreiben haben wir
         eine{" "}
