@@ -25,7 +25,7 @@ const Bio = ({ openVideo }) => {
           alignItems: "center",
         }}
       >
-        <LinkButton link="#" text="Zu den EP's" />
+        <LinkButton style={{ width: 195 }} link="#" text="Zu den EP's" />
       </div>
       <p>
         Nach der Veröffentlichung der letzten EP "Dörfs Es Bizli Zviel Sii?"
@@ -72,6 +72,7 @@ const Bio = ({ openVideo }) => {
         <LinkButton
           link="https://wemakeit.com/projects/noxx-mimimi-ep"
           text="Zur Kampagne"
+          width={195}
         />
         <br />
         <YoutubePreview

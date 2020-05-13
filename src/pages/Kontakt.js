@@ -53,10 +53,14 @@ const SignupForm = styled.div`
   button {
     background: slategray;
     border-radius: 40px;
-    text-transform: uppercase;
     font-family: LatoRegular;
     padding: 10px 26px;
     cursor: pointer;
+    text-transform: uppercase;
+
+    ${breakpoint(device.phone)} {
+      text-transform: none;
+    }
   }
 `;
 

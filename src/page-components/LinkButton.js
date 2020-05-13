@@ -25,6 +25,11 @@ const Wrapper = styled.div`
       ${breakpoint(device.tablet)} {
         width: 195px;
       }
+
+      ${breakpoint(device.phone)} {
+        width: 162px;
+      }
+
       .circle {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: relative;
@@ -34,6 +39,7 @@ const Wrapper = styled.div`
         height: 3rem;
         background: #282936;
         border-radius: 1.625rem;
+
         .icon {
           transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
           position: absolute;
@@ -75,6 +81,10 @@ const Wrapper = styled.div`
         text-align: center;
         padding-left: 10px;
         text-transform: uppercase;
+
+        ${breakpoint(device.phone)} {
+          text-transform: none;
+        }
       }
     }
     &:hover {
@@ -94,11 +104,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const LinkButton = ({ link, text }) => {
+const LinkButton = ({ link, text, width }) => {
   return (
     <Wrapper>
       <a href={link}>
-        <button className="learn-more">
+        <button className="learn-more" style={{ width }}>
           <span className="circle" aria-hidden="true">
             <span className="icon arrow"></span>
           </span>
