@@ -5,16 +5,16 @@ import pdfNoxxSolo from "../assets/noxx-solo.pdf";
 import pdfNoxxBand from "../assets/noxx-band.pdf";
 import SectionTitle from "../page-components/SectionTitle";
 import DownloadButton from "../page-components/DownloadButton";
-import { breakpoint, device } from "./../theme/index";
+import { breakpoint, device, sectionGaps } from "./../theme/index";
 
 const DownloadsWrapper = styled.div`
   background: #2b2b2b;
-  margin: 200px -10px -40px -10px;
+  margin: ${sectionGaps.topDesktop} -10px -40px -10px;
   color: white;
   padding: 12px;
 
   ${breakpoint(device.tablet)} {
-    margin: 200px 0 0 0;
+    margin: ${sectionGaps.topTablet} 0 0 0;
     padding: 0 8px;
   }
 

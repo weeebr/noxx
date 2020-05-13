@@ -68,4 +68,9 @@ export const zIndex = {
   overNavOverlay: 3,
 };
 
+export const sectionGaps = {
+  topDesktop: "200px",
+  topTablet: "120px",
+};
+
 export const pageFullWidth = 140 + 922; // nav + content
