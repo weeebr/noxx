@@ -9,13 +9,13 @@ import { breakpoint, device } from "./../theme/index";
 
 const DownloadsWrapper = styled.div`
   background: #2b2b2b;
-  margin: 200px 0 -40px 0;
+  margin: 200px -10px -40px -10px;
   color: white;
   padding: 12px;
 
-  ${breakpoint(device.phone)} {
+  ${breakpoint(device.tablet)} {
     margin: 200px 0 0 0;
-    padding: 0 3px;
+    padding: 0 8px;
   }
 
   & > div {
@@ -31,12 +31,19 @@ const DownloadsWrapper = styled.div`
     text-align: center;
   }
 
-  h3 {
-    font-size: 39px;
-    text-align: center;
-    line-height: 40px;
-    margin: 16px 0 14px 0;
-    color: #80775a;
+  .download-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin: 0 0 14px 0;
+
+    h3 {
+      font-size: 39px;
+      text-align: center;
+      line-height: 40px;
+      color: #80775a;
+    }
   }
 
   p {
@@ -57,7 +64,9 @@ const Kontakt = () => {
         <SectionTitle>Downloads</SectionTitle>
         <div>
           <div style={{ marginRight: 20 }}>
-            <h3>für Tech Riders</h3>
+            <div className="download-heading">
+              <h3>für Tech Riders</h3>
+            </div>
             <div style={{ textAlign: "center" }}>
               <DownloadButton link={pdfNoxxBand} text="NOXX Band" />
               <br />
@@ -67,7 +76,9 @@ const Kontakt = () => {
             <p>Spezielle Besetzungen auf Anfrage.</p>
           </div>
           <div>
-            <h3>für die Presse</h3>
+            <div className="download-heading">
+              <h3>für die Presse</h3>
+            </div>
             <div style={{ textAlign: "center" }}>
               <DownloadButton link="#" text="Pressemappe" />
               <br />

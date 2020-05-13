@@ -14,7 +14,7 @@ const StyledHamburger = styled.div`
   cursor: pointer;
   background: #d24e4e;
   position: fixed;
-  top: 36px;
+  top: 22px;
   right: 5%;
   transition: all 0.6s ease, top 0.3s ease;
 

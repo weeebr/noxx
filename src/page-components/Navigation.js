@@ -69,7 +69,7 @@ const StyledNavigation = styled.aside`
 
       ${breakpoint(device.phone)} {
         width: 0;
-        top: 36px;
+        top: 22px;
         right: 5%;
       }
 
@@ -105,7 +105,7 @@ const StyledNavigation = styled.aside`
       background: white;
       box-shadow: none;
       z-index: 11;
-      top: 90px;
+      top: 75px;
       right: 5%;
       width: 300px;
 
