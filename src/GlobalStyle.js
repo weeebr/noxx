@@ -148,6 +148,9 @@ const GlobalStyle = createGlobalStyle`
         background: 
           linear-gradient(-120deg,rgba(173,169,126,0.5),rgba(0, 0, 0, 0.5));
 
+        @media (min-width:1500px) {
+          margin: 0 auto;
+        }
 
           & > div > p {
             padding: 0 20px;
