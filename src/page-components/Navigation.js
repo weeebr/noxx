@@ -126,7 +126,8 @@ const StyledNavigation = styled.aside`
 `;
 
 const Navigation = ({ isOpen, setNavigationOpen }) => {
-  const hamburgerVisible = useMediaQuery(`(max-width:670px)`);
+  const hamburgerWhenWidth = `${parseInt(device.phone) + 170}px`; // 170 = nav width
+  const hamburgerVisible = useMediaQuery(`(max-width:${hamburgerWhenWidth})`);
 
   console.log({ hamburgerVisible });
 
