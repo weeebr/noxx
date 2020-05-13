@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 // page-components
 import SectionTitle from "../page-components/SectionTitle";
@@ -7,6 +8,14 @@ import YoutubePreview from "../page-components/YoutubePreview";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.webp";
+
+const HighlightedText = styled.span`
+  color: #3e3d34;
+  padding: 2px 4px;
+  margin: 0 4px;
+  background: #54535445;
+  border-radius: 3px;
+`;
 
 const Bio = ({ openVideo }) => {
   return (
@@ -17,8 +26,9 @@ const Bio = ({ openVideo }) => {
       </h3>
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum
-        "Es Halbs Kilo Songs". 2019 folgte die Nachfolge-EP "Dörfs Es Bizli
-        Zviel Sii?".
+        <HighlightedText>Es Halbs Kilo Songs</HighlightedText>. 2019 folgte die
+        Nachfolge-EP{" "}
+        <HighlightedText>Dörfs Es Bizli Zviel Sii?</HighlightedText>.
       </p>
       <div
         style={{
@@ -30,7 +40,8 @@ const Bio = ({ openVideo }) => {
         <LinkButton style={{ width: 195 }} link="#" text="Zu den EP's" />
       </div>
       <p>
-        Nach der Veröffentlichung der letzten EP "Dörfs Es Bizli Zviel Sii?"
+        Nach der Veröffentlichung der letzten EP{" "}
+        <HighlightedText>Dörfs Es Bizli Zviel Sii?</HighlightedText>
         hatten Begleitbands viele Abgängen zu beklagen. Aus den Verbliebenen und
         zwei Neuzugängen entstand daraus im Sommer 2019 die Noxx Band.
       </p>
