@@ -82,9 +82,15 @@ const SignupForm = styled.div`
     cursor: pointer;
     text-transform: uppercase;
     border: 3px solid #d24e4e;
+    color: white;
+    transition: all 0.5s ease;
 
     ${breakpoint(device.phone)} {
       text-transform: none;
+    }
+
+    &:hover {
+      background: #282936;
     }
   }
 `;
@@ -103,8 +109,11 @@ const Kontakt = () => {
       </SignupForm>
       <br />
       <br />
-      <h3>Social Media</h3>
-      <p>Du willst regelmässiger informiert werden? Dann folge uns hier:</p>
+      <h3>Folge uns</h3>
+      <p>
+        Du willst regelmässiger informiert werden? Dann folge uns auf Social
+        Media:
+      </p>
       <IconsWrapper>
         <a href="https://www.instagram.com/noxx_musik/">
           <img src={icons.instagram} alt="NOXX auf Instagram" />
