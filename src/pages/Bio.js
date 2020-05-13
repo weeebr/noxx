@@ -8,6 +8,7 @@ import YoutubePreview from "../page-components/YoutubePreview";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.webp";
+import { colors } from "../theme";
 
 const BioWrapper = styled.div`
   h3 {
@@ -30,13 +31,18 @@ const BioWrapper = styled.div`
   }
 `;
 
-const HighlightedText = styled.span`
+const HighlightedText = styled.a`
   color: #3e3d34;
   padding: 2px 4px;
   margin: 0 4px;
   background: #54535445;
   border-radius: 3px;
   white-space: nowrap;
+  transition: all 1s ease;
+
+  &:hover {
+    color: ${colors.primaryRed};
+  }
 `;
 
 const Bio = ({ openVideo }) => {
@@ -48,17 +54,23 @@ const Bio = ({ openVideo }) => {
       </h3>
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum
-        <HighlightedText>Es Halbs Kilo Songs</HighlightedText>. 2019 folgte die
-        Nachfolge-EP{" "}
-        <HighlightedText>Dörfs Es Bizli Zviel Sii?</HighlightedText>.
+        <a
+          className="external"
+          href="https://geo.itunes.apple.com/us/album/es-halbs-kilo-songs/1361261464?mt=1&app=music"
+        >
+          Es Halbs Kilo Songs
+        </a>
+        . 2019 folgte die Nachfolge-EP{" "}
+        <a className="external" href="https://song.link/album/i/1461468834">
+          Dörfs Es Bizli Zviel Sii?
+        </a>
+        .
       </p>
-      <div className="large-link-wrapper">
-        <LinkButton link="#" text="Zu den EP's" />
-      </div>
-      <br />
       <p>
         Nach der Veröffentlichung der letzten EP{" "}
-        <HighlightedText>Dörfs Es Bizli Zviel Sii?</HighlightedText>
+        <a className="external" href="https://song.link/album/i/1461468834">
+          Dörfs Es Bizli Zviel Sii?
+        </a>{" "}
         hatten Begleitbands viele Abgängen zu beklagen. Aus den Verbliebenen und
         zwei Neuzugängen entstand daraus im Sommer 2019 die Noxx Band.
       </p>
@@ -79,7 +91,13 @@ const Bio = ({ openVideo }) => {
       <h3>Und das ist erst der Anfang!</h3>
       <p>
         Wir haben schon einige neue Lieder am Start und würden gerne einen neuen
-        Tonträger unter dem Namen <HighlightedText>Mimimi EP</HighlightedText>{" "}
+        Tonträger unter dem Namen{" "}
+        <a
+          className="external"
+          href="https://wemakeit.com/projects/noxx-mimimi-ep"
+        >
+          Mimimi EP
+        </a>{" "}
         produzieren. Dabei werden wir vom Verein Graubünden Musik in der Planung
         unterstützt.
       </p>
@@ -87,12 +105,12 @@ const Bio = ({ openVideo }) => {
       <h4>Crowdfunding-Kampagne</h4>
       <p>
         Um noch das nötige Kleingeld für die Produktion aufzutreiben haben wir
-        eine{" "}
+        eine Crowdfunding-Kampagne auf{" "}
         <a
           className="external"
           href="https://wemakeit.com/projects/noxx-mimimi-ep"
         >
-          Crowdfunding-Kampagne auf wemakeit.com
+          wemakeit.com
         </a>{" "}
         gestartet.
       </p>

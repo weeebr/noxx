@@ -139,6 +139,7 @@ const GlobalStyle = createGlobalStyle`
     &.external {
       transition: all 1s ease;
       border-bottom: 2px solid #282936;
+      display: inline-block;
 
       &:focus, &:hover {
         color: #282936;
