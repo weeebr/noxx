@@ -57,11 +57,21 @@ const members = [
 const EmoijWrapper = styled.div`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 8px;
 
   span {
     transform: rotate(0deg);
     transition: all 1.7s ease-out;
     padding: 0 8px;
+    display: block;
+    font-size: 39px;
+    margin-top: 8px;
+
+    ${breakpoint(device.phone)} {
+      padding: 0 1%;
+      font-size: 30px;
+    }
 
     &:hover {
       transform: rotate(96000deg);
@@ -81,46 +91,22 @@ const Home = () => {
       <h3>Wer sind wir?</h3>
       <h4 style={{ fontWeight: "lighter" }}>Ganz einfach – Eine Band!</h4>
       <EmoijWrapper>
-        <span
-          role="img"
-          style={{ display: "block", fontSize: 39, marginTop: 8 }}
-          aria-label="music-emoijs"
-        >
+        <span role="img" aria-label="music-drums">
           🥁
         </span>
-        <span
-          role="img"
-          style={{ display: "block", fontSize: 39, marginTop: 8 }}
-          aria-label="music-emoijs"
-        >
+        <span role="img" aria-label="music-saxophone">
           🎷
         </span>
-        <span
-          role="img"
-          style={{ display: "block", fontSize: 39, marginTop: 8 }}
-          aria-label="music-emoijs"
-        >
+        <span role="img" aria-label="music-microphone">
           🎤
         </span>
-        <span
-          role="img"
-          style={{ display: "block", fontSize: 39, marginTop: 8 }}
-          aria-label="music-emoijs"
-        >
+        <span role="img" aria-label="music-ukulele">
           🪕
         </span>
-        <span
-          role="img"
-          style={{ display: "block", fontSize: 39, marginTop: 8 }}
-          aria-label="music-emoijs"
-        >
+        <span role="img" aria-label="music-keyboard">
           🎹
         </span>
-        <span
-          role="img"
-          style={{ display: "block", fontSize: 39, marginTop: 8 }}
-          aria-label="music-emoijs"
-        >
+        <span role="img" aria-label="music-bass">
           🎸
         </span>
       </EmoijWrapper>
