@@ -9,6 +9,12 @@ import YoutubePreview from "../page-components/YoutubePreview";
 // assets
 import bandFrontal from "../assets/band/band-frontal.webp";
 
+const BioWrapper = styled.div`
+  h3 {
+    margin-top: 0;
+  }
+`;
+
 const HighlightedText = styled.span`
   color: #3e3d34;
   padding: 2px 4px;
@@ -20,7 +26,7 @@ const HighlightedText = styled.span`
 
 const Bio = ({ openVideo }) => {
   return (
-    <>
+    <BioWrapper>
       <SectionTitle>Bio</SectionTitle>
       <h3>
         Die Anfänge: <span>NOXX a.k.a. Tamino Weggler</span>
@@ -104,7 +110,7 @@ const Bio = ({ openVideo }) => {
           title="cV3NnsfpA1Q"
         />
       </div>
-    </>
+    </BioWrapper>
   );
 };
 
