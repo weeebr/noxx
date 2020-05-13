@@ -12,21 +12,18 @@ const StyledHamburger = styled.div`
   z-index: 11;
   outline: none;
   cursor: pointer;
-  background: ${colors.primaryRed};
+  background: rgb(37, 37, 36);
+  position: fixed;
+  top: 0;
+  right: 5%;
+  margin-top: 5%;
   transition: all 0.6s ease, top 0.3s ease;
 
-  ${breakpoint(device.phone)} {
-    position: fixed;
-    top: 0;
-    right: 5%;
-    margin-top: 5%;
-  }
-
   &:hover {
-    background: black;
+    background: white;
 
     div {
-      background: ${colors.primaryRed};
+      background: black;
 
       &:nth-child(1) {
         top: 14px;
@@ -79,7 +76,7 @@ const StyledHamburger = styled.div`
     left: 10px;
     width: 28px;
     height: 2px;
-    background: black;
+    background: white;
     opacity: 1;
     transition: all 0.3s ease;
 

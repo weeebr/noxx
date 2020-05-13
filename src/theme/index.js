@@ -17,7 +17,7 @@ export const colors = {
 export const device = {
   mobile: "767px",
   tablet: "991px",
-  phone: "570px",
+  phone: "500px",
   xs: "450px",
   md: "900px",
   lg: "1200px",

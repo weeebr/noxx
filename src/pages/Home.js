@@ -10,12 +10,7 @@ import sonjaKuster from "../assets/band/sonja-kuster.webp";
 import taminoWeggler from "../assets/band/tamino-weggler.webp";
 import tamaraMueller from "../assets/band/tamara-mueller.webp";
 import keithMaguire from "../assets/band/keith-maguire.webp";
-
-const memberWrapperStyles = {
-  display: "flex",
-  justifyContent: "space-between",
-  margin: "30px -2px 0 -2px",
-};
+import { breakpoint, device } from "./../theme/index";
 
 const members = [
   {
@@ -45,8 +40,24 @@ const members = [
   { name: "Keith Maguire", emoji: "🎸", function: "Bass", img: keithMaguire },
 ];
 
-const MemberProfile = styled.div`
-  margin: 0 2px;
+const MemberProfiles = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 30px -2px 0 -2px;
+
+  ${breakpoint(device.phone)} {
+    margin: 30px -2px 0 -2px;
+    width: 100%;
+    padding: 0 20px;
+  }
+`;
+
+const Profile = styled.div`
+  margin: 0 4px;
+
+  ${breakpoint(device.tablet)} {
+    margin: 0 2px;
+  }
 
   p {
     margin: 0;
@@ -85,18 +96,18 @@ const Home = () => {
           🥁🎷🎤🪕🎹🎸
         </span>
       </h3>
-      <div style={memberWrapperStyles}>
+      <MemberProfiles>
         {members.map((m, idx) => (
-          <MemberProfile name={m.name} key={idx}>
+          <Profile name={m.name} key={idx}>
             <img src={m.img} alt={m.name} />
             <p className="member-name">{m.name}</p>
             <span className="member-emoji" role="img" aria-label="member-emoji">
               {m.emoji}
             </span>
             <p className="member-function">{m.function}</p>
-          </MemberProfile>
+          </Profile>
         ))}
-      </div>
+      </MemberProfiles>
     </>
   );
 };

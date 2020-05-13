@@ -8,12 +8,14 @@ import DownloadButton from "../page-components/DownloadButton";
 
 const DownloadsWrapper = styled.div`
   background: rgba(47, 46, 46, 1);
-  margin: 200px -40px -40px -40px;
+  margin: 200px -20px -40px -20px;
   color: white;
+  padding: 12px;
 
   & > div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 0 20px;
     margin: 40px 0 30px 0;
     text-align: left;
   }

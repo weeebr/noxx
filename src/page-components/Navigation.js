@@ -45,7 +45,7 @@ const StyledNavigation = styled.aside`
       }
 
       &.active {
-        color: #e84a43;
+        color: rgb(37, 37, 36);
         &:after {
           content: "⦁";
           font-size: 41px;
@@ -67,7 +67,7 @@ const StyledNavigation = styled.aside`
       box-shadow: none;
       height: 1px;
 
-      ${breakpoint("570px")} {
+      ${breakpoint(device.phone)} {
         width: 0;
       }
 
@@ -126,7 +126,7 @@ const StyledNavigation = styled.aside`
 `;
 
 const Navigation = ({ isOpen, setNavigationOpen }) => {
-  const hamburgerVisible = useMediaQuery(`(max-width:570px)`);
+  const hamburgerVisible = useMediaQuery(`(max-width:670px)`);
 
   console.log({ hamburgerVisible });
 
