@@ -34,6 +34,7 @@ const Bio = ({ openVideo }) => {
         hatten Begleitbands viele Abgängen zu beklagen. Aus den Verbliebenen und
         zwei Neuzugängen entstand daraus im Sommer 2019 die Noxx Band.
       </p>
+      <br />
       <h3>
         Heute: <span>NOXX Band</span>
       </h3>
@@ -46,13 +47,14 @@ const Bio = ({ openVideo }) => {
         spannenden neuen Ufern und Kreativität nichts mehr im Wege. Seid
         gespannt!
       </p>
-
+      <br />
       <h3>Und das ist erst der Anfang!</h3>
       <p>
         Wir haben schon einige neue Lieder am Start und würden gerne einen neuen
         Tonträger unter dem Namen "Mimimi EP" produzieren. Dabei werden wir vom
         Verein Graubünden Musik in der Planung unterstützt.
       </p>
+      <br />
       <h4>Crowdfunding-Kampagne</h4>
       <p>
         Um noch das nötige Kleingeld für die Produktion aufzutreiben haben wir
