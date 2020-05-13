@@ -12,7 +12,9 @@ const Bio = ({ openVideo }) => {
   return (
     <>
       <SectionTitle>Bio</SectionTitle>
-      <h3>Die Anfänge: NOXX a.k.a. Tamino Weggler</h3>
+      <h3>
+        Die Anfänge: <span>NOXX a.k.a. Tamino Weggler</span>
+      </h3>
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum
         "Es Halbs Kilo Songs". 2019 folgte die Nachfolge-EP "Dörfs Es Bizli
@@ -32,7 +34,9 @@ const Bio = ({ openVideo }) => {
         hatten Begleitbands viele Abgängen zu beklagen. Aus den Verbliebenen und
         zwei Neuzugängen entstand daraus im Sommer 2019 die Noxx Band.
       </p>
-      <h3>Heute: NOXX Band</h3>
+      <h3>
+        Heute: <span>NOXX Band</span>
+      </h3>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img src={bandFrontal} alt="NOXX Bandfoto" />
       </div>

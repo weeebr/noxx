@@ -97,12 +97,24 @@ const GlobalStyle = createGlobalStyle`
     background: white;
     border: 4px solid white;
     padding-top: 13px;
+
+    ${breakpoint(device.phone)} {
+      padding-top: 10px;
+      font-size: 44px;
+      width: 200px;
+      height: 95px;
+    }
   }
 
   h3 {
     ${getString(typography.h3)};
     text-align: center;
     margin: 16px 0 8px 0;
+
+    span {
+      display: block
+      font-size: 25px;
+    }
   }
 
   h4 {

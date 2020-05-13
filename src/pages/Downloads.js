@@ -8,8 +8,8 @@ import DownloadButton from "../page-components/DownloadButton";
 import { breakpoint, device } from "./../theme/index";
 
 const DownloadsWrapper = styled.div`
-  background: rgba(47, 46, 46, 1);
-  margin: 200px -20px -40px -20px;
+  background: #2b2b2b;
+  margin: 200px 0 -40px 0;
   color: white;
   padding: 12px;
 
@@ -36,6 +36,11 @@ const DownloadsWrapper = styled.div`
     text-align: center;
     line-height: 40px;
     margin: 16px 0 14px 0;
+    color: #80775a;
+  }
+
+  p {
+    color: #7d7d7b;
   }
 
   a {
