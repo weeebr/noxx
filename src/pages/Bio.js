@@ -53,7 +53,7 @@ const Bio = ({ openVideo }) => {
         Die Anfänge: <span>NOXX a.k.a. Tamino Weggler</span>
       </h3>
       <p>
-        Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum
+        Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum{" "}
         <a
           className="external"
           href="https://geo.itunes.apple.com/us/album/es-halbs-kilo-songs/1361261464?mt=1&app=music"
