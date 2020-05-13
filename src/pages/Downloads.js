@@ -32,12 +32,7 @@ const DownloadsWrapper = styled.div`
   }
 
   h3 {
-    text-align: left;
-    margin-left: 25px;
-
-    ${breakpoint(device.phone)} {
-      text-align: center;
-    }
+    text-align: center;
   }
 
   a {
@@ -55,17 +50,21 @@ const Kontakt = () => {
         <div>
           <div style={{ marginRight: 20 }}>
             <h3>für Tech Riders</h3>
-            <DownloadButton link={pdfNoxxBand} text="NOXX Band" />
-            <br />
-            <DownloadButton link={pdfNoxxSolo} text="NOXX Solo*" />
+            <div style={{ textAlign: "center" }}>
+              <DownloadButton link={pdfNoxxBand} text="NOXX Band" />
+              <br />
+              <DownloadButton link={pdfNoxxSolo} text="NOXX Solo*" />
+            </div>
             <p style={{ fontSize: 14 }}>*) nur Tamino</p>
             <p>Spezielle Besetzungen auf Anfrage.</p>
           </div>
           <div>
             <h3>für die Presse</h3>
-            <DownloadButton link="#" text="Pressemappe" />
-            <br />
-            <DownloadButton link="#" text="Fotomappe" />
+            <div style={{ textAlign: "center" }}>
+              <DownloadButton link="#" text="Pressemappe" />
+              <br />
+              <DownloadButton link="#" text="Fotomappe" />
+            </div>
           </div>
         </div>
       </DownloadsWrapper>
