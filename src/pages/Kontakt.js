@@ -41,7 +41,7 @@ const SignupForm = styled.div`
 
   input {
     border-radius: 4px;
-    border: 2px solid #282936;
+    border: 3px solid #282936;
     padding: 12px 20px;
     background: #fdfbe9;
     margin-right: 10px;
@@ -58,6 +58,7 @@ const SignupForm = styled.div`
     padding: 10px 26px;
     cursor: pointer;
     text-transform: uppercase;
+    border: 3px solid #d24e4e;
 
     ${breakpoint(device.phone)} {
       text-transform: none;

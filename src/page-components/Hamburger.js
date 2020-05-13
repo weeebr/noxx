@@ -12,18 +12,16 @@ const StyledHamburger = styled.div`
   z-index: 11;
   outline: none;
   cursor: pointer;
-  background: rgb(37, 37, 36);
+  background: #d24e4e;
   position: fixed;
   top: 36px;
   right: 5%;
   transition: all 0.6s ease, top 0.3s ease;
 
   &:hover {
-    background: white;
+    background: rgb(37, 37, 36);
 
     div {
-      background: black;
-
       &:nth-child(1) {
         top: 14px;
       }
