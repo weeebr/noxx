@@ -11,6 +11,19 @@ import taminoWeggler from "../assets/band/tamino-weggler.webp";
 import tamaraMueller from "../assets/band/tamara-mueller.webp";
 import keithMaguire from "../assets/band/keith-maguire.webp";
 import { breakpoint, device } from "./../theme/index";
+import Slider from "../page-components/Slider";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+
+const MemberProfiles = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 30px -2px 0 -2px;
+
+  ${breakpoint(device.phone)} {
+    width: 100%;
+    padding: 0 20px;
+  }
+`;
 
 const members = [
   {
@@ -40,24 +53,45 @@ const members = [
   { name: "Keith Maguire", emoji: "🎸", function: "Bass", img: keithMaguire },
 ];
 
-const MemberProfiles = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 30px -2px 0 -2px;
+const Home = () => {
+  const sliderVisible = useMediaQuery(`(max-width:${device.phone})`);
 
-  ${breakpoint(device.phone)} {
-    margin: 30px -2px 0 -2px;
-    width: 100%;
-    padding: 0 20px;
-  }
-`;
+  return (
+    <>
+      <h1>NOXX</h1>
+      <SectionTitle>Home</SectionTitle>
 
-const Profile = styled.div`
+      <h3>
+        Wer sind wir? Eine Band!
+        <span role="img" style={{ display: "block" }} aria-label="music-emoijs">
+          🥁🎷🎤🪕🎹🎸
+        </span>
+      </h3>
+      <br />
+      <MemberProfiles>
+        {true && (
+          <>
+            {members.map((m, idx) => (
+              <Profile m={m} idx={idx} key={m.name} />
+            ))}
+          </>
+        )}
+
+        {false && (
+          <Slider
+            slides={members}
+            SlideComponent={(s, idx) => (
+              <Profile m={s} idx={idx} key={s.name} />
+            )}
+          />
+        )}
+      </MemberProfiles>
+    </>
+  );
+};
+
+const ProfileWrapper = styled.div`
   margin: 0 4px;
-
-  ${breakpoint(device.tablet)} {
-    margin: 0 2px;
-  }
 
   p {
     margin: 0;
@@ -66,6 +100,11 @@ const Profile = styled.div`
   .member-name {
     margin: 0 0 4px 0;
     font-size: 25px;
+
+    ${breakpoint(device.phone)} {
+      font-size: 22px;
+    }
+
     font-family: AmaticBold;
     font-weight: 900;
     background: ${(props) =>
@@ -85,30 +124,17 @@ const Profile = styled.div`
   }
 `;
 
-const Home = () => {
+const Profile = ({ m, idx }) => {
+  console.log({ m, idx });
   return (
-    <>
-      <SectionTitle>Home</SectionTitle>
-      <h1>NOXX</h1>
-      <h3>
-        Wer sind wir? Eine Band!
-        <span role="img" style={{ display: "block" }} aria-label="music-emoijs">
-          🥁🎷🎤🪕🎹🎸
-        </span>
-      </h3>
-      <MemberProfiles>
-        {members.map((m, idx) => (
-          <Profile name={m.name} key={idx}>
-            <img src={m.img} alt={m.name} />
-            <p className="member-name">{m.name}</p>
-            <span className="member-emoji" role="img" aria-label="member-emoji">
-              {m.emoji}
-            </span>
-            <p className="member-function">{m.function}</p>
-          </Profile>
-        ))}
-      </MemberProfiles>
-    </>
+    <ProfileWrapper name={m.name} key={idx}>
+      <img src={m.img} alt={m.name} />
+      <p className="member-name">{m.name}</p>
+      <span className="member-emoji" role="img" aria-label="member-emoji">
+        {m.emoji}
+      </span>
+      <p className="member-function">{m.function}</p>
+    </ProfileWrapper>
   );
 };
 

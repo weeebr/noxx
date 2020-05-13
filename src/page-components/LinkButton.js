@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { device } from "../theme";
+import { breakpoint } from "./../theme/index";
 
 const Wrapper = styled.div`
   button {
@@ -19,6 +21,10 @@ const Wrapper = styled.div`
       height: auto;
       background: #8e8f98;
       border-radius: 40px;
+
+      ${breakpoint(device.tablet)} {
+        width: 195px;
+      }
       .circle {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: relative;

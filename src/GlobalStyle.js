@@ -81,7 +81,7 @@ const GlobalStyle = createGlobalStyle`
 
   h1 {
     ${getString(typography.h1)}
-    margin: -20px 0;
+    margin: 40px 0;
   }
 
   h2 {
@@ -128,7 +128,7 @@ const GlobalStyle = createGlobalStyle`
     linear-gradient(120deg,rgba(238,232,170, 0.3),rgba(173,169,126, 0.05));
       
 
-    ${breakpoint(device.phone)} {
+    ${breakpoint(device.tablet)} {
       background: 
         linear-gradient(-120deg,rgba(173,169,126,0.5),rgba(0, 0, 0, 0.5));
     }
@@ -139,11 +139,15 @@ const GlobalStyle = createGlobalStyle`
       margin: 0 auto;
       padding: 0 20px;
 
+      ${breakpoint(device.tablet)} {
+        padding: 0;
+      }
+
       & > .content {
         padding: 40px 10px;
         max-width: 1102px;
         min-height: 400px;
-        margin-right: 180px;
+        margin-right: 160px;
         display: flex;
         flex-direction: column;
         background: 
@@ -154,11 +158,11 @@ const GlobalStyle = createGlobalStyle`
             padding: 0 20px;
           }
 
-        & > div:first-child > div:first-child{
+        & > div:first-of-type > div:first-of-type {
           margin-top: 0;
         }
 
-        ${breakpoint(device.phone)} {
+        ${breakpoint(device.tablet)} {
           padding: 0;
           width: 100%;
           background: transparent;

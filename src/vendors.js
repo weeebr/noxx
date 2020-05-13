@@ -20,7 +20,7 @@ export class SlickSlider extends React.Component {
     const props = this.props;
     return (
       <>
-        <Slider ref={c => (this.slider = c)} {...props}>
+        <Slider ref={(c) => (this.slider = c)} {...props}>
           {props.children}
         </Slider>
       </>
