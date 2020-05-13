@@ -38,14 +38,6 @@ const StyledHamburger = styled.div`
   }
 
   &.open {
-    position: fixed;
-    margin-left: 48px;
-
-    ${breakpoint(device.phone)} {
-      margin-top: 0;
-      right: unset;
-    }
-
     div {
       &:nth-child(1) {
         top: 22px;
