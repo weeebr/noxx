@@ -22,7 +22,7 @@ export const IconsWrapper = styled.div`
       display: block;
       width: 58px;
       border-radius: 50%;
-      border: 4px solid #282936;
+      border: 4px solid ${colors.primaryRed};
       position: absolute;
       top: 0;
       left: 0;
@@ -31,6 +31,9 @@ export const IconsWrapper = styled.div`
     }
 
     &:hover {
+      &::after {
+        border: 4px solid #282936;
+      }
       img {
         background: ${colors.primaryRed};
       }
