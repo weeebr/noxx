@@ -15,6 +15,10 @@ const BioWrapper = styled.div`
     margin-top: 0;
   }
 
+  p {
+    padding: 0 20px;
+  }
+
   .large-link-wrapper {
     display: flex;
     flex-direction: column;
