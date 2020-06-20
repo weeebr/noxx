@@ -94,7 +94,7 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     ${getString(typography.h2)}
-    width: 349px;
+    width: 269px;
     height: 115px;
     box-shadow: inset 0 0 0px 7px black;
     background: white;
