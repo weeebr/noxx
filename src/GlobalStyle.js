@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
-import AmaticBold from "./assets/fonts/AmaticSC-Bold.ttf";
-import AmaticRegular from "./assets/fonts/AmaticSC-Regular.ttf";
+import AmaticBold from "./assets/fonts/PinkLemonade.otf";
+import AmaticRegular from "./assets/fonts/PinkLemonade.otf";
 import LatoRegular from "./assets/fonts/Lato-Regular.ttf";
 
 import { colors, typography, getString, breakpoint, device } from "./theme";
@@ -9,15 +9,15 @@ const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'AmaticBold';
     font-style: normal;
-    font-weight: 700;
-    src: url(${AmaticBold}) format('truetype');
+    letter-spacing: 1px;
+    src: url(${AmaticBold}) format('opentype');
   }
 
   @font-face {
     font-family: 'AmaticRegular';
     font-style: normal;
-    font-weight: 400;
-    src: url(${AmaticRegular}) format('truetype');
+    letter-spacing: 1px;
+    src: url(${AmaticRegular}) format('opentype');
   }
 
   @font-face {
@@ -96,6 +96,7 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: inset 0 0 0px 7px black;
     background: white;
     border: 4px solid white;
+    letter-spacing: 1px;
     padding-top: 13px;
 
     ${breakpoint(device.phone)} {
@@ -109,21 +110,24 @@ const GlobalStyle = createGlobalStyle`
   h3 {
     ${getString(typography.h3)};
     text-align: center;
+    letter-spacing: 1px;
     margin: 16px 0 8px 0;
 
     span {
-      ${getString(typography.h2)};
+      font-weight: bold;
+    font-family: Calibri;
+    letter-spacing: 0;
+    font-size: 20px;
       display: block;
-      font-size: 26px;
-      font-weight: bolder;
       color: #545340;
     }
   }
 
   h4 {
-    ${getString(typography.h2)};
-    font-size: 26px;
-    font-weight: bolder;
+    font-weight: bold;
+    font-family: Calibri;
+    letter-spacing: 0;
+    font-size: 20px;
     color: #545340;
   }
 
@@ -170,7 +174,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         background: 
-          linear-gradient(-120deg,rgba(173,169,126,0.5),rgba(0, 0, 0, 0.5));
+        linear-gradient(70deg, rgba(50, 54, 105, 0.9), rgba(186, 206, 138, 0.8));
 
         @media (min-width:1500px) {
           margin: 0 auto;
@@ -180,8 +184,8 @@ const GlobalStyle = createGlobalStyle`
             padding: 0 20px;
           }
 
-        & > div:first-of-type > div:first-of-type {
-          margin-top: 0;
+        & > div:first-of-type > div:nth-of-type(2) {
+          margin-top: 40px;
         }
 
         ${breakpoint(device.tablet)} {

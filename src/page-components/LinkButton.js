@@ -105,10 +105,15 @@ const Wrapper = styled.div`
   }
 `;
 
-const LinkButton = ({ link, text, width }) => {
+const LinkButton = ({ link, text, width, download = false }) => {
   return (
     <Wrapper>
-      <a href={link}>
+      <a
+        href={link}
+        download={download}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <button className="learn-more" style={{ width }}>
           <span className="circle" aria-hidden="true">
             <span className="icon arrow"></span>

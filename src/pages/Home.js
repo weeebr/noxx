@@ -5,7 +5,8 @@ import styled from "styled-components";
 import SectionTitle from "../page-components/SectionTitle";
 
 // assets
-import marcoFaseth from "../assets/band/marco-faseth.webp";
+import marcoFaseth from "../assets/band/marco-faseth.jpg";
+import logo from "../assets/logo.png";
 import sonjaKuster from "../assets/band/sonja-kuster.webp";
 import taminoWeggler from "../assets/band/tamino-weggler.webp";
 import tamaraMueller from "../assets/band/tamara-mueller.webp";
@@ -18,7 +19,6 @@ const MemberProfiles = styled.div`
   display: flex;
   justify-content: center;
   margin: 30px auto 0 auto;
-  width: 70%;
 
   ${breakpoint(device.phone)} {
     width: 100%;
@@ -36,17 +36,17 @@ const members = [
   {
     name: "Sonja Kuster",
     emoji: "🎷🎤",
-    function: "Sax/ Gesang",
+    function: "Sax/Gesang",
     img: sonjaKuster,
   },
   {
     name: "Tamino Weggler",
     emoji: "🎤🪕",
-    function: "Gesang/ Ukulele",
+    function: "Gesang/Ukulele",
     img: taminoWeggler,
   },
   {
-    name: "Tamara Müller",
+    name: "Tamara Mueller",
     emoji: "🎹",
     function: "Keyboard",
     img: tamaraMueller,
@@ -85,11 +85,13 @@ const Home = () => {
 
   return (
     <>
-      <h1>NOXX</h1>
+      <div style={{ textAlign: "center" }}>
+        <img style={{ display: "inline" }} src={logo} />
+      </div>
       <SectionTitle>Home</SectionTitle>
 
       <h3>Wer sind wir?</h3>
-      <h4 style={{ fontWeight: "lighter" }}>Ganz einfach – Eine Band!</h4>
+      <h4>Ganz einfach – Eine Band!</h4>
       <EmoijWrapper>
         <span role="img" aria-label="music-drums">
           🥁
@@ -113,44 +115,36 @@ const Home = () => {
 
       <br />
       <MemberProfiles>
-        {true && (
-          <>
-            {members.map((m, idx) => (
-              <Profile m={m} idx={idx} key={m.name} />
-            ))}
-          </>
-        )}
-
-        {false && (
-          <Slider
-            slides={members}
-            SlideComponent={(s, idx) => (
-              <Profile m={s} idx={idx} key={s.name} />
-            )}
-          />
-        )}
+        <Slider
+          slides={members}
+          SlideComponent={(s, idx) => <Profile m={s} idx={idx} key={s.name} />}
+        />
       </MemberProfiles>
     </>
   );
 };
 
 const ProfileWrapper = styled.div`
-  margin: 0 4px;
+  margin: 0 10px;
   position: relative;
-  cursor: crosshair;
+  cursor: pointer;
 
   &:hover {
     .member-overlay {
-      background: rgba(0, 0, 0, 0.7);
       z-index: 1;
       transition: all 0.8s ease;
     }
 
-    .member-info {
-      .member-name {
-        position: absolute;
-        bottom: -41px;
-      }
+    .member-info .member-name {
+      font-size: 30px;
+    }
+
+    .member-emoji {
+      font-size: 24px;
+    }
+
+    .member-function {
+      font-size: 26px;
     }
 
     .member-emoji,
@@ -158,35 +152,7 @@ const ProfileWrapper = styled.div`
       z-index: 2;
       position: relative;
       color: white;
-    }
-
-    .member-emoji {
-      transform: translateY(-210px) scale(1.3);
-
-      ${breakpoint(device.tablet)} {
-        transform: translateY(-190px) scale(1.2);
-      }
-
-      ${breakpoint(device.phone)} {
-        transform: translateY(-170px) scale(1.1);
-      }
-    }
-
-    .member-function {
-      transform: translateY(-200px) scale(1.2);
-      margin-top: 0;
-      word-spacing: 74px;
-      line-height: 20px;
-      text-align: center;
-      word-break: break-all;
-
-      ${breakpoint(device.tablet)} {
-        transform: translateY(-180px) scale(1.2);
-      }
-
-      ${breakpoint(device.phone)} {
-        transform: translateY(-155px) scale(1);
-      }
+      transform: translateY(-5px);
     }
   }
 
@@ -200,6 +166,8 @@ const ProfileWrapper = styled.div`
 
   .member-info {
     position: relative;
+    display: flex;
+    justify-content: center;
 
     .member-overlay {
       width: 100%;
@@ -222,7 +190,7 @@ const ProfileWrapper = styled.div`
       font-weight: 900;
       background: ${(props) =>
         props.name === "Tamino Weggler" ? "#ffbb0e" : "goldenrod"};
-      padding: 6px 4px;
+      padding: 6px 10px;
 
       ${breakpoint(device.phone)} {
         font-size: 13px;
@@ -268,13 +236,17 @@ const Profile = ({ m, idx }) => {
     <ProfileWrapper name={m.name} key={idx}>
       <div className="member-info">
         <div className="member-overlay" />
-        <img src={m.img} alt={m.name} />
+        <div className="img-wrapper">
+          <img src={m.img} alt={m.name} />
+        </div>
         <p className="member-name">{m.name}</p>
       </div>
-      <span className="member-emoji" role="img" aria-label="member-emoji">
-        {m.emoji}
-      </span>
-      <p className="member-function">{m.function}</p>
+      <div>
+        <span className="member-emoji" role="img" aria-label="member-emoji">
+          {m.emoji}
+        </span>
+        <p className="member-function">{m.function}</p>
+      </div>
     </ProfileWrapper>
   );
 };

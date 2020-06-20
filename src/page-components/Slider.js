@@ -4,14 +4,12 @@ import styled from "styled-components";
 import { breakpoint, device } from "./../theme/index";
 
 const SliderWrapper = styled.div`
-  transform: scale(1.2);
-  width: 80vw;
-  margin: 80px 0 0 0;
+  width: calc(100% - 8px);
 
   .slick-slider {
     .slick-list {
       position: relative;
-      padding: 0px 22px !important;
+      padding: 0 !important;
 
       .slick-track {
         margin-bottom: 10px;
@@ -26,7 +24,6 @@ const SliderWrapper = styled.div`
         transition: all 0.3s ease;
         position: relative;
         cursor: pointer;
-        transform: scale(0.7);
 
         &.slick-current {
           margin: 0 15px;
@@ -34,18 +31,21 @@ const SliderWrapper = styled.div`
           transform-origin: center;
           z-index: 1;
 
+          img {
+            transform: scale(1.2);
+            margin-bottom: 10px;
+          }
+
           .member-name {
-            transform: scale(1.5);
+            font-size: 30px;
           }
 
           .member-emoji {
-            transform: scale(1.5);
-            margin-top: 24px;
+            font-size: 24px;
           }
 
           .member-function {
-            transform: scale(1.5);
-            margin-top: 10px;
+            font-size: 26px;
           }
 
           ${breakpoint(device.phone)} {
@@ -57,12 +57,10 @@ const SliderWrapper = styled.div`
   }
 `;
 
-const Slider = ({ SlideComponent, slides }) => {
+const Slider = ({ SlideComponent, slides = [] }) => {
   let slider = React.createRef(null);
 
   const [currentSlideIdx, setCurrentSlideIdx] = React.useState(0);
-
-  console.log({ SlideComponent, slides });
 
   const getClass = (idx) =>
     idx === currentSlideIdx

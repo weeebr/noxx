@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 const DownloadButton = ({ link, text }) => {
   return (
     <Wrapper>
-      <LinkButton link={link} text={text} />
+      <LinkButton link={link} text={text} download />
     </Wrapper>
   );
 };

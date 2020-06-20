@@ -63,9 +63,9 @@ const Kontakt = () => {
       <DownloadsWrapper>
         <SectionTitle>Downloads</SectionTitle>
         <div>
-          <div style={{ marginRight: 20 }}>
+          <div>
             <div className="download-heading">
-              <h3>für Tech Riders</h3>
+              <h3>fuer Tech Riders</h3>
             </div>
             <div style={{ textAlign: "center" }}>
               <DownloadButton link={pdfNoxxBand} text="NOXX Band" />
@@ -74,16 +74,6 @@ const Kontakt = () => {
             </div>
             <p style={{ fontSize: 14 }}>*) nur Tamino</p>
             <p>Spezielle Besetzungen auf Anfrage.</p>
-          </div>
-          <div>
-            <div className="download-heading">
-              <h3>für die Presse</h3>
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <DownloadButton link="#" text="Pressemappe" />
-              <br />
-              <DownloadButton link="#" text="Fotomappe" />
-            </div>
           </div>
         </div>
       </DownloadsWrapper>

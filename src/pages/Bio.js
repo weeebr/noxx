@@ -54,7 +54,7 @@ const Bio = ({ openVideo }) => {
     <BioWrapper>
       <SectionTitle>Bio</SectionTitle>
       <h3>
-        Die Anfänge: <span>NOXX a.k.a. Tamino Weggler</span>
+        Die Anfaenge: <span>NOXX a.k.a. Tamino Weggler</span>
       </h3>
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum{" "}
@@ -130,8 +130,8 @@ const Bio = ({ openVideo }) => {
         <br />
         <YoutubePreview
           openVideo={openVideo}
-          id="cV3NnsfpA1Q"
-          title="cV3NnsfpA1Q"
+          id="HPUekq5fC90"
+          title="HPUekq5fC90"
         />
       </div>
     </BioWrapper>

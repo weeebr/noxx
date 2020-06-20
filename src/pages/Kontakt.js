@@ -77,7 +77,7 @@ const Kontakt = () => {
           <img src={icons.instagram} alt="NOXX auf Instagram" />
         </a>
         <a href="https://www.facebook.com/NOXXMusik/">
-          <img src={icons.facebook} alt="NOXX auf FaceBook" />
+          <img src={icons.facebook} alt="NOXX auf Facebook" />
         </a>
       </IconsWrapper>
     </>
