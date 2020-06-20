@@ -187,9 +187,7 @@ const GlobalStyle = createGlobalStyle`
             padding: 0 20px;
           }
 
-        & div > div > div:nth-of-type(2) {
-          margin-top: 40px;
-        }
+        
 
         ${breakpoint(device.tablet)} {
           padding: 0;

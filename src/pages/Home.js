@@ -80,14 +80,27 @@ const EmoijWrapper = styled.div`
   }
 `;
 
+const LogoWrapper = styled.div`
+  text-align: center;
+  margin: 30px 0 -120px 0;
+
+  img {
+    display: inline;
+  }
+
+  ${breakpoint(device.tablet)} {
+    margin: 30px 0 -90px 0;
+  }
+`;
+
 const Home = forwardRef((props, ref) => {
   const sliderVisible = useMediaQuery(`(max-width:${device.phone})`);
 
   return (
     <div ref={ref}>
-      <div style={{ textAlign: "center" }}>
-        <img style={{ display: "inline" }} src={logo} />
-      </div>
+      <LogoWrapper>
+        <img src={logo} />
+      </LogoWrapper>
       <SectionTitle>Home</SectionTitle>
 
       <h3>Wer sind wir?</h3>
