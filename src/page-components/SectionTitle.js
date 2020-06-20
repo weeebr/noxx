@@ -16,9 +16,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const SectionTitle = ({ children }) => {
+const SectionTitle = ({ children, other }) => {
   return (
-    <Wrapper>
+    <Wrapper {...other}>
       <h2>{children}</h2>
     </Wrapper>
   );

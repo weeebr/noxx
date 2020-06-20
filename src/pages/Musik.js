@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 import SectionTitle from "../page-components/SectionTitle";
@@ -25,10 +25,10 @@ const YoutubeWrapper = styled.div`
   }
 `;
 
-const Musik = ({ openVideo }) => {
+const Musik = forwardRef(({ openVideo }, ref) => {
   return (
-    <>
-      <SectionTitle>Musik</SectionTitle>
+    <div ref={ref}>
+      <SectionTitle id="musik">Musik</SectionTitle>
 
       <YoutubeWrapper>
         <YoutubePreview
@@ -75,8 +75,8 @@ const Musik = ({ openVideo }) => {
         link="mailto:booking@noxx-musik.ch?subject=Anfrage"
         text="Buche uns!"
       />
-    </>
+    </div>
   );
-};
+});
 
 export default Musik;

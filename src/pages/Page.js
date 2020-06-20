@@ -32,7 +32,7 @@ const Page = ({ pageRefs }) => {
         <Bio ref={pageRefs.bio} openVideo={openVideo} />
         <Kontakt ref={pageRefs.kontakt} />
       </div>
-      <Downloads />
+      <Downloads ref={pageRefs.downloads} />
     </>
   );
 };

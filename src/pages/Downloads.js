@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 import pdfNoxxSolo from "../assets/noxx-solo.pdf";
@@ -57,9 +57,9 @@ const DownloadsWrapper = styled.div`
   }
 `;
 
-const Kontakt = () => {
+const Kontakt = forwardRef((props, ref) => {
   return (
-    <>
+    <div ref={ref}>
       <DownloadsWrapper>
         <SectionTitle>Downloads</SectionTitle>
         <div>
@@ -77,8 +77,8 @@ const Kontakt = () => {
           </div>
         </div>
       </DownloadsWrapper>
-    </>
+    </div>
   );
-};
+});
 
 export default Kontakt;

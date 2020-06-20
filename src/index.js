@@ -15,16 +15,20 @@ const Pages = () => {
   const musikRef = useRef();
   const bioRef = useRef();
   const kontaktRef = useRef();
+  const downloadsRef = useRef();
 
   const pageRefs = {
     home: homeRef,
     musik: musikRef,
     bio: bioRef,
+    downloads: downloadsRef,
     kontakt: kontaktRef,
   };
 
   const handleNavigate = (ref) => {
-    console.log(ref.current);
+    ref.current.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (

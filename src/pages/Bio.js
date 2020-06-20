@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 // page-components
@@ -49,9 +49,9 @@ const HighlightedText = styled.a`
   }
 `;
 
-const Bio = ({ openVideo }) => {
+const Bio = forwardRef(({ openVideo }, ref) => {
   return (
-    <BioWrapper>
+    <BioWrapper ref={ref}>
       <SectionTitle>Bio</SectionTitle>
       <h3>
         Die Anfaenge: <span>NOXX a.k.a. Tamino Weggler</span>
@@ -112,7 +112,7 @@ const Bio = ({ openVideo }) => {
         eine Crowdfunding-Kampagne auf{" "}
         <a
           className="external"
-          href="https://wemakeit.com/projects/noxx-mimimi-ep"
+          href="https://wemakeit.com/projects/noxx-band-debuetalbum"
         >
           wemakeit.com
         </a>{" "}
@@ -124,7 +124,7 @@ const Bio = ({ openVideo }) => {
       </p>
       <div className="large-link-wrapper">
         <LinkButton
-          link="https://wemakeit.com/projects/noxx-mimimi-ep"
+          link="https://wemakeit.com/projects/noxx-band-debuetalbum"
           text="Zur Kampagne"
         />
         <br />
@@ -136,6 +136,6 @@ const Bio = ({ openVideo }) => {
       </div>
     </BioWrapper>
   );
-};
+});
 
 export default Bio;

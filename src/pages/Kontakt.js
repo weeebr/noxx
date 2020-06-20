@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 import SectionTitle from "../page-components/SectionTitle";
@@ -53,9 +53,9 @@ const SignupForm = styled.div`
   }
 `;
 
-const Kontakt = () => {
+const Kontakt = forwardRef((props, ref) => {
   return (
-    <>
+    <div ref={ref}>
       <SectionTitle>Kontakt</SectionTitle>
       <SignupForm>
         <h3>Newsletter</h3>
@@ -80,8 +80,8 @@ const Kontakt = () => {
           <img src={icons.facebook} alt="NOXX auf Facebook" />
         </a>
       </IconsWrapper>
-    </>
+    </div>
   );
-};
+});
 
 export default Kontakt;

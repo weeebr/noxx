@@ -121,6 +121,9 @@ const StyledNavigation = styled.aside`
 const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
   const hamburgerWhenWidth = `${parseInt(device.tablet) + 150}px`; // 170 = nav width
   const hamburgerVisible = useMediaQuery(`(max-width:${hamburgerWhenWidth})`);
+  const handleScroll = (e) => {
+    console.log(e.target.hash);
+  };
 
   return (
     <StyledNavigation className={isOpen ? "open" : null} isOpen={isOpen}>
@@ -138,13 +141,25 @@ const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
             isOpen ? "open" : ""
           }`}
         >
-          <a href="#" className="active">
+          <a
+            href="#"
+            className="active"
+            onClick={(e) => onNavigate(pageRefs.home)}
+          >
             Home
           </a>
-          <a href="#musik">Musik</a>
-          <a href="#bio">Bio</a>
-          <a href="#kontakt">Kontakt</a>
-          <a href="#downloads">Downloads</a>
+          <a href="#musik" onClick={(e) => onNavigate(pageRefs.musik)}>
+            Musik
+          </a>
+          <a href="#bio" onClick={(e) => onNavigate(pageRefs.bio)}>
+            Bio
+          </a>
+          <a href="#kontakt" onClick={(e) => onNavigate(pageRefs.kontakt)}>
+            Kontakt
+          </a>
+          <a href="#downloads" onClick={(e) => onNavigate(pageRefs.downloads)}>
+            Downloads
+          </a>
         </nav>
       </div>
     </StyledNavigation>

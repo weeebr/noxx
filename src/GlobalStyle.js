@@ -73,6 +73,9 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    transition: all 0.4s ease;
+    -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 
   p {
@@ -184,7 +187,7 @@ const GlobalStyle = createGlobalStyle`
             padding: 0 20px;
           }
 
-        & > div:first-of-type > div:nth-of-type(2) {
+        & div > div > div:nth-of-type(2) {
           margin-top: 40px;
         }
 

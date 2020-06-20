@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styled from "styled-components";
 
 // page-components
@@ -80,11 +80,11 @@ const EmoijWrapper = styled.div`
   }
 `;
 
-const Home = () => {
+const Home = forwardRef((props, ref) => {
   const sliderVisible = useMediaQuery(`(max-width:${device.phone})`);
 
   return (
-    <>
+    <div ref={ref}>
       <div style={{ textAlign: "center" }}>
         <img style={{ display: "inline" }} src={logo} />
       </div>
@@ -120,9 +120,9 @@ const Home = () => {
           SlideComponent={(s, idx) => <Profile m={s} idx={idx} key={s.name} />}
         />
       </MemberProfiles>
-    </>
+    </div>
   );
-};
+});
 
 const ProfileWrapper = styled.div`
   margin: 0 10px;
