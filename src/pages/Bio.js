@@ -7,7 +7,7 @@ import LinkButton from "./../page-components/LinkButton";
 import YoutubePreview from "../page-components/YoutubePreview";
 
 // assets
-import bandFrontal from "../assets/band/band-frontal.webp";
+import bandFrontal from "../assets/band/band-frontal.jpg";
 
 const BioWrapper = styled.div`
   h3 {

@@ -1,11 +1,10 @@
-import appleIcon from "../assets/icons/apple.webp";
-import arrowDownIcon from "../assets/icons/arrow-down.webp";
-import facebookIcon from "../assets/icons/facebook.webp";
-import instagramIcon from "../assets/icons/instagram.webp";
-import spotifyIcon from "../assets/icons/spotify.webp";
-import youtubeIcon from "../assets/icons/youtube.webp";
+import appleIcon from "../assets/icons/apple.png";
+import arrowDownIcon from "../assets/icons/arrow-down.png";
+import facebookIcon from "../assets/icons/facebook.png";
+import instagramIcon from "../assets/icons/instagram.png";
+import spotifyIcon from "../assets/icons/spotify.png";
+import youtubeIcon from "../assets/icons/youtube.png";
 import { lighten } from "polished";
-import styled from "styled-components";
 
 export const colors = {
   primaryRed: "#d24e4e",

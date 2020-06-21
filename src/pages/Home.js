@@ -7,10 +7,10 @@ import SectionTitle from "../page-components/SectionTitle";
 // assets
 import marcoFaseth from "../assets/band/marco-faseth.jpg";
 import logo from "../assets/logo.png";
-import sonjaKuster from "../assets/band/sonja-kuster.webp";
-import taminoWeggler from "../assets/band/tamino-weggler.webp";
-import tamaraMueller from "../assets/band/tamara-mueller.webp";
-import keithMaguire from "../assets/band/keith-maguire.webp";
+import sonjaKuster from "../assets/band/sonja-kuster.jpg";
+import taminoWeggler from "../assets/band/tamino-weggler.jpg";
+import tamaraMueller from "../assets/band/tamara-mueller.jpg";
+import keithMaguire from "../assets/band/keith-maguire.jpg";
 import { breakpoint, device } from "./../theme/index";
 import Slider from "../page-components/Slider";
 
