@@ -25,11 +25,6 @@ const Pages = () => {
     kontakt: kontaktRef,
   };
 
-  function removeClass(ele, cls) {
-    var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
-    ele.className = ele.className.replace(reg, "$1 $2");
-  }
-
   const handleNavigate = (e, ref) => {
     ref.current.scrollIntoView({
       behavior: "smooth",
