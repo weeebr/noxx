@@ -25,10 +25,21 @@ const Pages = () => {
     kontakt: kontaktRef,
   };
 
-  const handleNavigate = (ref) => {
+  function removeClass(ele, cls) {
+    var reg = new RegExp("(\\s|^)" + cls + "(\\s|$)");
+    ele.className = ele.className.replace(reg, "$1 $2");
+  }
+
+  const handleNavigate = (e, ref) => {
     ref.current.scrollIntoView({
       behavior: "smooth",
     });
+
+    document.querySelectorAll("a.nav").forEach((e) => {
+      e.className = e.className.replace("active", "");
+    });
+
+    e.target.className = "nav active";
   };
 
   return (
@@ -53,6 +64,7 @@ const Pages = () => {
   );
 };
 
+/* eslint-disable jsx-a11y/accessible-emoji */
 const App = (
   <Router>
     <GlobalStyle />

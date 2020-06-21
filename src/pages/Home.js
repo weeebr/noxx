@@ -13,7 +13,6 @@ import tamaraMueller from "../assets/band/tamara-mueller.webp";
 import keithMaguire from "../assets/band/keith-maguire.webp";
 import { breakpoint, device } from "./../theme/index";
 import Slider from "../page-components/Slider";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const MemberProfiles = styled.div`
   display: flex;
@@ -94,12 +93,10 @@ const LogoWrapper = styled.div`
 `;
 
 const Home = forwardRef((props, ref) => {
-  const sliderVisible = useMediaQuery(`(max-width:${device.phone})`);
-
   return (
     <div ref={ref}>
       <LogoWrapper>
-        <img src={logo} />
+        <img src={logo} alt="NOXX Band" />
       </LogoWrapper>
       <SectionTitle>Home</SectionTitle>
 

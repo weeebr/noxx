@@ -62,12 +62,12 @@ const Slider = ({ SlideComponent, slides = [] }) => {
 
   const [currentSlideIdx, setCurrentSlideIdx] = React.useState(0);
 
-  const getClass = (idx) =>
-    idx === currentSlideIdx
-      ? "current"
-      : idx < currentSlideIdx
-      ? "prev"
-      : "next";
+  // const getClass = (idx) =>
+  //   idx === currentSlideIdx
+  //     ? "current"
+  //     : idx < currentSlideIdx
+  //     ? "prev"
+  //     : "next";
 
   return (
     <SliderWrapper currentSlideIdx={currentSlideIdx}>

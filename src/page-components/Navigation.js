@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { colors, pageFullWidth } from "../theme";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import OverlayBg from "./OverlayBg";
 import Hamburger from "./Hamburger";
@@ -121,9 +120,6 @@ const StyledNavigation = styled.aside`
 const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
   const hamburgerWhenWidth = `${parseInt(device.tablet) + 150}px`; // 170 = nav width
   const hamburgerVisible = useMediaQuery(`(max-width:${hamburgerWhenWidth})`);
-  const handleScroll = (e) => {
-    console.log(e.target.hash);
-  };
 
   return (
     <StyledNavigation className={isOpen ? "open" : null} isOpen={isOpen}>
@@ -142,22 +138,38 @@ const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
           }`}
         >
           <a
-            href="#"
-            className="active"
-            onClick={(e) => onNavigate(pageRefs.home)}
+            href="/#"
+            className="active nav"
+            onClick={(e) => onNavigate(e, pageRefs.home)}
           >
             Home
           </a>
-          <a href="#musik" onClick={(e) => onNavigate(pageRefs.musik)}>
+          <a
+            className="nav"
+            href="#musik"
+            onClick={(e) => onNavigate(e, pageRefs.musik)}
+          >
             Musik
           </a>
-          <a href="#bio" onClick={(e) => onNavigate(pageRefs.bio)}>
+          <a
+            className="nav"
+            href="#bio"
+            onClick={(e) => onNavigate(e, pageRefs.bio)}
+          >
             Bio
           </a>
-          <a href="#kontakt" onClick={(e) => onNavigate(pageRefs.kontakt)}>
+          <a
+            className="nav"
+            href="#kontakt"
+            onClick={(e) => onNavigate(e, pageRefs.kontakt)}
+          >
             Kontakt
           </a>
-          <a href="#downloads" onClick={(e) => onNavigate(pageRefs.downloads)}>
+          <a
+            className="nav"
+            href="#downloads"
+            onClick={(e) => onNavigate(e, pageRefs.downloads)}
+          >
             Downloads
           </a>
         </nav>

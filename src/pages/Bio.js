@@ -8,7 +8,6 @@ import YoutubePreview from "../page-components/YoutubePreview";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.webp";
-import { colors } from "../theme";
 
 const BioWrapper = styled.div`
   h3 {
@@ -32,20 +31,6 @@ const BioWrapper = styled.div`
   .bandfoto-wrapper {
     display: flex;
     justify-content: center;
-  }
-`;
-
-const HighlightedText = styled.a`
-  color: #3e3d34;
-  padding: 2px 4px;
-  margin: 0 4px;
-  background: #54535445;
-  border-radius: 3px;
-  white-space: nowrap;
-  transition: all 1s ease;
-
-  &:hover {
-    color: ${colors.primaryRed};
   }
 `;
 

@@ -163,11 +163,7 @@ const GlobalStyle = createGlobalStyle`
     linear-gradient(120deg,rgba(238,232,170, 0.3),rgba(173,169,126, 0.05));
       
 
-    ${breakpoint(device.tablet)} {
-      background: 
-        linear-gradient(-120deg,rgba(173,169,126,0.5),rgba(0, 0, 0, 0.5));
-    }
-
+  
     & > div {
       & > .content {
         padding: 40px 10px;
@@ -187,12 +183,9 @@ const GlobalStyle = createGlobalStyle`
             padding: 0 20px;
           }
 
-        
-
         ${breakpoint(device.tablet)} {
           padding: 0;
           width: 100%;
-          background: transparent;
           box-shadow: none;
           margin: 0;
         }
