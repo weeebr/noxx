@@ -147,6 +147,10 @@ const ProfileWrapper = styled.div`
 
     .member-info .member-name {
       font-size: 30px;
+
+      ${breakpoint(device.phone)} {
+        font-size: 22px;
+      }
     }
 
     .member-emoji {
@@ -155,6 +159,10 @@ const ProfileWrapper = styled.div`
 
     .member-function {
       font-size: 26px;
+
+      ${breakpoint(device.phone)} {
+        font-size: 22px;
+      }
     }
 
     .member-emoji,
@@ -164,10 +172,6 @@ const ProfileWrapper = styled.div`
       color: white;
       transform: translateY(-5px);
     }
-  }
-
-  ${breakpoint(device.phone)} {
-    max-width: 20%;
   }
 
   p {

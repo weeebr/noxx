@@ -25,6 +25,14 @@ const SliderWrapper = styled.div`
         position: relative;
         cursor: pointer;
 
+        ${breakpoint(device.phone)} {
+          &:not(.slick-current) {
+            .member-info .member-overlay {
+              background: rgba(0, 0, 0, 0.4);
+            }
+          }
+        }
+
         &.slick-current {
           margin: 0 15px;
           transform: scale(1);
@@ -38,6 +46,10 @@ const SliderWrapper = styled.div`
 
           .member-name {
             font-size: 30px;
+
+            ${breakpoint(device.phone)} {
+              font-size: 22px;
+            }
           }
 
           .member-emoji {
@@ -46,6 +58,10 @@ const SliderWrapper = styled.div`
 
           .member-function {
             font-size: 26px;
+
+            ${breakpoint(device.phone)} {
+              font-size: 22px;
+            }
           }
 
           ${breakpoint(device.phone)} {
