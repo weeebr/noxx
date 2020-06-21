@@ -54,6 +54,7 @@ const PlayButton = styled.button`
 const Video = styled.div`
   position: relative;
   cursor: pointer;
+  z-index: 0;
 
   &:hover {
     svg {
