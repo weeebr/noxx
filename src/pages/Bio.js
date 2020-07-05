@@ -57,7 +57,7 @@ const Bio = forwardRef(({ openVideo }, ref) => {
           target="_blank"
           rel="noopener noreferrer"
           className="external"
-          href="https://geo.itunes.apple.com/us/album/es-halbs-kilo-songs/1361261464?mt=1&app=music"
+          href="https://album.link/ch/i/1361261464"
         >
           Es Halbs Kilo Songs
         </a>
@@ -95,24 +95,16 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         spannenden neuen Ufern und Kreativität nichts mehr im Wege. Seid
         gespannt!
       </p>
+      <br />
       <div className="bandfoto-wrapper">
         <img src={bandFrontal} alt="NOXX Bandfoto" />
       </div>
       <br />
       <h3>Und das ist erst der Anfang!</h3>
       <p>
-        Wir haben schon einige neue Lieder am Start und würden gerne einen neuen
-        Tonträger unter dem Namen{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="external"
-          href="https://wemakeit.com/projects/noxx-mimimi-ep"
-        >
-          Mimimi EP
-        </a>{" "}
-        produzieren. Dabei werden wir vom Verein Graubünden Musik in der Planung
-        unterstützt.
+        Wir haben in der Zwischenzeit fleissig Lieder geschrieben und würden nun
+        gerne unser erstes Album als Band NOXX produzieren. Dabei werden wir vom
+        Verein Graubünden Musik in der Planung unterstützt.
       </p>
       <br />
       <h4>Crowdfunding-Kampagne</h4>
@@ -133,11 +125,13 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         Wir würden uns enorm über deinen Beitrag freuen! Es gibt tolle Goodies
         als Entschädigung.
       </p>
+      <br />
       <div className="large-link-wrapper">
         <LinkButton
           link="https://wemakeit.com/projects/noxx-band-debuetalbum"
           text="Zur Kampagne"
         />
+        <br />
         <br />
         <YoutubePreview
           openVideo={openVideo}

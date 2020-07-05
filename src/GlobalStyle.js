@@ -85,7 +85,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     ${getString(typography.h1)}
     margin-bottom: 40px;
-    color: #d24e4e;
+    color: ${colors.primaryRed};
 
     ${breakpoint(device.tablet)} {
       margin-top: 40px;
@@ -119,6 +119,7 @@ const GlobalStyle = createGlobalStyle`
     span {
       font-weight: bold;
       font-family: LatoRegular;
+      text-transform: none;
       font-size: 20px;
       display: block;
       color: #545340;
@@ -140,6 +141,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: ${colors.primaryRed};
+    margin: 0 4px;
 
     &.external {
       transition: all 1s ease;

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import SectionTitle from "../page-components/SectionTitle";
 import IconsWrapper from "./../page-components/IconsWrapper";
 
-import { icons, device } from "../theme";
+import { icons, device, colors } from "../theme";
 import { breakpoint } from "./../theme/index";
 
 const SignupForm = styled.div`
@@ -39,7 +39,7 @@ const SignupForm = styled.div`
     padding: 10px 26px;
     cursor: pointer;
     text-transform: uppercase;
-    border: 3px solid #d24e4e;
+    border: 3px solid ${colors.primaryRed};
     color: white;
     transition: all 0.5s ease;
 

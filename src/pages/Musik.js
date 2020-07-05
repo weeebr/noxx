@@ -84,7 +84,7 @@ const Musik = forwardRef(({ openVideo }, ref) => {
       </p>
       <br />
       <LinkButton
-        link="mailto:booking@noxx-musik.ch?subject=Anfrage"
+        link="mailto:noxx.it.out@gmail.com?subject=Anfrage"
         text="Buche uns!"
       />
     </div>

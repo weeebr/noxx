@@ -22,8 +22,9 @@ const DownloadsWrapper = styled.div`
     display: flex;
     justify-content: center;
     padding: 0 20px;
-    margin: 40px 0 30px 0;
+    margin: 40px 0 0 -16px;
     text-align: left;
+    width: calc(100% + 24px);
   }
 
   h2 {
@@ -72,7 +73,7 @@ const Kontakt = forwardRef((props, ref) => {
               <br />
               <DownloadButton link={pdfNoxxSolo} text="NOXX Solo*" />
             </div>
-            <p style={{ fontSize: 14 }}>*) nur Tamino</p>
+            <p style={{ fontSize: 14 }}>* nur Tamino</p>
             <p>Spezielle Besetzungen auf Anfrage.</p>
           </div>
         </div>

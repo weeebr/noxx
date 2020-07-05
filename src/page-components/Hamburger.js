@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { colors } from "../theme";
 
 const StyledHamburger = styled.div`
   width: 48px;
@@ -10,7 +11,7 @@ const StyledHamburger = styled.div`
   z-index: 5;
   outline: none;
   cursor: pointer;
-  background: #d24e4e;
+  background: ${colors.primaryRed};
   position: fixed;
   top: 22px;
   right: 5%;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import OverlayBg from "./OverlayBg";
 import Hamburger from "./Hamburger";
-import { breakpoint, device } from "./../theme/index";
+import { breakpoint, device, colors } from "./../theme/index";
 
 const StyledNavigation = styled.aside`
   transition: all 0.5s ease;
@@ -44,7 +44,7 @@ const StyledNavigation = styled.aside`
       }
 
       &.active {
-        color: #d24e4e;
+        color: ${colors.primaryRed};
         &:after {
           content: "⦁";
           font-size: 41px;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { device } from "../theme";
+import { device, colors } from "../theme";
 import { breakpoint } from "./../theme/index";
 
 const Wrapper = styled.div`
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
       height: auto;
       background: slategray;
       border-radius: 40px;
-      border: 3px solid #d24e4e;
+      border: 3px solid ${colors.primaryRed};
 
       ${breakpoint(device.tablet)} {
         width: 195px;
