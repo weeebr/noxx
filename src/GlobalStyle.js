@@ -105,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
     ${breakpoint(device.phone)} {
       padding-top: 10px;
       font-size: 44px;
-      width: 200px;
+      width: 220px;
       height: 95px;
     }
   }
