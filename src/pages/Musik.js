@@ -49,14 +49,26 @@ const Musik = forwardRef(({ openVideo }, ref) => {
       </YoutubeWrapper>
       <br />
       <IconsWrapper>
-        <a href="https://open.spotify.com/artist/70VQtiINNxQ15JdP2NDaZP">
+        <a
+          href="https://open.spotify.com/artist/70VQtiINNxQ15JdP2NDaZP"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={icons.spotify} alt="NOXX auf Spotify" />
         </a>
-        <a href="https://music.apple.com/gb/artist/noxx/257548101">
+        <a
+          href="https://music.apple.com/gb/artist/noxx/257548101"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={icons.apple} alt="NOXX auf Apple Music" />
         </a>
 
-        <a href="https://www.youtube.com/channel/UCpIAxLIZTRmhOxDxetoKbqw">
+        <a
+          href="https://www.youtube.com/channel/UCpIAxLIZTRmhOxDxetoKbqw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={icons.youtube} alt="NOXX auf YouTube" />
         </a>
       </IconsWrapper>

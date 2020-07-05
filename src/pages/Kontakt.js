@@ -73,10 +73,18 @@ const Kontakt = forwardRef((props, ref) => {
         Media:
       </p>
       <IconsWrapper>
-        <a href="https://www.instagram.com/noxx_musik/">
+        <a
+          href="https://www.instagram.com/noxx_musik/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={icons.instagram} alt="NOXX auf Instagram" />
         </a>
-        <a href="https://www.facebook.com/NOXXMusik/">
+        <a
+          href="https://www.facebook.com/NOXXMusik/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={icons.facebook} alt="NOXX auf Facebook" />
         </a>
       </IconsWrapper>

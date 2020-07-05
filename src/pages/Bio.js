@@ -54,20 +54,32 @@ const Bio = forwardRef(({ openVideo }, ref) => {
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum{" "}
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           className="external"
           href="https://geo.itunes.apple.com/us/album/es-halbs-kilo-songs/1361261464?mt=1&app=music"
         >
           Es Halbs Kilo Songs
         </a>
         . 2019 folgte die Nachfolge-EP{" "}
-        <a className="external" href="https://song.link/album/i/1461468834">
+        <a
+          className="external"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://song.link/album/i/1461468834"
+        >
           Dörfs Es Bizli Zviel Sii?
         </a>
         .
       </p>
       <p>
         Nach der Veröffentlichung der letzten EP{" "}
-        <a className="external" href="https://song.link/album/i/1461468834">
+        <a
+          className="external"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://song.link/album/i/1461468834"
+        >
           Dörfs Es Bizli Zviel Sii?
         </a>{" "}
         hatten Begleitbands viele Abgängen zu beklagen. Aus den Verbliebenen und
@@ -92,6 +104,8 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         Wir haben schon einige neue Lieder am Start und würden gerne einen neuen
         Tonträger unter dem Namen{" "}
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           className="external"
           href="https://wemakeit.com/projects/noxx-mimimi-ep"
         >
@@ -106,6 +120,8 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         Um noch das nötige Kleingeld für die Produktion aufzutreiben haben wir
         eine Crowdfunding-Kampagne auf{" "}
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           className="external"
           href="https://wemakeit.com/projects/noxx-band-debuetalbum"
         >
