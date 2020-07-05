@@ -118,9 +118,8 @@ const GlobalStyle = createGlobalStyle`
 
     span {
       font-weight: bold;
-    font-family: Calibri;
-    letter-spacing: 0;
-    font-size: 20px;
+      font-family: LatoRegular;
+      font-size: 20px;
       display: block;
       color: #545340;
     }
@@ -128,8 +127,7 @@ const GlobalStyle = createGlobalStyle`
 
   h4 {
     font-weight: bold;
-    font-family: Calibri;
-    letter-spacing: 0;
+    font-family: LatoRegular;
     font-size: 20px;
     color: #545340;
   }
@@ -173,7 +171,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         background: 
-        linear-gradient(70deg, rgba(50, 54, 105, 0.9), rgba(186, 206, 138, 0.8));
+        linear-gradient(70deg,rgba(50,54,105,0.9),rgb(234, 197, 111));
 
         @media (min-width:1500px) {
           margin: 0 auto;

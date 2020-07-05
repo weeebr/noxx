@@ -8,10 +8,18 @@ import YoutubePreview from "../page-components/YoutubePreview";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.jpg";
+import bio from "../assets/bio.jpg";
 
 const BioWrapper = styled.div`
-  h3 {
+  h2 {
     margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    margin-top: -10px;
   }
 
   p {
@@ -37,7 +45,9 @@ const BioWrapper = styled.div`
 const Bio = forwardRef(({ openVideo }, ref) => {
   return (
     <BioWrapper ref={ref}>
-      <SectionTitle>Bio</SectionTitle>
+      <SectionTitle>
+        <img src={bio} alt="Bio" />
+      </SectionTitle>
       <h3>
         Der Anfang:<span>NOXX a.k.a. Tamino Weggler</span>
       </h3>

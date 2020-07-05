@@ -9,7 +9,7 @@ import marcoFaseth from "../assets/band/marco-faseth.jpg";
 import logo from "../assets/logo.png";
 import bandCover from "../assets/band/cover2.jpg";
 import sonjaKuster from "../assets/band/sonja-kuster.jpg";
-import mauro from "../assets/band/mauro.jpg";
+import mauroLessa from "../assets/band/mauro-lessa.jpg";
 import taminoWeggler from "../assets/band/tamino-weggler.jpg";
 import tamaraMueller from "../assets/band/tamara-mueller.jpg";
 import keithMaguire from "../assets/band/keith-maguire.jpg";
@@ -53,7 +53,7 @@ const members = [
     img: tamaraMueller,
   },
   { name: "Keith Maguire", emoji: "🎸", function: "Bass", img: keithMaguire },
-  { name: "Mauro", emoji: "?", function: "?", img: mauro },
+  { name: "Mauro Lessa", emoji: "🎸", function: "Gitarre", img: mauroLessa },
 ];
 
 const EmoijWrapper = styled.div`

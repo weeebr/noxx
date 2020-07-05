@@ -9,7 +9,11 @@ const Wrapper = styled.div`
   display: flex;
   width: 100%;
   margin: ${sectionGaps.topDesktop} 0 30px 0;
-  background: linear-gradient(120deg, rgb(238, 232, 170), rgb(173, 169, 126));
+  background: linear-gradient(
+    120deg,
+    rgb(51, 45, 51),
+    rgba(126, 149, 173, 0.88)
+  );
 
   ${breakpoint(device.tablet)} {
     margin: ${sectionGaps.topTablet} 0 30px 0;
