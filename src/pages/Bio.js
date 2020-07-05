@@ -39,6 +39,7 @@ const BioWrapper = styled.div`
   .bandfoto-wrapper {
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 `;
 
