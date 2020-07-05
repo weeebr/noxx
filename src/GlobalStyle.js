@@ -166,7 +166,7 @@ const GlobalStyle = createGlobalStyle`
   
     & > div {
       & > .content {
-        padding: 40px 10px;
+        padding: 10px;
         max-width: 1102px;
         min-height: 400px;
         margin-right: 160px;
