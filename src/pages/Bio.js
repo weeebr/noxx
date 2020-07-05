@@ -39,7 +39,7 @@ const Bio = forwardRef(({ openVideo }, ref) => {
     <BioWrapper ref={ref}>
       <SectionTitle>Bio</SectionTitle>
       <h3>
-        Die Anfaenge: <span>NOXX a.k.a. Tamino Weggler</span>
+        Der Anfang:<span>NOXX a.k.a. Tamino Weggler</span>
       </h3>
       <p>
         Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum{" "}

@@ -65,7 +65,7 @@ const Kontakt = forwardRef((props, ref) => {
         <div>
           <div>
             <div className="download-heading">
-              <h3>fuer Tech Riders</h3>
+              <h3>Tech Riders</h3>
             </div>
             <div style={{ textAlign: "center" }}>
               <DownloadButton link={pdfNoxxBand} text="NOXX Band" />

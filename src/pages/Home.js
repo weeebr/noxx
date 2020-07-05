@@ -7,7 +7,9 @@ import SectionTitle from "../page-components/SectionTitle";
 // assets
 import marcoFaseth from "../assets/band/marco-faseth.jpg";
 import logo from "../assets/logo.png";
+import bandCover from "../assets/band/cover2.jpg";
 import sonjaKuster from "../assets/band/sonja-kuster.jpg";
+import mauro from "../assets/band/mauro.jpg";
 import taminoWeggler from "../assets/band/tamino-weggler.jpg";
 import tamaraMueller from "../assets/band/tamara-mueller.jpg";
 import keithMaguire from "../assets/band/keith-maguire.jpg";
@@ -51,6 +53,7 @@ const members = [
     img: tamaraMueller,
   },
   { name: "Keith Maguire", emoji: "🎸", function: "Bass", img: keithMaguire },
+  { name: "Mauro", emoji: "?", function: "?", img: mauro },
 ];
 
 const EmoijWrapper = styled.div`
@@ -79,26 +82,29 @@ const EmoijWrapper = styled.div`
   }
 `;
 
-const LogoWrapper = styled.div`
+const ImagesWrapper = styled.div`
   text-align: center;
-  margin: 30px 0 -120px 0;
+  background: url(${bandCover});
+  background-size: cover;
+  height: 470px;
+
+  ${breakpoint(device.mobile)} {
+    height: initial;
+  }
 
   img {
     display: inline;
-  }
-
-  ${breakpoint(device.tablet)} {
-    margin: 30px 0 -90px 0;
+    margin-top: 5px;
   }
 `;
 
 const Home = forwardRef((props, ref) => {
   return (
     <div ref={ref}>
-      <LogoWrapper>
+      <ImagesWrapper>
         <img src={logo} alt="NOXX Band" />
-      </LogoWrapper>
-      <SectionTitle>Home</SectionTitle>
+      </ImagesWrapper>
+      <SectionTitle id="home">Home</SectionTitle>
 
       <h3>Wer sind wir?</h3>
       <h4>Ganz einfach – Eine Band!</h4>

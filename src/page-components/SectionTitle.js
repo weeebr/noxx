@@ -14,9 +14,13 @@ const Wrapper = styled.div`
   ${breakpoint(device.tablet)} {
     margin: ${sectionGaps.topTablet} 0 30px 0;
   }
+
+  &#home {
+    margin-top: 30px;
+  }
 `;
 
-const SectionTitle = ({ children, other }) => {
+const SectionTitle = ({ children, ...other }) => {
   return (
     <Wrapper {...other}>
       <h2>{children}</h2>
