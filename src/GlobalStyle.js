@@ -173,7 +173,7 @@ const GlobalStyle = createGlobalStyle`
         background: 
         linear-gradient(70deg,rgba(50,54,105,0.9),rgb(234, 197, 111));
 
-        @media (min-width:1500px) {
+        @media (min-width:1400px) {
           margin: 0 auto;
         }
 
