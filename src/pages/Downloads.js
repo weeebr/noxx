@@ -52,6 +52,7 @@ const DownloadsWrapper = styled.div`
 
   p {
     color: #7d7d7b;
+    margin: 14px 0;
   }
 
   a {

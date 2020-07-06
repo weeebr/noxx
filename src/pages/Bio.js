@@ -77,6 +77,7 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         </a>
         .
       </p>
+      <br />
       <p>
         Nach der Veröffentlichung der letzten EP{" "}
         <a
@@ -126,6 +127,7 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         </a>{" "}
         gestartet.
       </p>
+      <br />
       <p>
         Wir würden uns enorm über deinen Beitrag freuen! Es gibt tolle Goodies
         als Entschädigung.

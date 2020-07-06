@@ -80,6 +80,12 @@ const GlobalStyle = createGlobalStyle`
 
   p {
     margin: 14px 0;
+    max-width: 900px;
+    margin: 0 auto;
+
+    ${breakpoint(device.tablet)} {
+      padding: 0 20px;
+    }
   }
 
   h1 {

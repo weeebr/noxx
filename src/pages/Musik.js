@@ -77,6 +77,7 @@ const Musik = forwardRef(({ openVideo }, ref) => {
         Aufgrund der aktuellen Lage ist noch nicht klar, ab wann wir Konzerte
         spielen können.
       </p>
+      <br />
       <p>
         Warum hörst du dir derweil nicht paar alte Songs von uns an? Bestimmt
         kennst du noch nicht alle... oder doch? Vielleicht hast du dann ja
