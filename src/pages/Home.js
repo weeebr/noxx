@@ -94,7 +94,6 @@ const ImagesWrapper = styled.div`
 
   img {
     display: inline;
-    margin-top: 40px;
 
     ${breakpoint(device.tablet)} {
       margin-top: 5px;

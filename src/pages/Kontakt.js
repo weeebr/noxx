@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useState } from "react";
 import styled from "styled-components";
 
 import SectionTitle from "../page-components/SectionTitle";
@@ -32,7 +32,7 @@ const SignupForm = styled.div`
     }
   }
 
-  button {
+  input[type="submit"] {
     background: slategray;
     border-radius: 40px;
     font-family: LatoRegular;
@@ -54,6 +54,8 @@ const SignupForm = styled.div`
 `;
 
 const Kontakt = forwardRef((props, ref) => {
+  const [email, setEmail] = useState("");
+
   return (
     <div ref={ref}>
       <SectionTitle>Kontakt</SectionTitle>
@@ -62,8 +64,55 @@ const Kontakt = forwardRef((props, ref) => {
         <p>Unregelmässig und nur für das Wichtigste, kein Spam!</p>
         <br />
         <div>
-          <input type="email" placeholder="name@company.com" />
-          <button type="submit">Abonnieren</button>
+          <form
+            action="https://noxx-musik.us10.list-manage.com/subscribe/post?u=a0431cea84e7564385000183e&amp;id=5fbded3e7f"
+            method="post"
+            id="mc-embedded-subscribe-form"
+            name="mc-embedded-subscribe-form"
+            class="validate"
+            target="_blank"
+            novalidate
+          >
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              name="EMAIL"
+              class="required email"
+              id="mce-EMAIL"
+              placeholder="name@company.com"
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              name="subscribe"
+              id="mc-embedded-subscribe"
+              class="button"
+            />
+            <div id="mce-responses" class="clear">
+              <div
+                class="response"
+                id="mce-error-response"
+                style={{ display: "none" }}
+              ></div>
+              <div
+                class="response"
+                id="mce-success-response"
+                style={{ display: "none" }}
+              ></div>
+            </div>
+            <div
+              style={{ position: "absolute", left: "-5000px" }}
+              aria-hidden="true"
+            >
+              <input
+                type="text"
+                name="b_a0431cea84e7564385000183e_5fbded3e7f"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+          </form>
         </div>
       </SignupForm>
       <br />
