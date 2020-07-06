@@ -131,6 +131,7 @@ const GlobalStyle = createGlobalStyle`
     font-family: LatoRegular;
     font-size: 20px;
     color: #545340;
+    letter-spacing: unset;
   }
 
   button {
