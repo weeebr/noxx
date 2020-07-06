@@ -15,16 +15,19 @@ const DownloadsWrapper = styled.div`
 
   ${breakpoint(device.tablet)} {
     margin: ${sectionGaps.topTablet} 0 0 0;
-    padding: 0 8px;
+    padding: 8px 0 0 0;
   }
 
   & > div {
     display: flex;
     justify-content: center;
     padding: 0 20px;
-    margin: 40px 0 0 -16px;
     text-align: left;
-    width: calc(100% + 24px);
+    margin-top: 0;
+
+    ${breakpoint(device.tablet)} {
+      margin-top: 20px;
+    }
   }
 
   h2 {
