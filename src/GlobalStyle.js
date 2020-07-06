@@ -180,7 +180,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         background: 
-        linear-gradient(70deg,rgba(50,54,105,0.9),rgb(234, 197, 111));
+        linear-gradient(78deg,rgba(50,54,105,0.9),rgba(234,197,111, 0.85));
 
         @media (min-width:1400px) {
           margin: 0 auto;
