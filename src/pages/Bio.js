@@ -9,6 +9,7 @@ import YoutubePreview from "../page-components/YoutubePreview";
 // assets
 import bandFrontal from "../assets/band/band-frontal.jpg";
 import bio from "../assets/bio.jpg";
+import { breakpoint } from "./../theme/index";
 
 const BioWrapper = styled.div`
   h2 {
@@ -39,7 +40,10 @@ const BioWrapper = styled.div`
   .bandfoto-wrapper {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+
+    ${breakpoint("600px")} {
+      flex-direction: column;
+    }
   }
 `;
 

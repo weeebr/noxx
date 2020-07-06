@@ -37,13 +37,13 @@ const members = [
   {
     name: "Sonja Kuster",
     emoji: "🎷🎤",
-    function: "Sax/Gesang",
+    function: "Sax / Gesang",
     img: sonjaKuster,
   },
   {
     name: "Tamino Weggler",
     emoji: "🎤🪕",
-    function: "Gesang/Ukulele",
+    function: "Gesang / Ukulele",
     img: taminoWeggler,
   },
   {
@@ -244,13 +244,13 @@ const ProfileWrapper = styled.div`
     font-family: AmaticBold;
     transform: translateY(0) scale(1);
     transition: all 0.25s ease;
-    line-height: 25px;
+    line-height: 1.25;
+    white-space: break-spaces;
     word-spacing: 0px;
 
     ${breakpoint(device.phone)} {
       font-size: 11px;
       font-family: LatoRegular;
-      line-height: 16px;
     }
   }
 `;

@@ -75,12 +75,11 @@ const Wrapper = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        padding: 0.75rem 0;
+        padding: 11px 0 0.75rem 17px;
         margin: 0 0 0 1.85rem;
         color: white;
         line-height: 1.6;
         text-align: center;
-        padding-left: 10px;
         text-transform: uppercase;
 
         ${breakpoint(device.phone)} {
