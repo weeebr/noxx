@@ -88,8 +88,9 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         >
           Dörfs Es Bizli Zviel Sii?
         </a>{" "}
-        hatten Begleitbands viele Abgängen zu beklagen. Aus den Verbliebenen und
-        zwei Neuzugängen entstand daraus im Sommer 2019 die Noxx Band.
+        hatten wir in der Begleitband zwei Abgänge zu beklagen. Aus den
+        Verbliebenen und zwei Neuzugängen entstand daraus im Sommer 2019 die
+        NOXX Band.
       </p>
       <br />
       <h3>
