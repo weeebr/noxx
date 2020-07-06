@@ -60,6 +60,7 @@ const Kontakt = forwardRef((props, ref) => {
       <SignupForm>
         <h3>Newsletter</h3>
         <p>Unregelmässig und nur für das Wichtigste, kein Spam!</p>
+        <br />
         <div>
           <input type="email" placeholder="name@company.com" />
           <button type="submit">Abonnieren</button>
@@ -72,6 +73,7 @@ const Kontakt = forwardRef((props, ref) => {
         Du willst regelmässiger informiert werden? Dann folge uns auf Social
         Media:
       </p>
+      <br />
       <IconsWrapper>
         <a
           href="https://www.instagram.com/noxx_musik/"
