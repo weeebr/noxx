@@ -76,7 +76,7 @@ const Kontakt = forwardRef((props, ref) => {
       <br />
       <IconsWrapper>
         <a
-          href="https://www.instagram.com/noxx_musik/"
+          href="https://www.instagram.com/noxx_band/"
           target="_blank"
           rel="noopener noreferrer"
         >
