@@ -74,9 +74,9 @@ const Video = styled.div`
   }
 `;
 
-const YoutubePreview = ({ openVideo, id, title }) => {
+const YoutubePreview = ({ openVideo, id, title, ...other }) => {
   return (
-    <Video>
+    <Video {...other}>
       <img
         src={thumbnails[`id${id}`]}
         alt={title}

@@ -139,12 +139,11 @@ const Bio = forwardRef(({ openVideo }, ref) => {
           link="https://wemakeit.com/projects/noxx-band-debuetalbum"
           text="Zur Kampagne"
         />
-        <br />
-        <br />
         <YoutubePreview
           openVideo={openVideo}
           id="HPUekq5fC90"
           title="HPUekq5fC90"
+          style={{ marginTop: "40px" }}
         />
       </div>
     </BioWrapper>
