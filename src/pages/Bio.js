@@ -8,7 +8,7 @@ import YoutubePreview from "../page-components/YoutubePreview";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.jpg";
-import bio from "../assets/bio.jpg";
+import bio from "../assets/bio.png";
 import { breakpoint } from "./../theme/index";
 
 const BioWrapper = styled.div`
