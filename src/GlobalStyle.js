@@ -101,12 +101,12 @@ const GlobalStyle = createGlobalStyle`
   h2 {
     ${getString(typography.h2)}
     width: 269px;
-    height: 115px;
-    box-shadow: inset 0 0 0px 7px black;
-    background: white;
-    border: 4px solid white;
+    height: 104px;
+   
+   
     letter-spacing: 1px;
     padding-top: 13px;
+    color: white;
 
     ${breakpoint(device.phone)} {
       padding-top: 10px;

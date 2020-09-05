@@ -31,7 +31,7 @@ const DownloadsWrapper = styled.div`
   }
 
   h2 {
-    color: black;
+    color: white;
     text-align: center;
   }
 
