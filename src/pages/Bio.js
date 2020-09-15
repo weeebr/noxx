@@ -4,7 +4,6 @@ import styled from "styled-components";
 // page-components
 import SectionTitle from "../page-components/SectionTitle";
 import LinkButton from "./../page-components/LinkButton";
-import YoutubePreview from "../page-components/YoutubePreview";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.jpg";
@@ -33,7 +32,7 @@ const BioWrapper = styled.div`
     align-items: center;
 
     button {
-      width: 195px;
+      width: 255px;
     }
   }
 
@@ -107,44 +106,15 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         <img src={bandFrontal} alt="NOXX Bandfoto" />
       </div>
       <br />
-      <h3>Und das ist erst der Anfang!</h3>
-      <p>
-        Wir haben in der Zwischenzeit fleissig Lieder geschrieben und würden nun
-        gerne unser erstes Album als Band NOXX produzieren. Dabei werden wir vom
-        Verein Graubünden Musik in der Planung unterstützt.
-      </p>
-      <br />
-      <h4>Crowdfunding-Kampagne</h4>
-      <p>
-        Um noch das nötige Kleingeld für die Produktion aufzutreiben haben wir
-        eine Crowdfunding-Kampagne auf{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="external"
-          href="https://wemakeit.com/projects/noxx-band-debuetalbum"
-        >
-          wemakeit.com
-        </a>{" "}
-        gestartet.
-      </p>
-      <br />
-      <p>
-        Wir würden uns enorm über deinen Beitrag freuen! Es gibt tolle Goodies
-        als Entschädigung.
-      </p>
+     
       <br />
       <div className="large-link-wrapper">
-        <LinkButton
-          link="https://wemakeit.com/projects/noxx-band-debuetalbum"
-          text="Zur Kampagne"
+      <LinkButton
+          link="/assets/noxx-bio.pdf"
+          text="Zur vollen Biografie"
+          download
         />
-        <YoutubePreview
-          openVideo={openVideo}
-          id="HPUekq5fC90"
-          title="HPUekq5fC90"
-          style={{ marginTop: "40px" }}
-        />
+      
       </div>
     </BioWrapper>
   );

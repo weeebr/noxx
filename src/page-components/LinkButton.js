@@ -28,7 +28,7 @@ const Wrapper = styled.div`
       }
 
       ${breakpoint(device.phone)} {
-        width: 162px;
+        width: 215px;
       }
 
       .circle {
@@ -71,6 +71,7 @@ const Wrapper = styled.div`
       .button-text {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
+        white-space: nowrap;
         top: 0;
         left: 0;
         right: 0;
