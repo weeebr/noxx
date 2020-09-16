@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 // page-components
 import SectionTitle from "../page-components/SectionTitle";
-import LinkButton from "./../page-components/LinkButton";
+import DownloadButton from "./../page-components/DownloadButton";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.jpg";
-import bio from "../assets/bio.png";
+import bioTitle from "../assets/bio.png";
+import bioPdf from "../assets/noxx-bio.pdf";
 import { breakpoint } from "./../theme/index";
 
 const BioWrapper = styled.div`
@@ -32,7 +33,7 @@ const BioWrapper = styled.div`
     align-items: center;
 
     button {
-      width: 255px;
+      width: 265px;
     }
   }
 
@@ -50,7 +51,7 @@ const Bio = forwardRef(({ openVideo }, ref) => {
   return (
     <BioWrapper ref={ref}>
       <SectionTitle>
-        <img src={bio} alt="Bio" />
+        <img src={bioTitle} alt="Bio" />
       </SectionTitle>
       <h3>
         Der Anfang:<span>NOXX a.k.a. Tamino Weggler</span>
@@ -109,10 +110,10 @@ const Bio = forwardRef(({ openVideo }, ref) => {
      
       <br />
       <div className="large-link-wrapper">
-      <LinkButton
-          link="/assets/noxx-bio.pdf"
+      <DownloadButton
+          link={bioPdf}
           text="Zur vollen Biografie"
-          download
+          download="NOXX Biografie"
         />
       
       </div>
