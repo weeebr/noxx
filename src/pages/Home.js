@@ -5,12 +5,12 @@ import styled from "styled-components";
 import SectionTitle from "../page-components/SectionTitle";
 
 // assets
-import marcoFaseth from "../assets/band/marco-faseth.jpg";
+// import marcoFaseth from "../assets/band/marco-faseth.jpg";
 import logo from "../assets/logo.png";
 import bandCover from "../assets/band/cover.jpg";
-import sonjaKuster from "../assets/band/sonja-kuster.jpg";
+// import sonjaKuster from "../assets/band/sonja-kuster.jpg";
 import timoGeiser from "../assets/band/timo-geiser.jpg";
-import mauroLessa from "../assets/band/mauro-lessa.jpg";
+// import mauroLessa from "../assets/band/mauro-lessa.jpg";
 import taminoWeggler from "../assets/band/tamino-weggler.jpg";
 import tamaraMueller from "../assets/band/tamara-mueller.jpg";
 import keithMaguire from "../assets/band/keith-maguire.jpg";
