@@ -82,11 +82,7 @@ const Musik = forwardRef(({ openVideo }, ref) => {
          <br />
       
       <h3>Konzerte</h3>
-      <p>
-        <strong>12.08.2021 — NOXX Solo</strong> 
-        <br />Chur OFFA: Kornplatz (18:00 Uhr)
-      </p>
-      <br />
+      
       <p>
         <strong>14.08.2021 – NOXX Solo mit GIMMA (18:30 Uhr)</strong> 
         <br />“Scheitera-Tour”: OXIL Sommerbar Zofingen 
