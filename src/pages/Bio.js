@@ -100,6 +100,7 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         Der Stil der Lieder blieb unverändert, sie sind immer noch Bündnerdeutsch gesungen und inbrünstig vorgetragen. Die Band gibt aber nochmals eine mächtige Portion Wucht in den Teufelsbrei, die in älteren Songs teils fehlte.
       </p>
       <br />
+      <br />
       <div className="bandfoto-wrapper">
         <img src={bandFrontal} alt="NOXX Bandfoto" />
       </div>

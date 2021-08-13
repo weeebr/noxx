@@ -33,7 +33,7 @@ const SignupForm = styled.div`
   }
 
   input[type="submit"] {
-    background: slategray;
+    background: #535644;
     border-radius: 40px;
     font-family: LatoRegular;
     padding: 10px 26px;

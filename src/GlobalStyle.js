@@ -166,10 +166,8 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: 
-    linear-gradient(120deg,rgba(238,232,170, 0.3),rgba(173,169,126, 0.05));
-      
-
+    background: linear-gradient(108deg, rgb(135 157 92 / 33%), rgb(21 19 16));
+    overflow: hidden;
   
     & > div {
       & > .content {
@@ -179,8 +177,7 @@ const GlobalStyle = createGlobalStyle`
         margin-right: 160px;
         display: flex;
         flex-direction: column;
-        background: 
-        linear-gradient(78deg,rgba(50,54,105,0.9),rgba(234,197,111, 0.85));
+        background: linear-gradient(138deg,rgb(241 234 22 / 21%),rgb(255 189 133 / 61%));
 
         @media (min-width:1400px) {
           margin: 0 auto;

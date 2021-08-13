@@ -19,7 +19,7 @@ const Wrapper = styled.div`
     &.learn-more {
       width: 210px;
       height: auto;
-      background: slategray;
+      background: #535644;
       border-radius: 40px;
       border: 3px solid ${colors.primaryRed};
 

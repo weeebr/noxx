@@ -214,7 +214,7 @@ const ProfileWrapper = styled.div`
       font-family: AmaticBold;
       font-weight: 900;
       background: ${(props) =>
-        props.name === "Tamino Weggler" ? "#ffbb0e" : "goldenrod"};
+        props.name === "Tamino Weggler" ? "#b9da78" : "#a5c06e"};
       padding: 6px 10px;
 
       ${breakpoint(device.phone)} {
