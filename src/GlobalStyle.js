@@ -100,19 +100,14 @@ const GlobalStyle = createGlobalStyle`
 
   h2 {
     ${getString(typography.h2)}
-    width: 269px;
     height: 104px;
-   
-   
     letter-spacing: 1px;
     padding-top: 13px;
     color: white;
 
     ${breakpoint(device.phone)} {
-      padding-top: 10px;
+      padding-top: 20px;
       font-size: 44px;
-      width: 220px;
-      height: 95px;
     }
   }
 

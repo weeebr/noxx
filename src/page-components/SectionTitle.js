@@ -7,14 +7,23 @@ const Wrapper = styled.div`
   justify-content: center;
   text-align: center;
   display: flex;
-  width: 100%;
+  width: calc(100% + 40px);
+  left: -20px;
+  height: 100px;
   margin: ${sectionGaps.topDesktop} 0 30px 0;
-  background: linear-gradient(
-120deg
-, rgb(51, 45, 51), rgb(185 218 120));
+  background: linear-gradient(120deg, rgb(51, 45, 51), rgb(185 218 120));
+  position: relative;
+
+  div {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border: 1px solid white;
+    transform: skew(6deg, -2deg);
+  }
 
   ${breakpoint(device.tablet)} {
-    margin: ${sectionGaps.topTablet} 0 30px 0;
+    margin: ${sectionGaps.topTablet} 0 40px 0;
   }
 
   &#home {
@@ -25,7 +34,7 @@ const Wrapper = styled.div`
 const SectionTitle = ({ children, ...other }) => {
   return (
     <Wrapper {...other}>
-      <h2>{children}</h2>
+      <div><h2>{children}</h2></div>
     </Wrapper>
   );
 };

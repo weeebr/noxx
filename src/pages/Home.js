@@ -89,23 +89,35 @@ const ImagesWrapper = styled.div`
   background: url(${bandCover});
   background-size: cover;
   height: 470px;
+  position: relative;
+
+  div {
+    position: absolute;
+    top: -20px;
+    transform: skew(8deg, -9deg);
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+  }
 
   ${breakpoint(device.mobile)} {
     height: 190px;
 
     img {
       width: 120px !important;
-      margin-left: -220px;
+      margin-left: -310px;
     }
   }
 
   img {
     display: inline;
     width: 160px;
-    margin-top: 10px;
+    margin-top: 30px;
+    transform: skew(-7deg, 9deg);
 
     ${breakpoint(device.tablet)} {
-      margin-top: 5px;
+      margin-top: 25px;
+      transform: skew(-8deg,8deg);
     }
   }
 `;
@@ -114,7 +126,9 @@ const Home = forwardRef((props, ref) => {
   return (
     <div ref={ref}>
       <ImagesWrapper>
-        <img src={logo} alt="NOXX Band" />
+        <div>
+          <img src={logo} alt="NOXX Band" />
+        </div>
       </ImagesWrapper>
       <SectionTitle id="home">Home</SectionTitle>
 
