@@ -91,7 +91,12 @@ const ImagesWrapper = styled.div`
   height: 470px;
 
   ${breakpoint(device.mobile)} {
-    height: initial;
+    height: 190px;
+
+    img {
+      width: 120px !important;
+      margin-left: -220px;
+    }
   }
 
   img {
