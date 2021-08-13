@@ -83,14 +83,20 @@ const Musik = forwardRef(({ openVideo }, ref) => {
       
       <h3>Konzerte</h3>
       <p>
-        <strong>03.10.2020 — NOXX Solo:</strong> 
-        <br />Rhiienergie: Tag der offenen Tür 
+        <strong>12.08.2021 — NOXX Solo</strong> 
+        <br />Chur OFFA: Kornplatz (18:00 Uhr)
       </p>
-
       <br />
       <p>
-        Wegen dem bösen C-Wort sieht’s in diesem Abschnitt etwas leer aus. Warum hörst du dir derweil nicht paar alte Songs von uns an? Bestimmt kennst du noch nicht alle... oder doch? Vielleicht hast du dann ja Interesse, uns mal für einen Gig zu buchen? ;)
+        <strong>14.08.2021 – NOXX Solo mit GIMMA (18:30 Uhr)</strong> 
+        <br />“Scheitera-Tour”: OXIL Sommerbar Zofingen 
       </p>
+      <br />
+      <p>
+        <strong>13.11.2021 – NOXX Solo (12:00 Uhr)</strong> 
+        <br />Langer Samstag: Stadtbibliothek Chur
+      </p>
+      <br />
       <br />
       <LinkButton
         link="mailto:noxx.it.out@gmail.com?subject=Anfrage"

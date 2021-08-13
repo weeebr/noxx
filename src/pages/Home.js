@@ -7,8 +7,9 @@ import SectionTitle from "../page-components/SectionTitle";
 // assets
 import marcoFaseth from "../assets/band/marco-faseth.jpg";
 import logo from "../assets/logo.png";
-import bandCover from "../assets/band/cover2.jpg";
+import bandCover from "../assets/band/cover.jpg";
 import sonjaKuster from "../assets/band/sonja-kuster.jpg";
+import timoGeiser from "../assets/band/timo-geiser.jpg";
 import mauroLessa from "../assets/band/mauro-lessa.jpg";
 import taminoWeggler from "../assets/band/tamino-weggler.jpg";
 import tamaraMueller from "../assets/band/tamara-mueller.jpg";
@@ -28,18 +29,12 @@ const MemberProfiles = styled.div`
 `;
 
 const members = [
-  {
-    name: "Marco Faseth",
-    emoji: "🥁",
-    function: "Schlagzeug",
-    img: marcoFaseth,
-  },
-  {
-    name: "Sonja Kuster",
-    emoji: "🎷🎤",
-    function: "Sax / Gesang",
-    img: sonjaKuster,
-  },
+  // {
+  //   name: "Sonja Kuster",
+  //   emoji: "🎷🎤",
+  //   function: "Sax / Gesang",
+  //   img: sonjaKuster,
+  // },
   {
     name: "Tamino Weggler",
     emoji: "🎤🪕",
@@ -53,7 +48,7 @@ const members = [
     img: tamaraMueller,
   },
   { name: "Keith Maguire", emoji: "🎸", function: "Bass", img: keithMaguire },
-  { name: "Mauro Lessa", emoji: "🎸", function: "Gitarre", img: mauroLessa },
+  { name: "Timo Geiser", emoji: "🎸", function: "Gitarre", img: timoGeiser },
 ];
 
 const EmoijWrapper = styled.div`
@@ -94,6 +89,8 @@ const ImagesWrapper = styled.div`
 
   img {
     display: inline;
+    width: 160px;
+    margin-top: 10px;
 
     ${breakpoint(device.tablet)} {
       margin-top: 5px;
@@ -115,9 +112,7 @@ const Home = forwardRef((props, ref) => {
         <span role="img" aria-label="music-drums">
           🥁
         </span>
-        <span role="img" aria-label="music-saxophone">
-          🎷
-        </span>
+       
         <span role="img" aria-label="music-microphone">
           🎤
         </span>

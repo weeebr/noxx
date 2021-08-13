@@ -97,10 +97,7 @@ const Bio = forwardRef(({ openVideo }, ref) => {
         Heute: <span>NOXX Band</span>
       </h3>
       <p>
-        Am Stil der Lieder wird sich also nichts gross ändern. Mit der neuen
-        Zusammensetzung und deren verschiedenen Expertisen stehen also
-        spannenden neuen Ufern und Kreativität nichts mehr im Wege. Seid
-        gespannt!
+        Der Stil der Lieder blieb unverändert, sie sind immer noch Bündnerdeutsch gesungen und inbrünstig vorgetragen. Die Band gibt aber nochmals eine mächtige Portion Wucht in den Teufelsbrei, die in älteren Songs teils fehlte.
       </p>
       <br />
       <div className="bandfoto-wrapper">
