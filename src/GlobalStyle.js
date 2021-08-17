@@ -104,6 +104,7 @@ const GlobalStyle = createGlobalStyle`
     letter-spacing: 1px;
     padding-top: 13px;
     color: white;
+    transform: skew(-6deg, 2deg);
 
     ${breakpoint(device.phone)} {
       padding-top: 20px;
