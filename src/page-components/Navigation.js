@@ -26,7 +26,7 @@ const StyledNavigation = styled.aside`
 
     a {
       padding: 12px 20px;
-      color: white;
+      color: black;
       font-family: AmaticBold;
       font-size: 30px;
       text-decoration: none;

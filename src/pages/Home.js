@@ -102,10 +102,12 @@ const ImagesWrapper = styled.div`
 
   ${breakpoint(device.mobile)} {
     height: 190px;
+    text-align: left;
 
     img {
       width: 120px !important;
-      transform: translate(-170px, -10px) skew(-8deg, 8deg) !important;
+      margin-left: 35px;
+      transform: skew(-7deg, 9deg);
     }
   }
 
