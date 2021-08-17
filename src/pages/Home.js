@@ -105,7 +105,7 @@ const ImagesWrapper = styled.div`
 
     img {
       width: 120px !important;
-      margin-left: -310px;
+      transform: translate(-170px, -10px) skew(-8deg, 8deg) !important;
     }
   }
 
