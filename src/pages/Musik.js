@@ -84,12 +84,7 @@ const Musik = forwardRef(({ openVideo }, ref) => {
       <h3>Konzerte</h3>
       
       <p>
-        <strong>14.08.2021 – NOXX Solo mit GIMMA (18:30 Uhr)</strong> 
-        <br />“Scheitera-Tour”: OXIL Sommerbar Zofingen 
-      </p>
-      <br />
-      <p>
-        <strong>13.11.2021 – NOXX Solo (12:00 Uhr)</strong> 
+        <strong>13.11.2021, 19:00, 20:00 und 21:00 Uhr<br />NOXX Solo</strong>
         <br />Langer Samstag: Stadtbibliothek Chur
       </p>
       <br />
