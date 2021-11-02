@@ -84,7 +84,7 @@ const Musik = forwardRef(({ openVideo }, ref) => {
       <h3>Konzerte</h3>
       
       <p>
-        <strong>13.11.2021, 19:00, 20:00 und 21:00 Uhr<br />NOXX Solo</strong>
+        <strong>13.11.2021, 19:30, 20:30 und 21:30 Uhr<br />NOXX Solo</strong>
         <br />Langer Samstag: Stadtbibliothek Chur
       </p>
       <br />
