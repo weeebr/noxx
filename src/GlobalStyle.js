@@ -31,6 +31,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   html, body,  p {
     margin: 0;
     padding: 0;
@@ -70,7 +74,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     min-height: 100vh;
-    scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     transition: all 0.4s ease;
