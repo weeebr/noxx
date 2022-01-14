@@ -54,20 +54,6 @@ const Home = forwardRef((props, ref) => {
   );
 });
 
-const FlexWrapper = styled.div`
-  display: flex;
-
-  img {
-    width: 20%;
-    margin: 0 20px;
-  }
-
-  div {
-    text-align: left;
-    margin-left: 20px;
-  }
-`;
-
 const ImagesWrapper = styled.div`
   text-align: center;
   background: url(${bandCover});
