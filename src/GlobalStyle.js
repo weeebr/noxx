@@ -94,7 +94,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     ${getString(typography.h1)}
     margin-bottom: 40px;
-    color: ${colors.primaryRed};
+    color: ${colors.primary};
 
     ${breakpoint(device.tablet)} {
       margin-top: 40px;
@@ -146,7 +146,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${colors.primaryRed};
+    color: ${colors.primary};
     margin: 0 4px;
 
     &.external {
@@ -156,7 +156,7 @@ const GlobalStyle = createGlobalStyle`
 
       &:focus, &:hover {
         color: #282936;
-        border-bottom: 2px solid ${colors.primaryRed};
+        border-bottom: 2px solid ${colors.primary};
       }
     }
   }

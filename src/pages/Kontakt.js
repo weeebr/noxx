@@ -39,7 +39,7 @@ const SignupForm = styled.div`
     padding: 10px 26px;
     cursor: pointer;
     text-transform: uppercase;
-    border: 3px solid ${colors.primaryRed};
+    border: 3px solid ${colors.primary};
     color: white;
     transition: all 0.5s ease;
 
@@ -69,16 +69,16 @@ const Kontakt = forwardRef((props, ref) => {
             method="post"
             id="mc-embedded-subscribe-form"
             name="mc-embedded-subscribe-form"
-            class="validate"
+            className="validate"
             target="_blank"
-            novalidate
+            noValidate
           >
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               name="EMAIL"
-              class="required email"
+              className="required email"
               id="mce-EMAIL"
               placeholder="name@company.com"
             />
@@ -87,16 +87,16 @@ const Kontakt = forwardRef((props, ref) => {
               value="Subscribe"
               name="subscribe"
               id="mc-embedded-subscribe"
-              class="button"
+              className="button"
             />
-            <div id="mce-responses" class="clear">
+            <div id="mce-responses" className="clear">
               <div
-                class="response"
+                className="response"
                 id="mce-error-response"
                 style={{ display: "none" }}
               ></div>
               <div
-                class="response"
+                className="response"
                 id="mce-success-response"
                 style={{ display: "none" }}
               ></div>
@@ -108,8 +108,8 @@ const Kontakt = forwardRef((props, ref) => {
               <input
                 type="text"
                 name="b_a0431cea84e7564385000183e_5fbded3e7f"
-                tabindex="-1"
-                value=""
+                tabIndex="-1"
+                defaultValue=""
               />
             </div>
           </form>

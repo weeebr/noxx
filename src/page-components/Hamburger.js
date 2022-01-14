@@ -11,7 +11,7 @@ const StyledHamburger = styled.div`
   z-index: 5;
   outline: none;
   cursor: pointer;
-  background: ${colors.primaryRed};
+  background: ${colors.primary};
   position: fixed;
   top: 22px;
   right: 5%;

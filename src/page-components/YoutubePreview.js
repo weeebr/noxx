@@ -5,12 +5,15 @@ import yt3K86RRajPEM from "../assets/youtube/3K86RRajPEM.jpg";
 import ytU27b2SqZNH4 from "../assets/youtube/U27b2SqZNH4.jpg";
 import ytcV3NnsfpA1Q from "../assets/youtube/cV3NnsfpA1Q.jpg";
 import ytHPUekq5fC90 from "../assets/youtube/HPUekq5fC90.jpg";
+import ytO5e8asH2JpQ from "../assets/youtube/O5e8asH2JpQ.jpg";
+
 
 const thumbnails = {
   id3K86RRajPEM: yt3K86RRajPEM,
   idU27b2SqZNH4: ytU27b2SqZNH4,
   idcV3NnsfpA1Q: ytcV3NnsfpA1Q,
   idHPUekq5fC90: ytHPUekq5fC90,
+  idO5e8asH2JpQ: ytO5e8asH2JpQ
 };
 
 const PlayButton = styled.button`

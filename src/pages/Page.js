@@ -3,6 +3,7 @@ import ModalVideo from "react-modal-video";
 import "../../node_modules/react-modal-video/scss/modal-video.scss";
 
 import Home from "./Home";
+import About from "./About";
 import Bio from "./Bio";
 import Musik from "./Musik";
 import Kontakt from "./Kontakt";
@@ -28,6 +29,7 @@ const Page = ({ pageRefs }) => {
       />
       <div>
         <Home ref={pageRefs.home} />
+        <About ref={pageRefs.about} />
         <Musik ref={pageRefs.musik} openVideo={openVideo} />
         <Bio ref={pageRefs.bio} openVideo={openVideo} />
         <Kontakt ref={pageRefs.kontakt} />

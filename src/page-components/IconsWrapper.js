@@ -20,7 +20,7 @@ const Wrapper = styled.div`
       display: block;
       width: 58px;
       border-radius: 50%;
-      border: 4px solid ${colors.primaryRed};
+      border: 4px solid ${colors.primary};
       position: absolute;
       top: 0;
       left: 0;
@@ -33,14 +33,14 @@ const Wrapper = styled.div`
         border: 4px solid #282936;
       }
       img {
-        background: ${colors.primaryRed};
+        background: ${colors.primary};
       }
     }
 
     img {
       background: #49525a;
       border-radius: 50%;
-      border: 4px solid ${colors.primaryRed};
+      border: 4px solid ${colors.primary};
       width: 58px;
       box-shadow: 0 0 0 black;
     }

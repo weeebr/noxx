@@ -9,7 +9,7 @@ import DownloadButton from "./../page-components/DownloadButton";
 import bandFrontal from "../assets/band/band-frontal.jpg";
 import bioTitle from "../assets/bio.png";
 import bioPdf from "../assets/noxx-bio.pdf";
-import { breakpoint } from "./../theme/index";
+import { breakpoint, device } from "./../theme/index";
 
 const BioWrapper = styled.div`
   h2 {
@@ -47,60 +47,69 @@ const BioWrapper = styled.div`
   }
 `;
 
+const FlexWrapper = styled.div`
+  display: flex;
+  margin-bottom: 30px;
+
+  p {
+    text-align: left;
+  }
+
+  ${breakpoint(device.mobile)} {
+    flex-direction: column;
+  }
+}`;
+
 const Bio = forwardRef(({ openVideo }, ref) => {
   return (
     <BioWrapper ref={ref}>
       <SectionTitle>
         <img src={bioTitle} alt="Bio" />
       </SectionTitle>
-      <h3>
-        Der Anfang:<span>NOXX a.k.a. Tamino Weggler</span>
-      </h3>
-      <p>
-        Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum{" "}
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          className="external"
-          href="https://album.link/ch/i/1361261464"
-        >
-          Es Halbs Kilo Songs
-        </a>
-        . 2019 folgte die Nachfolge-EP{" "}
-        <a
-          className="external"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://song.link/album/i/1461468834"
-        >
-          Dörfs Es Bizli Zviel Sii?
-        </a>
-        .
-      </p>
-      <br />
-      <p>
-        Nach der Veröffentlichung der letzten EP{" "}
-        <a
-          className="external"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://song.link/album/i/1461468834"
-        >
-          Dörfs Es Bizli Zviel Sii?
-        </a>{" "}
-        hatten wir in der Begleitband zwei Abgänge zu beklagen. Aus den
-        Verbliebenen und zwei Neuzugängen entstand daraus im Sommer 2019 die
-        NOXX Band.
-      </p>
-      <br />
-      <h3>
-        Heute: <span>NOXX Band</span>
-      </h3>
-      <p>
-        Der Stil der Lieder blieb unverändert, sie sind immer noch Bündnerdeutsch gesungen und inbrünstig vorgetragen. Die Band gibt aber nochmals eine mächtige Portion Wucht in den Teufelsbrei, die in älteren Songs teils fehlte.
-      </p>
-      <br />
-      <br />
+      <FlexWrapper>
+        <div>
+          <h3>
+            Der Anfang:<span>NOXX a.k.a. Tamino Weggler</span>
+          </h3>
+          <p>
+            Unter dem Namen NOXX veröffentlichte Tamino Weggler 2018 sein Debütalbum{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="external"
+              href="https://album.link/ch/i/1361261464"
+            >
+              Es Halbs Kilo Songs
+            </a>
+            . 2019 folgte die Nachfolge-EP{" "}
+            <a
+              className="external"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://song.link/album/i/1461468834"
+            >
+              Dörfs Es Bizli Zviel Sii?
+            </a>
+            .
+          </p>
+          <br />
+          <p>
+            Nach der Veröffentlichung der letzten EP «Dörfs Es Bizli Zviel Sii?»
+            hatten wir in der Begleitband zwei Abgänge zu beklagen. Aus den
+            Verbliebenen und zwei Neuzugängen entstand daraus im Sommer 2019 die
+            NOXX Band.
+          </p>
+        </div>
+        <div>
+          <h3>
+            Heute: <span>NOXX Band</span>
+          </h3>
+          <p>
+            Der Stil der Lieder blieb unverändert, sie sind immer noch Bündnerdeutsch gesungen und inbrünstig vorgetragen. Die Band gibt aber nochmals eine mächtige Portion Wucht in den Teufelsbrei, die in älteren Songs teils fehlte.
+          </p>
+        </div>
+      </FlexWrapper>
+  
       <div className="bandfoto-wrapper">
         <img src={bandFrontal} alt="NOXX Bandfoto" />
       </div>

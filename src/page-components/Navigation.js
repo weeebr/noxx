@@ -44,7 +44,7 @@ const StyledNavigation = styled.aside`
       }
 
       &.active {
-        color: ${colors.primaryRed};
+        color: ${colors.primary};
         &:after {
           content: "⦁";
           font-size: 41px;
@@ -143,6 +143,13 @@ const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
             onClick={(e) => onNavigate(e, pageRefs.home)}
           >
             Home
+          </a>
+          <a
+            href="/#about"
+            className="active nav"
+            onClick={(e) => onNavigate(e, pageRefs.about)}
+          >
+            Wer wir sind
           </a>
           <a
             className="nav"

@@ -53,6 +53,15 @@ const Musik = forwardRef(({ openVideo }, ref) => {
           <img src={icons.youtube} alt="NOXX auf YouTube" />
         </a>
       </IconsWrapper>
+      <YoutubePreview
+          openVideo={openVideo}
+          id="O5e8asH2JpQ"
+          title="O5e8asH2JpQ"
+          style={{
+            maxWidth: 480,
+            margin: '20px auto'
+          }}
+        />
       <br />
       <YoutubeWrapper>
         <YoutubePreview
@@ -72,20 +81,12 @@ const Musik = forwardRef(({ openVideo }, ref) => {
         />
       </YoutubeWrapper>
       <br />
-      <h3>Album vorbestellen</h3>
-      <p>Unterstütze Schweizer Musik, in dem du unser neues Album als CD vorbestellst. Für nur 16.90.- landet die CD aufs Release-Datum bei dir im Briefkasten. Mit deiner Vorbestellung hilfst du uns in die Schweizer Albumcharts vorzudringen. Vielen Dank dafür!
-      </p>
-      <br />
-      <LinkButton 
-        link="https://forms.gle/6M49QBSzwFTFHK2CA"
-        text="Bestellen" />
-         <br />
       
       <h3>Konzerte</h3>
       
       <p>
-        <strong>13.11.2021, 19:30, 20:30 und 21:30 Uhr<br />NOXX Solo</strong>
-        <br />Langer Samstag: Stadtbibliothek Chur
+        <strong>20.01.2021, 20:00 Uhr</strong>
+        <br />Songwriter Slam im Parterre Basel
       </p>
       <br />
       <br />

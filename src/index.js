@@ -12,6 +12,7 @@ import GlobalStyle from "./GlobalStyle";
 const Pages = () => {
   const [isNavigationOpen, setNavigationOpen] = React.useState(false);
   const homeRef = useRef();
+  const aboutRef = useRef();
   const musikRef = useRef();
   const bioRef = useRef();
   const kontaktRef = useRef();
@@ -23,6 +24,7 @@ const Pages = () => {
     bio: bioRef,
     downloads: downloadsRef,
     kontakt: kontaktRef,
+    about: aboutRef
   };
 
   const handleNavigate = (e, ref) => {

@@ -7,7 +7,7 @@ import youtubeIcon from "../assets/icons/youtube.png";
 import { lighten } from "polished";
 
 export const colors = {
-  primaryRed: "#b9da78",
+  primary: "#d0fd77",
   primaryAnthracite: "#3c3c3c",
   textColor: lighten(0.1, "#000"), // 90% black
   footerBg: lighten(0.1, "#000"),
