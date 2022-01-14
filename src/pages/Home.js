@@ -22,13 +22,11 @@ const Home = forwardRef((props, ref) => {
 
       <h3>«Mimimi...» – Das neue Album kommt bald!</h3>
      
-     <FlexWrapper>
-       <div>
+       <p>
        Am 21. Januar 2022 erscheint unser erstes Bandalbum «Mimimi...». Das muss natürlich gebührend gefeiert werden! Leider können wir momentan keine sinnvolle Plattentaufe mit Publikum veranstalten. 
        Wir dürfen als Ersatz aber bei <a href="https://radio15.ch/">Radio15</a> ein kleines Live-Konzert on Air geben! 
-       </div>
-       <img src={flyer} alt="Flyer Radio15" />
-     </FlexWrapper>
+       </p>
+      <img src={flyer} alt="Flyer Radio15" style={{width: '40%', margin: '20px auto 0 auto'}} />
 
      <h3>Album vorbestellen</h3>
 
@@ -38,7 +36,19 @@ const Home = forwardRef((props, ref) => {
       <LinkButton 
         link="https://forms.gle/6M49QBSzwFTFHK2CA"
         text="Bestellen" />
-         <br />
+      <br />
+      <h3>Konzerte</h3>
+      
+      <p>
+        <strong>20.01.2022, 20:00 Uhr</strong>
+        <br />Songwriter Slam im Parterre Basel
+      </p>
+      <br />
+      <br />
+      <LinkButton
+        link="mailto:noxx.it.out@gmail.com?subject=Anfrage"
+        text="Buche uns!"
+      />
 
     </div>
   );

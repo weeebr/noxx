@@ -11,7 +11,7 @@ const DownloadsWrapper = styled.div`
   background: #2b2b2b;
   margin: ${sectionGaps.topDesktop} -10px -40px -10px;
   color: white;
-  padding: 12px;
+  padding: 12px 12px 60px 12px;
 
   ${breakpoint(device.tablet)} {
     margin: ${sectionGaps.topTablet} 0 0 0;

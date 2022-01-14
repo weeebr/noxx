@@ -80,20 +80,6 @@ const Musik = forwardRef(({ openVideo }, ref) => {
           title="cV3NnsfpA1Q"
         />
       </YoutubeWrapper>
-      <br />
-      
-      <h3>Konzerte</h3>
-      
-      <p>
-        <strong>20.01.2021, 20:00 Uhr</strong>
-        <br />Songwriter Slam im Parterre Basel
-      </p>
-      <br />
-      <br />
-      <LinkButton
-        link="mailto:noxx.it.out@gmail.com?subject=Anfrage"
-        text="Buche uns!"
-      />
     </div>
   );
 });
