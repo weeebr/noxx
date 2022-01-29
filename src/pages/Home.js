@@ -36,7 +36,10 @@ const Home = forwardRef((props, ref) => {
         als CD bestellen. 
       </p>
       <p>
-        Wie findet ihr das Album? Schreibt uns in den Sozialen Medien oder direkt per Mail. (Hyperlink: noxx.it.out@gmail.com)
+        Wie findet ihr das Album? Schreibt uns in den Sozialen Medien oder direkt <a 
+          href="noxx.it.out@gmail.com" 
+          target="_blank"
+          rel="noopener noreferrer">per Mail</a>.
        </p>
       <img src={cover} alt="Mimimi Album Cover" style={{width: '40%', margin: '20px auto 0 auto'}} />
 
