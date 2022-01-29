@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import styled from "styled-components";
-import flyer from "../assets/aktuelles/flyer_radio15.png";
+import cover from "../assets/aktuelles/Cover-Spotify_Social-Media-small.jpg";
 import bandCover from "../assets/band/cover.png";
 // assets
 // import marcoFaseth from "../assets/band/marco-faseth.jpg";
@@ -20,28 +20,34 @@ const Home = forwardRef((props, ref) => {
       </ImagesWrapper>
       <SectionTitle id="home">Home</SectionTitle>
 
-      <h3>«Mimimi...» – Das neue Album kommt bald!</h3>
+      <h3>«Mimimi...» – Das neue Album ist da!</h3>
      
        <p>
-       Am 21. Januar 2022 erscheint unser erstes Bandalbum «Mimimi...». Das muss natürlich gebührend gefeiert werden! Leider können wir momentan keine sinnvolle Plattentaufe mit Publikum veranstalten. 
-       Wir dürfen als Ersatz aber bei <a href="https://radio15.ch/">Radio15</a> ein kleines Live-Konzert on Air geben! 
-       </p>
-      <img src={flyer} alt="Flyer Radio15" style={{width: '40%', margin: '20px auto 0 auto'}} />
-
-     <h3>Album vorbestellen</h3>
-
-     <p>Unterstütze Schweizer Musik, in dem du unser neues Album als CD vorbestellst. Für nur 16.90.- landet die CD aufs Release-Datum bei dir im Briefkasten. Mit deiner Vorbestellung hilfst du uns in die Schweizer Albumcharts vorzudringen. Vielen Dank dafür!
+        Unser neues Album mit 10 Titeln kannst du jetzt 
+        <a 
+          href="https://album.link/ch/i/1603866842" 
+          target="_blank"
+          rel="noopener noreferrer">überall streamen</a> 
+        oder auf 
+        <a 
+          href="https://www.cede.ch/de/music/?branch=1&aid=17671634&view=detail&gclid=Cj0KCQiAubmPBhCyARIsAJWNpiORC265eW13q5xuSe3LbKCCAAfi_Y_MurWNUOhjoib4ns_WV5-mU1YaAsWBEALw_wcB&gclsrc=aw.ds&pid=8110" 
+          target="_blank"
+          rel="noopener noreferrer">cede.ch</a>
+        als CD bestellen. 
       </p>
-      <br />
-      <LinkButton 
-        link="https://forms.gle/6M49QBSzwFTFHK2CA"
-        text="Bestellen" />
-      <br />
+      <p>
+        Wie findet ihr das Album? Schreibt uns in den Sozialen Medien oder direkt per Mail. (Hyperlink: noxx.it.out@gmail.com)
+       </p>
+      <img src={cover} alt="Mimimi Album Cover" style={{width: '40%', margin: '20px auto 0 auto'}} />
+
       <h3>Konzerte</h3>
       
       <p>
-        <strong>20.01.2022, 20:00 Uhr</strong>
-        <br />Songwriter Slam im Parterre Basel
+        <strong>25.06.2022, 20:00 Uhr</strong>
+        <br />Plattentaufe in der <a 
+          href="https://www.postremise.ch" 
+          target="_blank"
+          rel="noopener noreferrer">Postremise Chur</a>
       </p>
       <br />
       <br />
