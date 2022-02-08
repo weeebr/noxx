@@ -52,6 +52,14 @@ const Home = forwardRef((props, ref) => {
           target="_blank"
           rel="noopener noreferrer">Postremise Chur</a>
       </p>
+
+      <p>
+        <strong>11.06.2022, 20.00r</strong>
+        <br />Plattentaufe in der <a 
+          href="https://www.kinker.ch/" 
+          target="_blank"
+          rel="noopener noreferrer">Kinker</a>
+      </p>
       <br />
       <br />
       <LinkButton
