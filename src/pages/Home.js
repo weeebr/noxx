@@ -43,7 +43,7 @@ const Home = forwardRef((props, ref) => {
        </p>
       <img src={cover} alt="Mimimi Album Cover" style={{width: '40%', margin: '20px auto 0 auto'}} />
 
-      <h3>Konzerte bla</h3>
+      <h3>Konzerte</h3>
       
       <p>
         <strong>25.06.2022, 20:00 Uhr</strong>
