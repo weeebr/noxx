@@ -52,7 +52,7 @@ const Home = forwardRef((props, ref) => {
           target="_blank"
           rel="noopener noreferrer">Postremise Chur</a>
       </p>
-
+      <br />
       <p>
         <strong>11.06.2022, 20.00 Uhr</strong>
         <br />Plattentaufe in der <a 
