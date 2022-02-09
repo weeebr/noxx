@@ -54,7 +54,7 @@ const Home = forwardRef((props, ref) => {
       </p>
 
       <p>
-        <strong>11.06.2022, 20.00r</strong>
+        <strong>11.06.2022, 20.00 Uhr</strong>
         <br />Plattentaufe in der <a 
           href="https://www.kinker.ch/" 
           target="_blank"
