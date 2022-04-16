@@ -37,17 +37,17 @@ export const icons = {
 export const typography = {
   h1: {
     textTransform: "uppercase",
-    fontFamily: "AmaticBold",
+    fontFamily: "ShadowsIntoLight",
     fontSize: "100px",
   },
   h2: {
     textTransform: "uppercase",
-    fontFamily: "AmaticBold",
+    fontFamily: "ShadowsIntoLight",
     fontSize: "54px",
   },
   h3: {
     textTransform: "uppercase",
-    fontFamily: "AmaticRegular",
+    fontFamily: "ShadowsIntoLight",
     fontSize: "39px",
   },
 };

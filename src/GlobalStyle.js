@@ -1,23 +1,15 @@
 import { createGlobalStyle } from "styled-components";
-import AmaticBold from "./assets/fonts/PinkLemonade.otf";
-import AmaticRegular from "./assets/fonts/PinkLemonade.otf";
+import ShadowsIntoLight from "./assets/fonts/ShadowsIntoLight-Regular.ttf";
 import LatoRegular from "./assets/fonts/Lato-Regular.ttf";
 
 import { colors, typography, getString, breakpoint, device } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'AmaticBold';
+    font-family: 'ShadowsIntoLight';
     font-style: normal;
     letter-spacing: 1px;
-    src: url(${AmaticBold}) format('opentype');
-  }
-
-  @font-face {
-    font-family: 'AmaticRegular';
-    font-style: normal;
-    letter-spacing: 1px;
-    src: url(${AmaticRegular}) format('opentype');
+    src: url(${ShadowsIntoLight}) format('opentype');
   }
 
   @font-face {
