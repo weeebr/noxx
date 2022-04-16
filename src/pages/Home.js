@@ -46,19 +46,60 @@ const Home = forwardRef((props, ref) => {
       <h3>Konzerte</h3>
       
       <p>
-        <strong>25.06.2022, 20:00 Uhr</strong>
-        <br />Plattentaufe in der <a 
-          href="https://www.postremise.ch" 
+      <DateTitle>27.05.2022, ab 19:00 Uhr</DateTitle>
+        <br />NOXX Solo in der Krone-Lounge von <a 
+          href="https://lightragaz.com/angebot/light-lounge/" 
           target="_blank"
-          rel="noopener noreferrer">Postremise Chur</a>
+          style={{margin: 0}}
+          rel="noopener noreferrer">Light Ragaz </a>
+          <br />
       </p>
       <br />
       <p>
-        <strong>11.06.2022, 20.00 Uhr</strong>
-        <br />Plattentaufe in der <a 
-          href="https://www.kinker.ch/" 
+        <DateTitle>10.06.2022, 20:30 Uhr</DateTitle>
+        <br />Headliner am Summerfest Chur 
+        <br />
+        <DetailsLink 
+          href="https://www.suedostschweiz.ch/ereignisse/viel-buendner-power-am-summer-fest-in-chur" 
           target="_blank"
-          rel="noopener noreferrer">Kinker</a>
+          rel="noopener noreferrer">→ Artikel der Südostschweiz</DetailsLink>
+      </p>
+      <br />
+      <p>
+        <DateTitle>11.06.2022, ab 19:00 Uhr</DateTitle>
+        <br />Plattentaufe im <a 
+          href="http://rockfact.ch/" 
+          target="_blank"
+          style={{margin: 0}}
+          rel="noopener noreferrer">Rockfact Münchenstein </a>
+          <br />
+          <DetailsLink 
+          href="https://www.facebook.com/events/902731720448672?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D" 
+          target="_blank"
+          rel="noopener noreferrer">→ Mehr Infos</DetailsLink>
+      </p>
+      <br />
+      <p>
+        <DateTitle>25.06.2022, ab 19:00 Uhr</DateTitle>
+        <br />Plattentaufe in der <a 
+          href="https://www.postremise.ch" 
+          target="_blank"
+          style={{margin: 0}}
+          rel="noopener noreferrer">Postremise Chur </a>
+          <br />
+         <DetailsLink 
+          href="https://www.facebook.com/events/1690245907991680?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D" 
+          target="_blank"
+          rel="noopener noreferrer">→ Mehr Infos</DetailsLink>
+      </p>
+      <br />
+      <p>
+        <DateTitle>06.08.2022, 15:30 Uhr</DateTitle>
+        <br />Auftritt am <a 
+          href="https://chapella.ch/" 
+          target="_blank"
+          style={{margin: 0}}
+          rel="noopener noreferrer">Openair Chapella</a>
       </p>
       <br />
       <br />
@@ -70,6 +111,15 @@ const Home = forwardRef((props, ref) => {
     </div>
   );
 });
+
+const DateTitle = styled.strong`
+  font-family: 'LatoBold';
+`;
+
+const DetailsLink = styled.a`
+  margin: 0;
+  color: white;
+`;
 
 const ImagesWrapper = styled.div`
   text-align: center;

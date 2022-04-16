@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import AmaticBold from "./assets/fonts/PinkLemonade.otf";
 import AmaticRegular from "./assets/fonts/PinkLemonade.otf";
 import LatoRegular from "./assets/fonts/Lato-Regular.ttf";
+import LatoBold from "./assets/fonts/Lato-Bold.ttf";
 
 import { colors, typography, getString, breakpoint, device } from "./theme";
 
@@ -25,6 +26,13 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-weight: 400;
     src: url(${LatoRegular}) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'LatoBold';
+    font-style: normal;
+    font-weight: 900;
+    src: url(${LatoBold}) format('truetype');
   }
 
   *::before, *::after, * {
