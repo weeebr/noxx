@@ -7,7 +7,6 @@ import DownloadButton from "./../page-components/DownloadButton";
 
 // assets
 import bandFrontal from "../assets/band/band-frontal.jpg";
-import bioTitle from "../assets/bio.png";
 import bioPdf from "../assets/noxx-bio.pdf";
 import { breakpoint, device } from "./../theme/index";
 
@@ -58,14 +57,12 @@ const FlexWrapper = styled.div`
   ${breakpoint(device.mobile)} {
     flex-direction: column;
   }
-}`;
+`;
 
 const Bio = forwardRef(({ openVideo }, ref) => {
   return (
     <BioWrapper ref={ref}>
-      <SectionTitle>
-        <img src={bioTitle} alt="Bio" />
-      </SectionTitle>
+      <SectionTitle>Bio</SectionTitle>
       <FlexWrapper>
         <div>
           <h3>

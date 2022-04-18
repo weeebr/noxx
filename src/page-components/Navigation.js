@@ -27,12 +27,17 @@ const StyledNavigation = styled.aside`
     a {
       padding: 12px 20px;
       color: white;
-      font-family: AmaticBold;
+      font-family: ShadowsIntoLight;
+      text-transform: uppercase;
       font-size: 30px;
       text-decoration: none;
       white-space: nowrap;
       transition: all 0.5s ease, background 0.1s ease;
       height: 48px;
+
+      ${breakpoint(device.tabletPlus)} {
+        color: black;
+      }
 
       &:after {
         margin-left: 12px;
@@ -93,7 +98,7 @@ const StyledNavigation = styled.aside`
   &.open {
     margin-right: calc(277px + 68px - 20px);
     left: 207px;
-    g ${breakpoint(device.phone)} {
+    ${breakpoint(device.phone)} {
       margin-right: calc(277px + 68px - 7%);
     }
 
@@ -122,7 +127,7 @@ const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
   const hamburgerVisible = useMediaQuery(`(max-width:${hamburgerWhenWidth})`);
 
   return (
-    <StyledNavigation className={isOpen ? "open" : null} isOpen={isOpen}>
+    <StyledNavigation className={isOpen && hamburgerVisible ? "open" : null} isOpen={isOpen}>
       <div
         onClick={() => (hamburgerVisible ? setNavigationOpen(!isOpen) : null)}
       >
@@ -130,7 +135,7 @@ const Navigation = ({ isOpen, setNavigationOpen, onNavigate, pageRefs }) => {
           <Hamburger isOpen={isOpen} onClick={setNavigationOpen} />
         )}
 
-        {isOpen && <OverlayBg />}
+        {isOpen && hamburgerVisible && <OverlayBg />}
 
         <nav
           className={`${hamburgerVisible ? "mobile" : ""} ${

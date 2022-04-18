@@ -20,7 +20,7 @@ const Home = forwardRef((props, ref) => {
       </ImagesWrapper>
       <SectionTitle id="home">Home</SectionTitle>
 
-      <h3>Mimimi...» – Das neue Album ist da!</h3>
+      <h3>«Mimimi...» – Das neue Album ist da!</h3>
      
        <p>
         Unser neues Album mit 10 Titeln kannst du jetzt 

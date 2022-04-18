@@ -149,7 +149,7 @@ const ProfileWrapper = styled.div`
       z-index: 3;
       transition: all 0.5s ease;
       font-size: 25px;
-      font-family: AmaticBold;
+      font-family: ShadowsIntoLight;
       font-weight: 900;
       background: ${(props) =>
         props.name === "Tamino Weggler" ? "#b9da78" : "#a5c06e"};
@@ -166,7 +166,7 @@ const ProfileWrapper = styled.div`
 
   .member-emoji {
     display: block;
-    font-family: AmaticBold;
+    font-family: ShadowsIntoLight;
     font-size: 20px;
     transform: translateY(0) scale(1);
     transition: all 0.25s ease;
@@ -180,7 +180,7 @@ const ProfileWrapper = styled.div`
 
   .member-function {
     font-size: 22px;
-    font-family: AmaticBold;
+    font-family: ShadowsIntoLight;
     transform: translateY(0) scale(1);
     transition: all 0.25s ease;
     line-height: 1.25;

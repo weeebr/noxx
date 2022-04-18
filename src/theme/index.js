@@ -16,6 +16,7 @@ export const colors = {
 export const device = {
   mobile: "767px",
   tablet: "991px",
+  tabletPlus: "1141px",
   phone: "500px",
   xs: "450px",
   md: "900px",
@@ -37,17 +38,17 @@ export const icons = {
 export const typography = {
   h1: {
     textTransform: "uppercase",
-    fontFamily: "AmaticBold",
+    fontFamily: "ShadowsIntoLight",
     fontSize: "100px",
   },
   h2: {
     textTransform: "uppercase",
-    fontFamily: "AmaticBold",
+    fontFamily: "ShadowsIntoLight",
     fontSize: "54px",
   },
   h3: {
     textTransform: "uppercase",
-    fontFamily: "AmaticRegular",
+    fontFamily: "ShadowsIntoLight",
     fontSize: "39px",
   },
 };
