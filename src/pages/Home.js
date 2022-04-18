@@ -57,7 +57,7 @@ const Home = forwardRef((props, ref) => {
       <br />
       <p>
         <DateTitle>10.06.2022, 20:30 Uhr</DateTitle>
-        <br />Headliner am Summerfest Chur 
+        <br />NOXX & Friends am Summerfest Chur 
         <br />
         <DetailsLink 
           href="https://www.suedostschweiz.ch/ereignisse/viel-buendner-power-am-summer-fest-in-chur" 
