@@ -56,7 +56,7 @@ const Home = forwardRef((props, ref) => {
       </p>
       <br />
       <p>
-        <DateTitle>10.06.2022, 20:30 Uhr</DateTitle>
+        <DateTitle>10.06.2022, 20:00 Uhr</DateTitle>
         <br />NOXX & Friends am Summerfest Chur 
         <br />
         <DetailsLink 
