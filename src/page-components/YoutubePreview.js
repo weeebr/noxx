@@ -6,6 +6,8 @@ import ytU27b2SqZNH4 from "../assets/youtube/U27b2SqZNH4.jpg";
 import ytcV3NnsfpA1Q from "../assets/youtube/cV3NnsfpA1Q.jpg";
 import ytHPUekq5fC90 from "../assets/youtube/HPUekq5fC90.jpg";
 import ytO5e8asH2JpQ from "../assets/youtube/O5e8asH2JpQ.jpg";
+import yt2dprbnEs8G8 from "../assets/youtube/2dprbnEs8G8.jpg";
+
 
 
 const thumbnails = {
@@ -13,7 +15,8 @@ const thumbnails = {
   idU27b2SqZNH4: ytU27b2SqZNH4,
   idcV3NnsfpA1Q: ytcV3NnsfpA1Q,
   idHPUekq5fC90: ytHPUekq5fC90,
-  idO5e8asH2JpQ: ytO5e8asH2JpQ
+  idO5e8asH2JpQ: ytO5e8asH2JpQ,
+  id2dprbnEs8G8: yt2dprbnEs8G8
 };
 
 const PlayButton = styled.button`
