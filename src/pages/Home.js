@@ -45,16 +45,7 @@ const Home = forwardRef((props, ref) => {
 
       <h3>Konzerte</h3>
       
-      <p>
-      <DateTitle>27.05.2022, ab 19:00 Uhr</DateTitle>
-        <br />NOXX Solo in der Krone-Lounge von <a 
-          href="https://lightragaz.com/angebot/light-lounge/" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">Light Ragaz </a>
-          <br />
-      </p>
-      <br />
+     
       <p>
         <DateTitle>10.06.2022, 20:00 Uhr</DateTitle>
         <br />NOXX & Friends am Summerfest Chur 
