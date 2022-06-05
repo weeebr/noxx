@@ -54,8 +54,8 @@ const Musik = forwardRef(({ openVideo }, ref) => {
       </IconsWrapper>
       <YoutubePreview
           openVideo={openVideo}
-          id="O5e8asH2JpQ"
-          title="O5e8asH2JpQ"
+          id="2dprbnEs8G8"
+          title="2dprbnEs8G8"
           style={{
             maxWidth: 480,
             margin: '20px auto'
@@ -75,8 +75,8 @@ const Musik = forwardRef(({ openVideo }, ref) => {
         />
         <YoutubePreview
           openVideo={openVideo}
-          id="cV3NnsfpA1Q"
-          title="cV3NnsfpA1Q"
+          id="O5e8asH2JpQ"
+          title="O5e8asH2JpQ"
         />
       </YoutubeWrapper>
     </div>
