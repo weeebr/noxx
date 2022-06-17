@@ -46,36 +46,13 @@ const Home = forwardRef((props, ref) => {
       <h3>Konzerte</h3>
       
      
-      <p>
-        <DateTitle>10.06.2022, 20:00 Uhr</DateTitle>
-        <br />NOXX & Friends am Summerfest Chur 
-        <br />
-        <DetailsLink 
-          href="https://www.suedostschweiz.ch/ereignisse/viel-buendner-power-am-summer-fest-in-chur" 
-          target="_blank"
-          rel="noopener noreferrer">→ Artikel der Südostschweiz</DetailsLink>
-      </p>
-      <br />
-      <p>
-        <DateTitle>11.06.2022, ab 19:00 Uhr</DateTitle>
-        <br />Plattentaufe im <a 
-          href="http://rockfact.ch/" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">Rockfact Münchenstein </a>
-          <br />
-          <DetailsLink 
-          href="https://www.facebook.com/events/902731720448672?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D" 
-          target="_blank"
-          rel="noopener noreferrer">→ Mehr Infos</DetailsLink>
-      </p>
-      <br />
+     
       <p>
       <DateTitle>18.06.2022, 20:00 Uhr</DateTitle>
         <br />NOXX & Friends am badikult 22 in Aesch 
         <br />
         <DetailsLink 
-          href="https://attraktivesaesch.ch/" 
+          href="https://attraktivesaesch.ch/anlaesse/badikult/" 
           target="_blank"
           rel="noopener noreferrer">→ Mehr Infos</DetailsLink>
       </p>
