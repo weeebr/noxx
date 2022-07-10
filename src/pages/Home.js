@@ -48,32 +48,8 @@ const Home = forwardRef((props, ref) => {
      
      
       <p>
-      <DateTitle>18.06.2022, 20:00 Uhr</DateTitle>
-        <br />NOXX & Friends am badikult 22 in Aesch 
-        <br />
-        <DetailsLink 
-          href="https://attraktivesaesch.ch/anlaesse/badikult/" 
-          target="_blank"
-          rel="noopener noreferrer">→ Mehr Infos</DetailsLink>
-      </p>
-      <br />
-      <p>
-        <DateTitle>25.06.2022, ab 19:00 Uhr</DateTitle>
-        <br />Plattentaufe in der <a 
-          href="https://www.postremise.ch" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">Postremise Chur </a>
-          <br />
-         <DetailsLink 
-          href="https://www.facebook.com/events/1690245907991680?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D" 
-          target="_blank"
-          rel="noopener noreferrer">→ Mehr Infos</DetailsLink>
-      </p>
-      <br />
-      <p>
         <DateTitle>06.08.2022, 15:30 Uhr</DateTitle>
-        <br />Auftritt am <a 
+        <br />NOXX am <a 
           href="https://chapella.ch/" 
           target="_blank"
           style={{margin: 0}}
