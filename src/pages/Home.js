@@ -70,11 +70,6 @@ const DateTitle = styled.strong`
   font-family: 'LatoBold';
 `;
 
-const DetailsLink = styled.a`
-  margin: 0;
-  color: white;
-`;
-
 const ImagesWrapper = styled.div`
   text-align: center;
   background: url(${bandCover});
