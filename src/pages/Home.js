@@ -48,20 +48,8 @@ const Home = forwardRef((props, ref) => {
      
      
       <p>
-        <DateTitle>06.08.2022, 15:30 Uhr</DateTitle>
-        <br />NOXX am <a 
-          href="https://chapella.ch/" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">Openair Chapella</a>
-      </p>
-      <br />
-      <br />
-      <LinkButton
-        link="mailto:noxx.it.out@gmail.com?subject=Anfrage"
-        text="Buche uns!"
-      />
-
+        Coming soon...
+        </p>
     </div>
   );
 });
