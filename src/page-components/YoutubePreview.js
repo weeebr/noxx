@@ -6,7 +6,9 @@ import ytU27b2SqZNH4 from "../assets/youtube/U27b2SqZNH4.jpg";
 import ytcV3NnsfpA1Q from "../assets/youtube/cV3NnsfpA1Q.jpg";
 import ytHPUekq5fC90 from "../assets/youtube/HPUekq5fC90.jpg";
 import ytO5e8asH2JpQ from "../assets/youtube/O5e8asH2JpQ.jpg";
+import ytAnHM8TFIs0M from "../assets/youtube/AnHM8TFIs0M.jpg";
 import yt2dprbnEs8G8 from "../assets/youtube/2dprbnEs8G8.jpg";
+
 
 
 
@@ -16,7 +18,8 @@ const thumbnails = {
   idcV3NnsfpA1Q: ytcV3NnsfpA1Q,
   idHPUekq5fC90: ytHPUekq5fC90,
   idO5e8asH2JpQ: ytO5e8asH2JpQ,
-  id2dprbnEs8G8: yt2dprbnEs8G8
+  idAnHM8TFIs0M: ytAnHM8TFIs0M,
+  id2dprbnEs8G8: yt2dprbnEs8G8,
 };
 
 const PlayButton = styled.button`
@@ -62,6 +65,15 @@ const Video = styled.div`
   cursor: pointer;
   z-index: 0 !important;
 
+  p {
+    font-size: 26px;
+    padding: 8px 0;
+    font-family: ShadowsIntoLight;
+    font-weight: 900;
+    border-bottom: 2px solid black;
+    background: #f5f7e88a;
+  }
+
   &:hover {
     svg {
       height: 100%;
@@ -98,6 +110,7 @@ const YoutubePreview = ({ openVideo, id, title, ...other }) => {
           <path className="bg" d="M 45,24 27,14 27,34" fill="#fff"></path>
         </svg>
       </PlayButton>
+      <p>{title}</p>
     </Video>
   );
 };

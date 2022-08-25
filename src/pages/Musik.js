@@ -54,10 +54,10 @@ const Musik = forwardRef(({ openVideo }, ref) => {
       </IconsWrapper>
       <YoutubePreview
           openVideo={openVideo}
-          id="2dprbnEs8G8"
-          title="2dprbnEs8G8"
+          id="AnHM8TFIs0M"
+          title="I werda alt"
           style={{
-            maxWidth: 480,
+            maxWidth: 680,
             margin: '20px auto'
           }}
         />
@@ -66,17 +66,17 @@ const Musik = forwardRef(({ openVideo }, ref) => {
         <YoutubePreview
           openVideo={openVideo}
           id="3K86RRajPEM"
-          title="3K86RRajPEM"
+          title="Partytime im Altersheim"
         />
         <YoutubePreview
           openVideo={openVideo}
-          id="U27b2SqZNH4"
-          title="U27b2SqZNH4"
+          id="2dprbnEs8G8"
+          title="Mis Velo"
         />
         <YoutubePreview
           openVideo={openVideo}
           id="O5e8asH2JpQ"
-          title="O5e8asH2JpQ"
+          title="Maskapflicht"
         />
       </YoutubeWrapper>
     </div>

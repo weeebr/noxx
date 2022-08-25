@@ -7,7 +7,6 @@ import bandCover from "../assets/band/cover.png";
 import logo from "../assets/logo.png";
 // page-components
 import SectionTitle from "../page-components/SectionTitle";
-import LinkButton from "./../page-components/LinkButton";
 import { breakpoint, device } from "./../theme/index";
 
 const Home = forwardRef((props, ref) => {
@@ -53,10 +52,6 @@ const Home = forwardRef((props, ref) => {
     </div>
   );
 });
-
-const DateTitle = styled.strong`
-  font-family: 'LatoBold';
-`;
 
 const ImagesWrapper = styled.div`
   text-align: center;
