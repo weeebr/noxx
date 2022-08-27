@@ -13,6 +13,7 @@ const YoutubeWrapper = styled.div`
 
   & > div {
     padding: 0 20px;
+    width: 100%;
 
     ${breakpoint(device.tablet)} {
       padding: 0 8px;
@@ -58,6 +59,7 @@ const Musik = forwardRef(({ openVideo }, ref) => {
           title="I werda alt"
           style={{
             maxWidth: 680,
+            
             margin: '20px auto'
           }}
         />
