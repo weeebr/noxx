@@ -42,16 +42,28 @@ const Home = forwardRef((props, ref) => {
        </p>
       <img src={cover} alt="Mimimi Album Cover" style={{width: '40%', margin: '20px auto 0 auto'}} />
 
+
+
       <h3>Konzerte</h3>
       
      
      
       <p>
-        Coming soon...
-        </p>
+        <DateTitle>16.09.2022, 18:00 Uhr</DateTitle>
+        <br />NOXX Solo am <a 
+          href="https://www.flaneurbasel.ch/" 
+          target="_blank"
+          style={{margin: 0}}
+          rel="noopener noreferrer">Flaneur Festival Basel</a>
+      </p>
+
     </div>
   );
 });
+
+  const DateTitle = styled.strong`
+  font-family: 'LatoBold';
+  `;
 
 const ImagesWrapper = styled.div`
   text-align: center;
