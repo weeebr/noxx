@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import styled from "styled-components";
-import cover from "../assets/aktuelles/Cover-Spotify_Social-Media-small.jpg";
+import cover from "../assets/aktuelles/Paar-4-long.jpg";
 import bandCover from "../assets/band/cover.png";
 // assets
 // import marcoFaseth from "../assets/band/marco-faseth.jpg";
@@ -19,28 +19,22 @@ const Home = forwardRef((props, ref) => {
       </ImagesWrapper>
       <SectionTitle id="home">Home</SectionTitle>
 
-      <h3>«Mimimi...» – Das neue Album ist da!</h3>
+      <h3>Neue Single: Wenn i flüg</h3>
      
        <p>
-        Unser neues Album mit 10 Titeln kannst du jetzt 
+        Hör dir jetzt unsere neue Single auf deiner liebsten
         <a 
-          href="https://album.link/ch/i/1603866842" 
+          href="https://songwhip.com/noxx/wenn-i-flug" 
           target="_blank"
-          rel="noopener noreferrer">überall streamen</a> 
-        oder auf 
-        <a 
-          href="https://www.cede.ch/de/music/?branch=1&aid=17671634&view=detail&gclid=Cj0KCQiAubmPBhCyARIsAJWNpiORC265eW13q5xuSe3LbKCCAAfi_Y_MurWNUOhjoib4ns_WV5-mU1YaAsWBEALw_wcB&gclsrc=aw.ds&pid=8110" 
-          target="_blank"
-          rel="noopener noreferrer">cede.ch</a>
-        als CD bestellen. 
+          rel="noopener noreferrer">Streamingplattform</a> 
+        an.
+        
       </p>
       <p>
-        Wie findet ihr das Album? Schreibt uns in den Sozialen Medien oder direkt <a 
-          href="noxx.it.out@gmail.com" 
-          target="_blank"
-          rel="noopener noreferrer">per Mail</a>.
-       </p>
-      <img src={cover} alt="Mimimi Album Cover" style={{width: '40%', margin: '20px auto 0 auto'}} />
+        
+      </p>
+      
+      <img src={cover} alt="Paar-4-long" style={{width: '40%', margin: '20px auto 0 auto'}} />
 
 
 
@@ -49,12 +43,12 @@ const Home = forwardRef((props, ref) => {
      
      
       <p>
-        <DateTitle>16.09.2022, 18:00 Uhr</DateTitle>
-        <br />NOXX Solo am <a 
-          href="https://www.flaneurbasel.ch/" 
+        <DateTitle>16.12.2022 - 20:00 Uhr</DateTitle>
+        <br />NOXX Solo an der <a 
+          href="https://www.rtr.ch/interpresa/nova-show-musicala-late-lounge-live" 
           target="_blank"
           style={{margin: 0}}
-          rel="noopener noreferrer">Flaneur Festival Basel</a>
+          rel="noopener noreferrer">RTR Late Lounge Live</a>
       </p>
 
     </div>
