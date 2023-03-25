@@ -102,7 +102,12 @@ const Bio = forwardRef(({ openVideo }, ref) => {
             Heute: <span>NOXX Band</span>
           </h3>
           <p>
-            Der Stil der Lieder blieb unverändert, sie sind immer noch Bündnerdeutsch gesungen und inbrünstig vorgetragen. Die Band gibt aber nochmals eine mächtige Portion Wucht in den Teufelsbrei, die in älteren Songs teils fehlte.
+          Im Sommer 2020 startete eine Crowdfunding-Kampagne für die erste Bandproduktion. Das dadurch finanzierte Album „mimimi...“ wurde im Januar 2022 nach einer Reihe von Single-Auskopplungen veröffentlicht und erreichte Platz 2 der CH-Album Charts. Darauf zu hören sind 10 Songs, die zum Teil mit Rap-Schlagkante relevante und irrelevante gesellschaftliche und persönliche Themen hochnehmen. 
+          </p>
+          <br />
+          <p>
+ Die Musik von NOXX ist geprägt von oftmals humoristischen, bündnerdeutschen Texten welche mit eingängigen Melodien und tanzbaren Grooves verschmelzen. Die Musik eignet sich deshalb sowohl für Lyrics-Fetischist:innen als auch Tanzwütige gleichermassen. 
+ 
           </p>
         </div>
       </FlexWrapper>

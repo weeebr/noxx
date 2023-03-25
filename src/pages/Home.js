@@ -19,10 +19,13 @@ const Home = forwardRef((props, ref) => {
       </ImagesWrapper>
       <SectionTitle id="home">Home</SectionTitle>
 
-      <h3>Neue Single: Wenn i flüg</h3>
-     
-       <p>
-        Hör dir jetzt unsere neue Single auf deiner liebsten
+
+
+
+      <h3>Unsere neueste Single: Wenn i flüg</h3>
+
+      <p>
+        Hör dir jetzt "Wenn i flüg" auf deiner liebsten
         <a 
           href="https://songwhip.com/noxx/wenn-i-flug" 
           target="_blank"
@@ -36,21 +39,73 @@ const Home = forwardRef((props, ref) => {
       
       <img src={cover} alt="Paar-4-long" style={{width: '40%', margin: '20px auto 0 auto'}} />
 
-
-
+      <br />
       <h3>Konzerte</h3>
       
-     
-     
+      <br />
+
       <p>
-        <DateTitle>16.12.2022 - 20:00 Uhr</DateTitle>
-        <br />NOXX Solo an der <a 
-          href="https://www.rtr.ch/interpresa/nova-show-musicala-late-lounge-live" 
+        <DateTitle>6. Mai 2023 - Solo</DateTitle>
+        <br /> 
+        Support für <a
+          href="https://carmencresta.ch/" 
           target="_blank"
           style={{margin: 0}}
-          rel="noopener noreferrer">RTR Late Lounge Live</a>
+          rel="noopener noreferrer">CARMEN CRESTA  < /a>
+          |  Beni's Backroad Beiz, Sils i.D.
       </p>
 
+      <br />
+
+      <p>
+        <DateTitle>23. Juni 2023 - Trio</DateTitle>
+        <br />Auf der Fähre am <a 
+          href="https://www.paerklijam.ch/" 
+          target="_blank"
+          style={{margin: 0}}
+          rel="noopener noreferrer">PÄRKLI JAM </a>
+          |  Basel
+      </p>
+
+      <br />
+      
+      <p>
+        <DateTitle>18. August 2023 - Band</DateTitle>
+        <br /> 
+        <a
+          href="https://www.embebbisyjazz.ch/" 
+          target="_blank"
+          style={{margin: 0}}
+          rel="noopener noreferrer">EM BEBBI SY JAZZ < /a>
+          |  Basel
+      </p>
+
+      <br />
+
+      <p>
+        <DateTitle>19. August 2023 - Band</DateTitle>
+        <br /> 
+        <a
+          href="https://verein-signatur.ch/index.php/events/openair-fids/" 
+          target="_blank"
+          style={{margin: 0}}
+          rel="noopener noreferrer">FEST IN DA STEINA < /a>
+          |  Churwalden
+      </p>
+
+      <br />
+
+<p>
+  <DateTitle>9. September 2023 - Band</DateTitle>
+  <br /> Bandunion mit 
+  <a
+    href="https://www.instagram.com/whatthefunkchur/" 
+    target="_blank"
+    style={{margin: 0}}
+    rel="noopener noreferrer"> WHAT THE FUNK < /a>
+    |  Chur
+</p>
+      
     </div>
   );
 });
