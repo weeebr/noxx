@@ -102,7 +102,20 @@ const Bio = forwardRef(({ openVideo }, ref) => {
             Heute: <span>NOXX Band</span>
           </h3>
           <p>
-          Im Sommer 2020 startete eine Crowdfunding-Kampagne für die erste Bandproduktion. Das dadurch finanzierte Album „mimimi...“ wurde im Januar 2022 nach einer Reihe von Single-Auskopplungen veröffentlicht und erreichte Platz 2 der CH-Album Charts. Darauf zu hören sind 10 Songs, die zum Teil mit Rap-Schlagkante relevante und irrelevante gesellschaftliche und persönliche Themen hochnehmen. 
+          Im Sommer 2020 startete eine Crowdfunding-Kampagne für die erste Bandproduktion. Das dadurch finanzierte Album 
+          
+          {" "}
+            <a
+              className="external"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://album.link/ch/i/1603866842"
+            >
+              mimimi...
+            </a>
+            . 
+          
+          wurde im Januar 2022 nach einer Reihe von Single-Auskopplungen veröffentlicht und erreichte Platz 2 der CH-Album Charts. Darauf zu hören sind 10 Songs, die zum Teil mit Rap-Schlagkante relevante und irrelevante gesellschaftliche und persönliche Themen hochnehmen. 
           </p>
           <br />
           <p>

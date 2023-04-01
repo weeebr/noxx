@@ -89,7 +89,7 @@ const Home = forwardRef((props, ref) => {
           href="https://verein-signatur.ch/index.php/events/openair-fids/" 
           target="_blank"
           style={{margin: 0}}
-          rel="noopener noreferrer">FEST IN DA STEINA < /a>
+          rel="noopener noreferrer">FESCHT IN DA STEINA < /a>
           |  Churwalden
       </p>
 
