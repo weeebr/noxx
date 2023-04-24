@@ -57,17 +57,6 @@ const Home = forwardRef((props, ref) => {
 
       <br />
 
-      <p>
-        <DateTitle>23. Juni 2023 - Trio</DateTitle>
-        <br />Auf der Fähre am <a 
-          href="https://www.paerklijam.ch/" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">PÄRKLI JAM </a>
-          |  Basel
-      </p>
-
-      <br />
       
       <p>
         <DateTitle>18. August 2023 - Band</DateTitle>

@@ -113,7 +113,6 @@ const Bio = forwardRef(({ openVideo }, ref) => {
             >
               mimimi...
             </a>
-            . 
           
           wurde im Januar 2022 nach einer Reihe von Single-Auskopplungen veröffentlicht und erreichte Platz 2 der CH-Album Charts. Darauf zu hören sind 10 Songs, die zum Teil mit Rap-Schlagkante relevante und irrelevante gesellschaftliche und persönliche Themen hochnehmen. 
           </p>
