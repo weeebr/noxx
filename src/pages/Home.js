@@ -46,7 +46,7 @@ const Home = forwardRef((props, ref) => {
 
       
       <p>
-        <DateTitle>18. August 2023 - Band</DateTitle>
+        <DateTitle>Freitag, 18. August 2023 - Band</DateTitle>
         <br /> 
         <a
           href="https://www.embebbisyjazz.ch/" 
@@ -59,7 +59,7 @@ const Home = forwardRef((props, ref) => {
       <br />
 
       <p>
-        <DateTitle>19. August 2023 - Band</DateTitle>
+        <DateTitle>Samstag, 19. August 2023 - Band</DateTitle>
         <br /> 
         <a
           href="https://verein-signatur.ch/index.php/events/openair-fids/" 
@@ -72,7 +72,7 @@ const Home = forwardRef((props, ref) => {
       <br />
 
 <p>
-  <DateTitle>9. September 2023 - Band</DateTitle>
+  <DateTitle>Samstag, 9. September 2023 - Band</DateTitle>
   <br /> 
   <a
     href="https://www.chur.graubuenden.ch/en/overview-events/tres-bandas-music-night" 
