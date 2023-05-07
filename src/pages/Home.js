@@ -44,19 +44,6 @@ const Home = forwardRef((props, ref) => {
       
       <br />
 
-      <p>
-        <DateTitle>6. Mai 2023 - Solo</DateTitle>
-        <br /> 
-        Support für <a
-          href="https://carmencresta.ch/" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">CARMEN CRESTA  < /a>
-          |  Beni's Backroad Beiz, Sils i.D.
-      </p>
-
-      <br />
-
       
       <p>
         <DateTitle>18. August 2023 - Band</DateTitle>
@@ -86,12 +73,12 @@ const Home = forwardRef((props, ref) => {
 
 <p>
   <DateTitle>9. September 2023 - Band</DateTitle>
-  <br /> Bandunion mit 
+  <br /> 
   <a
-    href="https://www.instagram.com/whatthefunkchur/" 
+    href="https://www.chur.graubuenden.ch/en/overview-events/tres-bandas-music-night" 
     target="_blank"
     style={{margin: 0}}
-    rel="noopener noreferrer"> WHAT THE FUNK < /a>
+    rel="noopener noreferrer"> TRÊS BANDAS - Music Night < /a>
     |  Chur
 </p>
       
