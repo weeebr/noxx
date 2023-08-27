@@ -38,49 +38,6 @@ const Home = forwardRef((props, ref) => {
       </p>
       
       <img src={cover} alt="Paar-4-long" style={{width: '40%', margin: '20px auto 0 auto'}} />
-
-      <br />
-      <h3>Konzerte</h3>
-      
-      <br />
-
-      
-      <p>
-        <DateTitle>Freitag, 18. August 2023 - Band</DateTitle>
-        <br /> 
-        <a
-          href="https://www.embebbisyjazz.ch/" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">EM BEBBI SY JAZZ < /a>
-          |  Basel
-      </p>
-
-      <br />
-
-      <p>
-        <DateTitle>Samstag, 19. August 2023 - Band</DateTitle>
-        <br /> 
-        <a
-          href="https://verein-signatur.ch/index.php/events/openair-fids/" 
-          target="_blank"
-          style={{margin: 0}}
-          rel="noopener noreferrer">FESCHT IN DA STEINA < /a>
-          |  Churwalden
-      </p>
-
-      <br />
-
-<p>
-  <DateTitle>Samstag, 9. September 2023 - Band</DateTitle>
-  <br /> 
-  <a
-    href="https://www.chur.graubuenden.ch/en/overview-events/tres-bandas-music-night" 
-    target="_blank"
-    style={{margin: 0}}
-    rel="noopener noreferrer"> TRÊS BANDAS - Music Night < /a>
-    |  Chur
-</p>
       
     </div>
   );
